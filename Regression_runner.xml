@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="GLS Regression" verbose="1">
+
+    <test name="Regression">
+        <packages>
+            <package name="com.company.Tests"/>
+        </packages>
+    </test>
+
+
+</suite>
