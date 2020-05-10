@@ -25,7 +25,7 @@ public class POST_DELETE_usingPOJO {
         String employeeBody = JsonUtil.convertJavaToJson(employee);
         baseURI = "http://dummy.restapiexample.com/api/v1";
         Response res =
-                given().log().all().accept(ContentType.JSON).log().all()
+                given().log().all().accept(ContentType.JSON)
                         .body(employeeBody)
                         .when().post("/create")
                         .then().assertThat().statusCode(200).contentType(ContentType.JSON)
