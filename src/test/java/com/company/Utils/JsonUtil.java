@@ -9,16 +9,13 @@ import java.io.IOException;
 
 public class JsonUtil {
 
-    private static ObjectMapper mapper;
+    private static ObjectMapper mapper = new ObjectMapper();
 
-    static {
-        mapper = new ObjectMapper();
-    }
 
     /**
-     *  Accepting the object of pojo class and converting to Json (String for body)
-     *  Store returned data in String
-     *  Returns String
+     * Accepting the object of pojo class and converting to Json (String for body)
+     * Store returned data in String
+     * Returns String
      */
     public static String convertJavaToJson(Object object) {
         String jsonResult = "";
@@ -40,7 +37,7 @@ public class JsonUtil {
      * Using that object we call getter methods to get the value for certain variables.
      */
 
-    public static <T> T convertJsonToJava(String jsonString, Class<T> cls)  {
+    public static <T> T convertJsonToJava(String jsonString, Class<T> cls) {
         T result = null;
         try {
             result = mapper.readValue(jsonString, cls);

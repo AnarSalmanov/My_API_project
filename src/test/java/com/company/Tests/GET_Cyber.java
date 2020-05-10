@@ -27,11 +27,12 @@ public class GET_Cyber {
                         .queryParam("type", "member")
                         .queryParam("sort", "pushed")
                         .queryParam("direction", "desc")
-                        .accept(ContentType.JSON).log().all()
+                        .accept(ContentType.JSON)
                         .when().get("/users/{username}/repos")
                         .then().assertThat().statusCode(200).contentType(ContentType.JSON)
                         .body("owner.id[4]", equalTo(2610172))
                         .extract().response();
+        res.prettyPrint();
         // Verify there is 11 id's
         JsonPath js = res.jsonPath();
         int idSize = js.getInt("id.size()");
