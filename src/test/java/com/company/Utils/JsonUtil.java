@@ -6,6 +6,9 @@ import org.codehaus.jackson.map.JsonMappingException;
 import org.codehaus.jackson.map.ObjectMapper;
 
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
 public class JsonUtil {
 
@@ -49,6 +52,20 @@ public class JsonUtil {
             e.printStackTrace();
         }
         return result;
+    }
+
+    /**
+     * This method accepts path of Json file,
+     * Using this method we can read data from Json file and use as Payload
+     */
+    public static String readFromJsonFile(String filePath) {
+        String payload = "";
+        try {
+            payload = new String(Files.readAllBytes(Paths.get(filePath)));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return payload;
     }
 }
 
