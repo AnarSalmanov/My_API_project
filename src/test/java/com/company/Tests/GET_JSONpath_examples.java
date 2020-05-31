@@ -31,6 +31,7 @@ public class GET_JSONpath_examples {
                         .when().get("https://uinames.com/api")
                         .then().assertThat().statusCode(200).contentType(ContentType.JSON)
                         .extract().response();
+        res.prettyPrint();
         JsonPath js = res.jsonPath();
         // Find count of elements in the array in response
         int arraySize = js.getInt("array.size()");
