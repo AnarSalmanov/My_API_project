@@ -14,6 +14,8 @@ import org.testng.annotations.Test;
 
 import java.io.IOException;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 import static io.restassured.RestAssured.*;
@@ -34,13 +36,17 @@ public class PUT_RegresUser {
         Response res =
                 given().accept(ContentType.JSON)
                         .body(bodyJson)
-                        .when().put("/api/users/2")
+                        .when().put("/api/users/3")
                         .then().assertThat().statusCode(200).contentType(ContentType.JSON)
                         .extract().response();
         res.prettyPrint();
         JsonPath js = res.jsonPath();
         String updatedMessage = js.getString("updatedAt");
-        Assert.assertTrue(updatedMessage.contains("2020-05-10"));
+        Date date = new Date();
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
+        String currentDay = simpleDateFormat.format(date);
+        System.out.println(currentDay);
+        Assert.assertTrue(updatedMessage.contains(currentDay));
 
     }
 
