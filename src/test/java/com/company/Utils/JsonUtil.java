@@ -20,17 +20,8 @@ public class JsonUtil {
      * Store returned data in String
      * Returns String
      */
-    public static String convertJavaToJson(Object object) {
-        String jsonResult = "";
-        try {
-            jsonResult = mapper.writeValueAsString(object);
-        } catch (JsonGenerationException e) {
-            e.printStackTrace();
-        } catch (JsonMappingException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+    public static String convertJavaToJson(Object object) throws IOException {
+        String jsonResult = mapper.writeValueAsString(object);
         return jsonResult;
     }
 
@@ -40,17 +31,8 @@ public class JsonUtil {
      * Using that object we call getter methods to get the value for certain variables.
      */
 
-    public static <T> T convertJsonToJava(String jsonString, Class<T> cls) {
-        T result = null;
-        try {
-            result = mapper.readValue(jsonString, cls);
-        } catch (JsonParseException e) {
-            e.printStackTrace();
-        } catch (JsonMappingException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+    public static <T> T convertJsonToJava(String jsonString, Class<T> cls) throws IOException {
+        T result = mapper.readValue(jsonString, cls);
         return result;
     }
 
@@ -58,13 +40,8 @@ public class JsonUtil {
      * This method accepts path of Json file,
      * Using this method we can read data from Json file and use as Payload
      */
-    public static String readFromJsonFile(String filePath) {
-        String payload = "";
-        try {
-            payload = new String(Files.readAllBytes(Paths.get(filePath)));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+    public static String readFromJsonFile(String filePath) throws IOException {
+        String payload = new String(Files.readAllBytes(Paths.get(filePath)));
         return payload;
     }
 }

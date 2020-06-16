@@ -6,7 +6,7 @@ import java.io.Serializable;
 import java.util.List;
 
 @JsonPropertyOrder(value = {"location", "accuracy", "name", "name", "phone_number",
-        "address", "types", "website", "language"})
+                              "address", "types", "website", "language"})
 public class Google_Map implements Serializable {
 
     private Location location; // child json inside main Json payload - Should created as a separate class.

@@ -25,7 +25,7 @@ public class PUT_RegresUser {
 
 
     @Test
-    public void updateUser() {
+    public void updateUser() throws IOException {
         RegresUser regresUser = new RegresUser();
         regresUser.setName("Anar");
         regresUser.setJob("Engineer");

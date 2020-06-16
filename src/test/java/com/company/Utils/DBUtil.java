@@ -58,7 +58,7 @@ public class DBUtil {
     }
 
     /*Always at the end of test must be closed connection by calling this method.*/
-    public static void destroy() {
+    public static void destroyConnection() {
         try {
             if (connection != null) {
                 connection.close();

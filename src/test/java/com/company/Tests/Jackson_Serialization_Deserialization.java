@@ -15,7 +15,7 @@ public class Jackson_Serialization_Deserialization {
      */
 
     @Test
-    public static void creatingBodyForRequest() {
+    public static void creatingBodyForRequest() throws IOException {
         // Serialization  --> Java Object to Json
         Employee_jackson obj1 = new Employee_jackson();
         obj1.setEmp_Id(100);

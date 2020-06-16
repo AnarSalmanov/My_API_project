@@ -46,10 +46,11 @@ public class POST_DELETE_example {
     @Test(priority = 2)
     public void DELETE_createdOne() {
         baseURI = "http://dummy.restapiexample.com/api/v1";
-        Response res = given().pathParam("id", id)
-                .accept(ContentType.JSON)
-                .when().delete("/delete/{id}")
-                .then().assertThat().statusCode(200).extract().response();
+        Response res =
+                given().pathParam("id", id)
+                        .accept(ContentType.JSON)
+                        .when().delete("/delete/{id}")
+                        .then().assertThat().statusCode(200).extract().response();
         res.prettyPrint();
 
     }

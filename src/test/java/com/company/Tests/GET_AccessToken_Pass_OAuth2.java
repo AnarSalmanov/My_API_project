@@ -48,8 +48,7 @@ public class GET_AccessToken_Pass_OAuth2 {
         System.out.println(accessToken);
         // 4. Use access token to pass OAuth2 authentication
         String res2 =
-                given()
-                        .contentType("application/json")
+                given().accept(ContentType.JSON)
                         .queryParams("access_token", accessToken).expect().defaultParser(Parser.JSON)
                         .when()
                         .get("https://rahulshettyacademy.com/getCourse.php")
