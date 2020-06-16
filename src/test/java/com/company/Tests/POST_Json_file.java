@@ -13,6 +13,7 @@ import org.testng.annotations.*;
 import sun.security.krb5.internal.PAData;
 
 
+import java.io.IOException;
 import java.util.*;
 
 import static io.restassured.RestAssured.*;
@@ -25,7 +26,7 @@ public class POST_Json_file {
     String path = "addBook.json";
 
     @Test
-    public void POST_NewBook_From_Json_File() {
+    public void POST_NewBook_From_Json_File() throws IOException {
         baseURI = base;
         Response res =
                 given().log().all()

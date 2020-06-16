@@ -8,6 +8,8 @@ import io.restassured.response.Response;
 import org.junit.Assert;
 import org.testng.annotations.Test;
 
+import java.io.IOException;
+
 import static io.restassured.RestAssured.baseURI;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.*;
@@ -17,7 +19,7 @@ public class POST_DELETE_usingPOJO {
     public int id;
 
     @Test(priority = 1)
-    public void POST_newEmployee() {
+    public void POST_newEmployee() throws IOException {
         Employee employee = new Employee();
         employee.setName("Samir");
         employee.setAge("34");
