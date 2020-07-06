@@ -19,8 +19,10 @@ import java.util.*;
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
 
-public class POST_Json_file {
-
+public class POST_Read_JSON_File {
+    /**
+     * For each time we need to use new file for static body.
+     */
 
     String base = "http://216.10.245.166";
     String path = "addBook.json";
@@ -31,8 +33,9 @@ public class POST_Json_file {
         Response res =
                 given().log().all()
                         .header("Content-Type", "application/json")
-                        .body(JsonUtil.readFromJsonFile(path)).log().all()
-                        .when().post("/Library/Addbook.php")
+                        .body(JsonUtil.readFromJsonFile(path))
+                        .when().log().ifValidationFails()
+                        .post("/Library/Addbook.php")
                         .then().assertThat().statusCode(200).contentType(ContentType.JSON)
                         .and().body("Msg", equalTo("successfully added"))
                         .extract().response();

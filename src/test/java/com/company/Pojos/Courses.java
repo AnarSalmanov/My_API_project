@@ -3,11 +3,10 @@ package com.company.Pojos;
 import java.util.List;
 
 public class Courses {
-
+    // these 3 nodes return Arrays inside Courses Json
     private List<WebAutomation> webAutomation;
     private List<Api> api;
     private List<Mobile> mobile;
-
 
     public List<WebAutomation> getWebAutomation() {
         return webAutomation;
@@ -21,8 +20,8 @@ public class Courses {
         return api;
     }
 
-    public void setApi(List<Api> api) {
-        this.api = api;
+    public void setApiList(List<Api> apiList) {
+        this.api = apiList;
     }
 
     public List<Mobile> getMobile() {

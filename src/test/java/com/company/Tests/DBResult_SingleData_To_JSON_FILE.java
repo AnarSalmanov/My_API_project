@@ -1,5 +1,6 @@
 package com.company.Tests;
 
+import com.company.Pojos.CustomerDetails_Pojo;
 import com.company.Utils.DBUtil;
 import org.codehaus.jackson.map.ObjectMapper;
 import org.testng.annotations.Test;

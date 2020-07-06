@@ -1,7 +1,7 @@
-Feature:
+Feature: Adding new customer
 
 
-  Scenario:
+  Scenario: Adding new customer with correct credentials
     Given Base Uri "http://dummy.restapiexample.com/api/v1"
     And Content type Json
     When I post a new Employee  to resource "/create"

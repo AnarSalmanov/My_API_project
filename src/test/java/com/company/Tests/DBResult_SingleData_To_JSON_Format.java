@@ -1,5 +1,6 @@
 package com.company.Tests;
 
+import com.company.Pojos.CustomerDetails_Pojo;
 import com.company.Utils.DBUtil;
 import com.company.Utils.JsonUtil;
 import org.testng.annotations.Test;
@@ -27,7 +28,7 @@ public class DBResult_SingleData_To_JSON_Format {
             customerDetails.setEmployee_id(employeeID);
         }
         DBUtil.destroyConnection();
-        String jsonPayload = JsonUtil.convertJavaToJson(customerDetails);
+        String jsonPayload = String.valueOf(customerDetails);
         System.out.println(jsonPayload);
     }
 }
