@@ -1,0 +1,16 @@
+{
+  "location": {
+    "lat": -47.5554546,
+    "lng": 42.777777
+  },
+  "accuracy": 50,
+  "name": "arkansas",
+  "phone_number": "4124131313",
+  "address": "304 Ables dr",
+  "types": [
+    "shoe park",
+    "shop"
+  ],
+  "website": "wwww.rahulshetty.com",
+  "language": "russian"
+}

@@ -17,7 +17,7 @@ import java.net.ResponseCache;
 import java.util.List;
 
 
-public class GET_queryParam_pathParam {
+public class Param_query {
 /**
  *  /? key=value -> is used as a queryParameters. Used for filter the response.
  * /: and / { data} used for path parameters, it is a part of URL.
@@ -37,13 +37,15 @@ public class GET_queryParam_pathParam {
     public void GET_queryParam() {
         baseURI = "http://dummy.restapiexample.com/api/v1";
         Response res =
-                given().queryParam("limit", "24")
+                given().log().all()
+                        .queryParam("limit", "24")
                         .accept(ContentType.JSON)
-                        .when().get("/employees")
+                        .when().log().ifValidationFails()
+                        .get("/employees")
                         .then().assertThat().statusCode(200).contentType(ContentType.JSON)
                         .body("data.id", hasSize(24))
                         .extract().response();
-        JsonPath js = new JsonPath(res.asString());
+        JsonPath js = res.jsonPath();
         //Find the count of all elements in response array
         int peopleCount = js.getInt("data.size()");
         //Find all id's count in response array and verify count is 2
@@ -63,23 +65,6 @@ public class GET_queryParam_pathParam {
     }
 
 
-    // Path parameter is a part of URL , format-->  URL/{name} or  URL/:name (can be any thing)
-    // In test should be passed in resource section -->  /resource /{name}
-    // Note: In Postman We should pass as URL/:name .
-    //Otherwise path param section will not be active
-    @Test
-    public void GET_pathParam() {
-        baseURI = "https://api.got.show/api/show";
-        Response res =
-                given().pathParam("name", "Yohn Royce")
-                        .accept(ContentType.JSON).log().all()
-                        .when().get("/characters/{name}")
-                        .then().assertThat().statusCode(200).contentType(ContentType.JSON)
-                        .body("house", equalTo("House Royce"))
-                        .extract().response();
-        res.prettyPrint();
 
-
-    }
 
 }

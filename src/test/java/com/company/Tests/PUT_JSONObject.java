@@ -1,52 +1,47 @@
 package com.company.Tests;
 
-import com.company.Pojos.RegresUser;
-
-import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
+import org.json.simple.JSONObject;
 import org.junit.Assert;
-import com.company.Pojos.Employee;
-
-import com.company.Utils.JsonUtil;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
-
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.List;
 
-import static io.restassured.RestAssured.*;
-import static org.hamcrest.Matchers.*;
+import static io.restassured.RestAssured.baseURI;
+import static io.restassured.RestAssured.given;
 
-public class PUT_RegresUser {
+public class PUT_JSONObject {
 
 
     @Test
     public void updateUser() throws IOException {
-        RegresUser regresUser = new RegresUser();
-        regresUser.setName("Anar");
-        regresUser.setJob("Engineer");
+        JSONObject jsonObject = new JSONObject();
+        jsonObject.put("name", "Anar");
+        jsonObject.put("job", "Engineer");
         baseURI = "https://reqres.in/";
-        String bodyJson = JsonUtil.convertJavaToJson(regresUser);
-        System.out.println("body " + bodyJson);
-
         Response res =
-                given().accept(ContentType.JSON)
-                        .body(bodyJson)
-                        .when().put("/api/users/3")
-                        .then().assertThat().statusCode(200).contentType(ContentType.JSON)
+                given().log().all()
+                        .accept(ContentType.JSON)
+                        .body(jsonObject)
+                        .when().log().ifValidationFails()
+                        .put("/api/users/3")
+                        .then().assertThat()
+                        .statusCode(200)
+                        .contentType(ContentType.JSON)
                         .extract().response();
         res.prettyPrint();
         JsonPath js = res.jsonPath();
         String updatedMessage = js.getString("updatedAt");
+        //current day
         Date date = new Date();
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
         String currentDay = simpleDateFormat.format(date);
         System.out.println(currentDay);
-        Assert.assertTrue(updatedMessage.contains(currentDay));
+        Assert.assertTrue(updatedMessage.contains(currentDay)); //1 day ahead
 
     }
 

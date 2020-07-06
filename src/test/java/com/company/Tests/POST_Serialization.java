@@ -1,31 +1,27 @@
 package com.company.Tests;
 
-import com.company.Pojos.Google_Map;
+import com.company.Pojos.Google_Map_for_Serialization;
 import com.company.Pojos.Location;
 import org.testng.annotations.Test;
-import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
-import org.junit.Assert;
 
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
 
-public class POST_Google_place_Nested_JSON {
+public class POST_Serialization {
 
     String id;
 
     @Test
     public void addingPlace() {
-        // simple point give value to Main class variables using setter methods
-        Google_Map google_map = new Google_Map();
+        // simple points give value to Main class variables using setter methods
+        Google_Map_for_Serialization google_map = new Google_Map_for_Serialization();
         google_map.setAccuracy(50);
         google_map.setName("arkansas");
         google_map.setAddress("304 Ables dr");
@@ -38,7 +34,6 @@ public class POST_Google_place_Nested_JSON {
         typeList.add("shop");
         // then pass that List into setter method of main Json payload class
         google_map.setTypes(typeList);
-
         // Create an object of the Class which we created for Child Json
         // use that object and setter method of that class to set variables
         Location location = new Location();
@@ -48,16 +43,17 @@ public class POST_Google_place_Nested_JSON {
         google_map.setLocation(location);
         // all points set , now pass the object of main Json class to the body
         baseURI = "https://rahulshettyacademy.com";
-        System.out.println(google_map.toString());
+        basePath = "maps/api/place/add/json";
         Response res =
                 given().log().all()
                         .queryParam("key", "qaclick123")
                         .accept(ContentType.JSON)
-                        .body(google_map)
-                        .when()
-                        .post("maps/api/place/add/json")
-                        .then()
-                        .assertThat().statusCode(200).contentType(ContentType.JSON)
+                        .body(google_map).log().all()
+                        .when().log().ifValidationFails()
+                        .post()
+                        .then().assertThat()
+                        .statusCode(200)
+                        .contentType(ContentType.JSON)
                         .body("status", equalTo("OK"))
                         .body("scope", equalTo("APP"))
                         .extract().response();
@@ -65,5 +61,24 @@ public class POST_Google_place_Nested_JSON {
         JsonPath js = res.jsonPath();
         id = js.getString("id");
         System.out.println(id);
+
     }
+    /**
+     {
+     "location": {
+     "lat": -47.5554546,
+     "lng": 42.777777
+     },
+     "accuracy": 50,
+     "name": "arkansas",
+     "phone_number": "4124131313",
+     "address": "304 Ables dr",
+     "types": [
+     "shoe park",
+     "shop"
+     ],
+     "website": "wwww.rahulshetty.com",
+     "language": "russian"
+     }
+     */
 }

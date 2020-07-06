@@ -28,7 +28,7 @@ public class GET_AccessToken_Pass_OAuth2 {
         String code = partialCode.split("&scope")[0];
         System.out.println("code : " + code);
         // 2.Use that code in request body send POST request to Google OAuth2
-        String response =
+        Response res =
                 given()
                         .urlEncodingEnabled(false)
                         .queryParams("code", code)
@@ -40,19 +40,20 @@ public class GET_AccessToken_Pass_OAuth2 {
                         // .queryParam("scope", "email+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email")
                         .queryParams("redirect_uri", "https://rahulshettyacademy.com/getCourse.php")
                         .when().log().all()
-                        .post("https://www.googleapis.com/oauth2/v4/token").asString();
-        System.out.println(response);
+                        .post("https://www.googleapis.com/oauth2/v4/token")
+                        .then().extract().response();
+        res.prettyPrint();
         // 3. Get access token from response
-        JsonPath jsonPath = new JsonPath(response);
+        JsonPath jsonPath = res.jsonPath();
         String accessToken = jsonPath.getString("access_token");
         System.out.println(accessToken);
         // 4. Use access token to pass OAuth2 authentication
-        String res2 =
+        Response res2 =
                 given().accept(ContentType.JSON)
                         .queryParams("access_token", accessToken).expect().defaultParser(Parser.JSON)
                         .when()
                         .get("https://rahulshettyacademy.com/getCourse.php")
-                        .asString();
+                        .then().extract().response();
         System.out.println(res2);
     }
 }

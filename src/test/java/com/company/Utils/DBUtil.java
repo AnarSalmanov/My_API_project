@@ -213,20 +213,7 @@ public class DBUtil {
         return rowList;
     }
 
-    public static boolean verifyEmployeeExists(String firstName, String lastName) {
-        boolean exists = false;
-        String query = "SELECT COUNT(*) as count \n" +
-                "FROM employees\n" +
-                "WHERE first_name = '" + firstName + "' and  last_name='" + lastName + "';";
-        executeQuery(query);
-        try {
-            resultSet.next();
-            exists = resultSet.getInt(1) > 0;
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        return exists;
-    }
+
 
 
     public static Object getCellValue(String query) {

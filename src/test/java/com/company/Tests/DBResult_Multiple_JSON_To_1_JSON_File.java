@@ -1,7 +1,7 @@
 package com.company.Tests;
 
+import com.company.Pojos.CustomerDetails_Pojo;
 import com.company.Utils.DBUtil;
-import netscape.javascript.JSObject;
 import org.codehaus.jackson.map.ObjectMapper;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
@@ -38,7 +38,7 @@ public class DBResult_Multiple_JSON_To_1_JSON_File {
             // adding all created objects to the list.
             customersList.add(customerDetails);
         }
-        // Json Simple - library
+
 
         // 1. Looping, getting objects from List and adding to JSONArray
         JSONArray jsonArray = new JSONArray();
@@ -48,6 +48,7 @@ public class DBResult_Multiple_JSON_To_1_JSON_File {
         // 2. Create JSONObject, key = nameOfArray , value = JSONArray reference
         JSONObject jsonObject = new JSONObject();
         jsonObject.put("data", jsonArray);
+
 
         // Create 1 Json file with multiple Json data on that
         File filePath = new File("MultipleJSONs.json");

@@ -1,16 +1,14 @@
 package com.company.Pojos;
 
-import com.google.gson.annotations.SerializedName;
+import org.codehaus.jackson.annotate.JsonPropertyOrder;
 
-import java.util.ArrayList;
-import java.util.Map;
+import java.io.Serializable;
 
-public class Employee {
-    @SerializedName("name")
+@JsonPropertyOrder(value = {"name", "age", "salary"})
+public class Employee implements Serializable {
+
     private String name;
-    @SerializedName("age")
     private String age;
-    @SerializedName("salary")
     private String salary;
 
 

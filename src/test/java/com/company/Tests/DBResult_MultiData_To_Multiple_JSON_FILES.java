@@ -1,5 +1,6 @@
 package com.company.Tests;
 
+import com.company.Pojos.CustomerDetails_Pojo;
 import com.company.Utils.DBUtil;
 import org.codehaus.jackson.map.ObjectMapper;
 import org.testng.annotations.Test;
@@ -25,14 +26,9 @@ public class DBResult_MultiData_To_Multiple_JSON_FILES {
         for (int i = 0; i < resultMap.size(); i++) {
             //Create object of Pojo class inside loop in order to create a new object for each looping.
             CustomerDetails_Pojo customerDetails = new CustomerDetails_Pojo();
-            // Getting result from db
-            Object firstName = resultMap.get(i).get("first_name");
-            Object lastName = resultMap.get(i).get("last_name");
-            Object employeeID = resultMap.get(i).get("employee_id");
-            // Setting value of Pojo class variables using setter methods.
-            customerDetails.setFirst_name(firstName.toString());
-            customerDetails.setLast_name(lastName.toString());
-            customerDetails.setEmployee_id(Integer.valueOf(employeeID.toString()));
+            customerDetails.setFirst_name(resultMap.get(i).get("first_name").toString());
+            customerDetails.setLast_name(resultMap.get(i).get("last_name").toString());
+            customerDetails.setEmployee_id(Integer.valueOf(resultMap.get(i).get("employee_id").toString()));
             // adding all created objects to the list.
             customersList.add(customerDetails);
         }

@@ -1,5 +1,6 @@
 package com.company.Tests;
 
+import com.company.Pojos.CustomerDetails_Pojo;
 import com.company.Utils.DBUtil;
 import com.google.gson.Gson;
 import org.json.simple.JSONArray;
@@ -12,7 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-public class DBResult_MultiData_To_JSON_Format {
+public class DBResult_MultiData_To_JSON_Format_Pavan {
     @Test
     public void example() throws SQLException, IOException {
         DBUtil.createConnectionToHrDB();

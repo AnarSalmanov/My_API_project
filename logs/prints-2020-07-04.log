@@ -1,0 +1,1476 @@
+00:30:39.747 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://dummy.restapiexample.com:80
+00:30:39.967 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to dummy.restapiexample.com:80
+00:30:40.065 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+00:30:40.068 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+00:30:40.068 [main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+00:30:40.071 [main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+00:30:40.072 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+00:30:40.073 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: POST /api/v1/create HTTP/1.1
+00:30:40.073 [main] DEBUG org.apache.http.wire -  >> "POST /api/v1/create HTTP/1.1[\r][\n]"
+00:30:40.075 [main] DEBUG org.apache.http.wire -  >> "Accept: application/json, application/javascript, text/javascript, text/json[\r][\n]"
+00:30:40.077 [main] DEBUG org.apache.http.wire -  >> "Content-Type: text/plain; charset=ISO-8859-1[\r][\n]"
+00:30:40.077 [main] DEBUG org.apache.http.wire -  >> "Content-Length: 41[\r][\n]"
+00:30:40.077 [main] DEBUG org.apache.http.wire -  >> "Host: dummy.restapiexample.com[\r][\n]"
+00:30:40.077 [main] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+00:30:40.077 [main] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)[\r][\n]"
+00:30:40.082 [main] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+00:30:40.083 [main] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+00:30:40.083 [main] DEBUG org.apache.http.headers - >> POST /api/v1/create HTTP/1.1
+00:30:40.083 [main] DEBUG org.apache.http.headers - >> Accept: application/json, application/javascript, text/javascript, text/json
+00:30:40.083 [main] DEBUG org.apache.http.headers - >> Content-Type: text/plain; charset=ISO-8859-1
+00:30:40.083 [main] DEBUG org.apache.http.headers - >> Content-Length: 41
+00:30:40.085 [main] DEBUG org.apache.http.headers - >> Host: dummy.restapiexample.com
+00:30:40.085 [main] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+00:30:40.085 [main] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)
+00:30:40.085 [main] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+00:30:40.086 [main] DEBUG org.apache.http.wire -  >> "{"name":"Samir","age":"34","salary":"50"}"
+00:30:40.538 [main] DEBUG org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+00:30:40.543 [main] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Origin: *[\r][\n]"
+00:30:40.543 [main] DEBUG org.apache.http.wire -  << "Access-Control-Expose-Headers: Content-Type, X-Requested-With, X-authentication, X-client[\r][\n]"
+00:30:40.543 [main] DEBUG org.apache.http.wire -  << "Cache-Control: no-store, no-cache, must-revalidate[\r][\n]"
+00:30:40.544 [main] DEBUG org.apache.http.wire -  << "Content-Type: application/json;charset=utf-8[\r][\n]"
+00:30:40.544 [main] DEBUG org.apache.http.wire -  << "Date: Sat, 04 Jul 2020 05:30:39 GMT[\r][\n]"
+00:30:40.545 [main] DEBUG org.apache.http.wire -  << "Display: staticcontent_sol[\r][\n]"
+00:30:40.545 [main] DEBUG org.apache.http.wire -  << "Expires: Thu, 19 Nov 1981 08:52:00 GMT[\r][\n]"
+00:30:40.546 [main] DEBUG org.apache.http.wire -  << "Host-Header: c2hhcmVkLmJsdWVob3N0LmNvbQ==[\r][\n]"
+00:30:40.546 [main] DEBUG org.apache.http.wire -  << "Pragma: no-cache[\r][\n]"
+00:30:40.546 [main] DEBUG org.apache.http.wire -  << "Referrer-Policy: [\r][\n]"
+00:30:40.546 [main] DEBUG org.apache.http.wire -  << "Response: 200[\r][\n]"
+00:30:40.548 [main] DEBUG org.apache.http.wire -  << "Server: nginx/1.16.0[\r][\n]"
+00:30:40.548 [main] DEBUG org.apache.http.wire -  << "Set-Cookie: PHPSESSID=ff178dcfb11b2cf7ac25585caae81b09; path=/[\r][\n]"
+00:30:40.549 [main] DEBUG org.apache.http.wire -  << "Vary: Accept-Encoding[\r][\n]"
+00:30:40.549 [main] DEBUG org.apache.http.wire -  << "Vary: Accept-Encoding,Origin,X-APP-JSON[\r][\n]"
+00:30:40.549 [main] DEBUG org.apache.http.wire -  << "X-Ezoic-Cdn: Miss[\r][\n]"
+00:30:40.549 [main] DEBUG org.apache.http.wire -  << "X-Middleton-Display: staticcontent_sol[\r][\n]"
+00:30:40.551 [main] DEBUG org.apache.http.wire -  << "X-Middleton-Response: 200[\r][\n]"
+00:30:40.551 [main] DEBUG org.apache.http.wire -  << "X-Sol: pub_site[\r][\n]"
+00:30:40.551 [main] DEBUG org.apache.http.wire -  << "Content-Length: 77[\r][\n]"
+00:30:40.551 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+00:30:40.553 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+00:30:40.553 [main] DEBUG org.apache.http.headers - << HTTP/1.1 200 OK
+00:30:40.555 [main] DEBUG org.apache.http.headers - << Access-Control-Allow-Origin: *
+00:30:40.555 [main] DEBUG org.apache.http.headers - << Access-Control-Expose-Headers: Content-Type, X-Requested-With, X-authentication, X-client
+00:30:40.555 [main] DEBUG org.apache.http.headers - << Cache-Control: no-store, no-cache, must-revalidate
+00:30:40.555 [main] DEBUG org.apache.http.headers - << Content-Type: application/json;charset=utf-8
+00:30:40.555 [main] DEBUG org.apache.http.headers - << Date: Sat, 04 Jul 2020 05:30:39 GMT
+00:30:40.557 [main] DEBUG org.apache.http.headers - << Display: staticcontent_sol
+00:30:40.557 [main] DEBUG org.apache.http.headers - << Expires: Thu, 19 Nov 1981 08:52:00 GMT
+00:30:40.557 [main] DEBUG org.apache.http.headers - << Host-Header: c2hhcmVkLmJsdWVob3N0LmNvbQ==
+00:30:40.557 [main] DEBUG org.apache.http.headers - << Pragma: no-cache
+00:30:40.558 [main] DEBUG org.apache.http.headers - << Referrer-Policy: 
+00:30:40.558 [main] DEBUG org.apache.http.headers - << Response: 200
+00:30:40.559 [main] DEBUG org.apache.http.headers - << Server: nginx/1.16.0
+00:30:40.559 [main] DEBUG org.apache.http.headers - << Set-Cookie: PHPSESSID=ff178dcfb11b2cf7ac25585caae81b09; path=/
+00:30:40.559 [main] DEBUG org.apache.http.headers - << Vary: Accept-Encoding
+00:30:40.560 [main] DEBUG org.apache.http.headers - << Vary: Accept-Encoding,Origin,X-APP-JSON
+00:30:40.560 [main] DEBUG org.apache.http.headers - << X-Ezoic-Cdn: Miss
+00:30:40.560 [main] DEBUG org.apache.http.headers - << X-Middleton-Display: staticcontent_sol
+00:30:40.562 [main] DEBUG org.apache.http.headers - << X-Middleton-Response: 200
+00:30:40.562 [main] DEBUG org.apache.http.headers - << X-Sol: pub_site
+00:30:40.562 [main] DEBUG org.apache.http.headers - << Content-Length: 77
+00:30:40.572 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+00:30:40.606 [main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: application/json;charset=utf-8
+00:30:40.607 [main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+00:30:40.769 [main] DEBUG org.apache.http.wire -  << "{"status":"success","data":{"name":"Samir","salary":"50","age":"34","id":58}}"
+00:30:40.769 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@779dfe55
+00:30:40.770 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive indefinitely
+00:32:13.404 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://dummy.restapiexample.com:80
+00:32:13.467 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to dummy.restapiexample.com:80
+00:32:13.563 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+00:32:13.565 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+00:32:13.566 [main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+00:32:13.567 [main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+00:32:13.567 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+00:32:13.568 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: POST /api/v1/create HTTP/1.1
+00:32:13.569 [main] DEBUG org.apache.http.wire -  >> "POST /api/v1/create HTTP/1.1[\r][\n]"
+00:32:13.570 [main] DEBUG org.apache.http.wire -  >> "Accept: application/json, application/javascript, text/javascript, text/json[\r][\n]"
+00:32:13.570 [main] DEBUG org.apache.http.wire -  >> "Content-Type: text/plain; charset=ISO-8859-1[\r][\n]"
+00:32:13.571 [main] DEBUG org.apache.http.wire -  >> "Content-Length: 41[\r][\n]"
+00:32:13.572 [main] DEBUG org.apache.http.wire -  >> "Host: dummy.restapiexample.com[\r][\n]"
+00:32:13.572 [main] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+00:32:13.572 [main] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)[\r][\n]"
+00:32:13.572 [main] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+00:32:13.572 [main] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+00:32:13.572 [main] DEBUG org.apache.http.headers - >> POST /api/v1/create HTTP/1.1
+00:32:13.574 [main] DEBUG org.apache.http.headers - >> Accept: application/json, application/javascript, text/javascript, text/json
+00:32:13.574 [main] DEBUG org.apache.http.headers - >> Content-Type: text/plain; charset=ISO-8859-1
+00:32:13.574 [main] DEBUG org.apache.http.headers - >> Content-Length: 41
+00:32:13.574 [main] DEBUG org.apache.http.headers - >> Host: dummy.restapiexample.com
+00:32:13.574 [main] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+00:32:13.574 [main] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)
+00:32:13.575 [main] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+00:32:13.576 [main] DEBUG org.apache.http.wire -  >> "{"name":"Samir","age":"34","salary":"50"}"
+00:32:14.102 [main] DEBUG org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+00:32:14.104 [main] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Origin: *[\r][\n]"
+00:32:14.104 [main] DEBUG org.apache.http.wire -  << "Access-Control-Expose-Headers: Content-Type, X-Requested-With, X-authentication, X-client[\r][\n]"
+00:32:14.104 [main] DEBUG org.apache.http.wire -  << "Cache-Control: no-store, no-cache, must-revalidate[\r][\n]"
+00:32:14.106 [main] DEBUG org.apache.http.wire -  << "Content-Type: application/json;charset=utf-8[\r][\n]"
+00:32:14.106 [main] DEBUG org.apache.http.wire -  << "Date: Sat, 04 Jul 2020 05:32:12 GMT[\r][\n]"
+00:32:14.106 [main] DEBUG org.apache.http.wire -  << "Display: staticcontent_sol[\r][\n]"
+00:32:14.106 [main] DEBUG org.apache.http.wire -  << "Expires: Thu, 19 Nov 1981 08:52:00 GMT[\r][\n]"
+00:32:14.106 [main] DEBUG org.apache.http.wire -  << "Host-Header: c2hhcmVkLmJsdWVob3N0LmNvbQ==[\r][\n]"
+00:32:14.107 [main] DEBUG org.apache.http.wire -  << "Pragma: no-cache[\r][\n]"
+00:32:14.107 [main] DEBUG org.apache.http.wire -  << "Referrer-Policy: [\r][\n]"
+00:32:14.107 [main] DEBUG org.apache.http.wire -  << "Response: 200[\r][\n]"
+00:32:14.107 [main] DEBUG org.apache.http.wire -  << "Server: nginx/1.16.0[\r][\n]"
+00:32:14.107 [main] DEBUG org.apache.http.wire -  << "Set-Cookie: PHPSESSID=a64d88e490926abbc3ea8315aebdb179; path=/[\r][\n]"
+00:32:14.107 [main] DEBUG org.apache.http.wire -  << "Vary: Accept-Encoding[\r][\n]"
+00:32:14.109 [main] DEBUG org.apache.http.wire -  << "Vary: Accept-Encoding,Origin,X-APP-JSON[\r][\n]"
+00:32:14.109 [main] DEBUG org.apache.http.wire -  << "X-Ezoic-Cdn: Miss[\r][\n]"
+00:32:14.109 [main] DEBUG org.apache.http.wire -  << "X-Middleton-Display: staticcontent_sol[\r][\n]"
+00:32:14.109 [main] DEBUG org.apache.http.wire -  << "X-Middleton-Response: 200[\r][\n]"
+00:32:14.109 [main] DEBUG org.apache.http.wire -  << "X-Sol: pub_site[\r][\n]"
+00:32:14.109 [main] DEBUG org.apache.http.wire -  << "Content-Length: 77[\r][\n]"
+00:32:14.110 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+00:32:14.111 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+00:32:14.111 [main] DEBUG org.apache.http.headers - << HTTP/1.1 200 OK
+00:32:14.111 [main] DEBUG org.apache.http.headers - << Access-Control-Allow-Origin: *
+00:32:14.111 [main] DEBUG org.apache.http.headers - << Access-Control-Expose-Headers: Content-Type, X-Requested-With, X-authentication, X-client
+00:32:14.111 [main] DEBUG org.apache.http.headers - << Cache-Control: no-store, no-cache, must-revalidate
+00:32:14.112 [main] DEBUG org.apache.http.headers - << Content-Type: application/json;charset=utf-8
+00:32:14.113 [main] DEBUG org.apache.http.headers - << Date: Sat, 04 Jul 2020 05:32:12 GMT
+00:32:14.113 [main] DEBUG org.apache.http.headers - << Display: staticcontent_sol
+00:32:14.113 [main] DEBUG org.apache.http.headers - << Expires: Thu, 19 Nov 1981 08:52:00 GMT
+00:32:14.113 [main] DEBUG org.apache.http.headers - << Host-Header: c2hhcmVkLmJsdWVob3N0LmNvbQ==
+00:32:14.113 [main] DEBUG org.apache.http.headers - << Pragma: no-cache
+00:32:14.114 [main] DEBUG org.apache.http.headers - << Referrer-Policy: 
+00:32:14.114 [main] DEBUG org.apache.http.headers - << Response: 200
+00:32:14.114 [main] DEBUG org.apache.http.headers - << Server: nginx/1.16.0
+00:32:14.114 [main] DEBUG org.apache.http.headers - << Set-Cookie: PHPSESSID=a64d88e490926abbc3ea8315aebdb179; path=/
+00:32:14.114 [main] DEBUG org.apache.http.headers - << Vary: Accept-Encoding
+00:32:14.114 [main] DEBUG org.apache.http.headers - << Vary: Accept-Encoding,Origin,X-APP-JSON
+00:32:14.114 [main] DEBUG org.apache.http.headers - << X-Ezoic-Cdn: Miss
+00:32:14.116 [main] DEBUG org.apache.http.headers - << X-Middleton-Display: staticcontent_sol
+00:32:14.116 [main] DEBUG org.apache.http.headers - << X-Middleton-Response: 200
+00:32:14.116 [main] DEBUG org.apache.http.headers - << X-Sol: pub_site
+00:32:14.116 [main] DEBUG org.apache.http.headers - << Content-Length: 77
+00:32:14.121 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+00:32:14.143 [main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: application/json;charset=utf-8
+00:32:14.144 [main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+00:32:14.278 [main] DEBUG org.apache.http.wire -  << "{"status":"success","data":{"name":"Samir","salary":"50","age":"34","id":49}}"
+00:32:14.278 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@2e52fb3e
+00:32:14.279 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive indefinitely
+00:35:39.686 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://dummy.restapiexample.com:80
+00:35:39.762 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to dummy.restapiexample.com:80
+00:35:39.854 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+00:35:39.857 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+00:35:39.857 [main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+00:35:39.858 [main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+00:35:39.859 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+00:35:39.860 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: POST /api/v1/create HTTP/1.1
+00:35:39.861 [main] DEBUG org.apache.http.wire -  >> "POST /api/v1/create HTTP/1.1[\r][\n]"
+00:35:39.863 [main] DEBUG org.apache.http.wire -  >> "Accept: application/json, application/javascript, text/javascript, text/json[\r][\n]"
+00:35:39.863 [main] DEBUG org.apache.http.wire -  >> "Content-Type: text/plain; charset=ISO-8859-1[\r][\n]"
+00:35:39.863 [main] DEBUG org.apache.http.wire -  >> "Content-Length: 41[\r][\n]"
+00:35:39.865 [main] DEBUG org.apache.http.wire -  >> "Host: dummy.restapiexample.com[\r][\n]"
+00:35:39.865 [main] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+00:35:39.865 [main] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)[\r][\n]"
+00:35:39.865 [main] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+00:35:39.865 [main] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+00:35:39.865 [main] DEBUG org.apache.http.headers - >> POST /api/v1/create HTTP/1.1
+00:35:39.867 [main] DEBUG org.apache.http.headers - >> Accept: application/json, application/javascript, text/javascript, text/json
+00:35:39.868 [main] DEBUG org.apache.http.headers - >> Content-Type: text/plain; charset=ISO-8859-1
+00:35:39.868 [main] DEBUG org.apache.http.headers - >> Content-Length: 41
+00:35:39.868 [main] DEBUG org.apache.http.headers - >> Host: dummy.restapiexample.com
+00:35:39.868 [main] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+00:35:39.868 [main] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)
+00:35:39.870 [main] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+00:35:39.871 [main] DEBUG org.apache.http.wire -  >> "{"name":"Samir","age":"34","salary":"50"}"
+00:35:40.380 [main] DEBUG org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+00:35:40.384 [main] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Origin: *[\r][\n]"
+00:35:40.384 [main] DEBUG org.apache.http.wire -  << "Access-Control-Expose-Headers: Content-Type, X-Requested-With, X-authentication, X-client[\r][\n]"
+00:35:40.384 [main] DEBUG org.apache.http.wire -  << "Cache-Control: no-store, no-cache, must-revalidate[\r][\n]"
+00:35:40.386 [main] DEBUG org.apache.http.wire -  << "Content-Type: application/json;charset=utf-8[\r][\n]"
+00:35:40.386 [main] DEBUG org.apache.http.wire -  << "Date: Sat, 04 Jul 2020 05:35:38 GMT[\r][\n]"
+00:35:40.386 [main] DEBUG org.apache.http.wire -  << "Display: staticcontent_sol[\r][\n]"
+00:35:40.386 [main] DEBUG org.apache.http.wire -  << "Expires: Thu, 19 Nov 1981 08:52:00 GMT[\r][\n]"
+00:35:40.386 [main] DEBUG org.apache.http.wire -  << "Host-Header: c2hhcmVkLmJsdWVob3N0LmNvbQ==[\r][\n]"
+00:35:40.388 [main] DEBUG org.apache.http.wire -  << "Pragma: no-cache[\r][\n]"
+00:35:40.388 [main] DEBUG org.apache.http.wire -  << "Referrer-Policy: [\r][\n]"
+00:35:40.388 [main] DEBUG org.apache.http.wire -  << "Response: 200[\r][\n]"
+00:35:40.388 [main] DEBUG org.apache.http.wire -  << "Server: nginx/1.16.0[\r][\n]"
+00:35:40.388 [main] DEBUG org.apache.http.wire -  << "Set-Cookie: PHPSESSID=b376fe523ebfb5f140981521c5fef91d; path=/[\r][\n]"
+00:35:40.388 [main] DEBUG org.apache.http.wire -  << "Vary: Accept-Encoding[\r][\n]"
+00:35:40.389 [main] DEBUG org.apache.http.wire -  << "Vary: Accept-Encoding,Origin,X-APP-JSON[\r][\n]"
+00:35:40.389 [main] DEBUG org.apache.http.wire -  << "X-Ezoic-Cdn: Miss[\r][\n]"
+00:35:40.389 [main] DEBUG org.apache.http.wire -  << "X-Middleton-Display: staticcontent_sol[\r][\n]"
+00:35:40.389 [main] DEBUG org.apache.http.wire -  << "X-Middleton-Response: 200[\r][\n]"
+00:35:40.390 [main] DEBUG org.apache.http.wire -  << "X-Sol: pub_site[\r][\n]"
+00:35:40.390 [main] DEBUG org.apache.http.wire -  << "Content-Length: 77[\r][\n]"
+00:35:40.391 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+00:35:40.392 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+00:35:40.392 [main] DEBUG org.apache.http.headers - << HTTP/1.1 200 OK
+00:35:40.392 [main] DEBUG org.apache.http.headers - << Access-Control-Allow-Origin: *
+00:35:40.392 [main] DEBUG org.apache.http.headers - << Access-Control-Expose-Headers: Content-Type, X-Requested-With, X-authentication, X-client
+00:35:40.392 [main] DEBUG org.apache.http.headers - << Cache-Control: no-store, no-cache, must-revalidate
+00:35:40.394 [main] DEBUG org.apache.http.headers - << Content-Type: application/json;charset=utf-8
+00:35:40.394 [main] DEBUG org.apache.http.headers - << Date: Sat, 04 Jul 2020 05:35:38 GMT
+00:35:40.394 [main] DEBUG org.apache.http.headers - << Display: staticcontent_sol
+00:35:40.394 [main] DEBUG org.apache.http.headers - << Expires: Thu, 19 Nov 1981 08:52:00 GMT
+00:35:40.394 [main] DEBUG org.apache.http.headers - << Host-Header: c2hhcmVkLmJsdWVob3N0LmNvbQ==
+00:35:40.394 [main] DEBUG org.apache.http.headers - << Pragma: no-cache
+00:35:40.396 [main] DEBUG org.apache.http.headers - << Referrer-Policy: 
+00:35:40.396 [main] DEBUG org.apache.http.headers - << Response: 200
+00:35:40.396 [main] DEBUG org.apache.http.headers - << Server: nginx/1.16.0
+00:35:40.396 [main] DEBUG org.apache.http.headers - << Set-Cookie: PHPSESSID=b376fe523ebfb5f140981521c5fef91d; path=/
+00:35:40.396 [main] DEBUG org.apache.http.headers - << Vary: Accept-Encoding
+00:35:40.396 [main] DEBUG org.apache.http.headers - << Vary: Accept-Encoding,Origin,X-APP-JSON
+00:35:40.396 [main] DEBUG org.apache.http.headers - << X-Ezoic-Cdn: Miss
+00:35:40.398 [main] DEBUG org.apache.http.headers - << X-Middleton-Display: staticcontent_sol
+00:35:40.398 [main] DEBUG org.apache.http.headers - << X-Middleton-Response: 200
+00:35:40.398 [main] DEBUG org.apache.http.headers - << X-Sol: pub_site
+00:35:40.398 [main] DEBUG org.apache.http.headers - << Content-Length: 77
+00:35:40.404 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+00:35:40.422 [main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: application/json;charset=utf-8
+00:35:40.424 [main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+00:35:40.559 [main] DEBUG org.apache.http.wire -  << "{"status":"success","data":{"name":"Samir","salary":"50","age":"34","id":43}}"
+00:35:40.560 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@16fe9c29
+00:35:40.561 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive indefinitely
+00:36:24.682 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://dummy.restapiexample.com:80
+00:36:24.803 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to dummy.restapiexample.com:80
+00:36:24.885 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+00:36:24.887 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+00:36:24.887 [main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+00:36:24.888 [main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+00:36:24.888 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+00:36:24.890 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: POST /api/v1/create HTTP/1.1
+00:36:24.891 [main] DEBUG org.apache.http.wire -  >> "POST /api/v1/create HTTP/1.1[\r][\n]"
+00:36:24.892 [main] DEBUG org.apache.http.wire -  >> "Accept: application/json, application/javascript, text/javascript, text/json[\r][\n]"
+00:36:24.893 [main] DEBUG org.apache.http.wire -  >> "Content-Type: text/plain; charset=ISO-8859-1[\r][\n]"
+00:36:24.893 [main] DEBUG org.apache.http.wire -  >> "Content-Length: 41[\r][\n]"
+00:36:24.894 [main] DEBUG org.apache.http.wire -  >> "Host: dummy.restapiexample.com[\r][\n]"
+00:36:24.894 [main] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+00:36:24.894 [main] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)[\r][\n]"
+00:36:24.895 [main] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+00:36:24.895 [main] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+00:36:24.895 [main] DEBUG org.apache.http.headers - >> POST /api/v1/create HTTP/1.1
+00:36:24.896 [main] DEBUG org.apache.http.headers - >> Accept: application/json, application/javascript, text/javascript, text/json
+00:36:24.896 [main] DEBUG org.apache.http.headers - >> Content-Type: text/plain; charset=ISO-8859-1
+00:36:24.896 [main] DEBUG org.apache.http.headers - >> Content-Length: 41
+00:36:24.896 [main] DEBUG org.apache.http.headers - >> Host: dummy.restapiexample.com
+00:36:24.896 [main] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+00:36:24.897 [main] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)
+00:36:24.898 [main] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+00:36:24.898 [main] DEBUG org.apache.http.wire -  >> "{"name":"Samir","age":"34","salary":"50"}"
+00:36:25.325 [main] DEBUG org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+00:36:25.328 [main] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Origin: *[\r][\n]"
+00:36:25.328 [main] DEBUG org.apache.http.wire -  << "Access-Control-Expose-Headers: Content-Type, X-Requested-With, X-authentication, X-client[\r][\n]"
+00:36:25.328 [main] DEBUG org.apache.http.wire -  << "Cache-Control: no-store, no-cache, must-revalidate[\r][\n]"
+00:36:25.330 [main] DEBUG org.apache.http.wire -  << "Content-Type: application/json;charset=utf-8[\r][\n]"
+00:36:25.330 [main] DEBUG org.apache.http.wire -  << "Date: Sat, 04 Jul 2020 05:36:23 GMT[\r][\n]"
+00:36:25.330 [main] DEBUG org.apache.http.wire -  << "Display: staticcontent_sol[\r][\n]"
+00:36:25.330 [main] DEBUG org.apache.http.wire -  << "Expires: Thu, 19 Nov 1981 08:52:00 GMT[\r][\n]"
+00:36:25.330 [main] DEBUG org.apache.http.wire -  << "Host-Header: c2hhcmVkLmJsdWVob3N0LmNvbQ==[\r][\n]"
+00:36:25.331 [main] DEBUG org.apache.http.wire -  << "Pragma: no-cache[\r][\n]"
+00:36:25.331 [main] DEBUG org.apache.http.wire -  << "Referrer-Policy: [\r][\n]"
+00:36:25.331 [main] DEBUG org.apache.http.wire -  << "Response: 200[\r][\n]"
+00:36:25.331 [main] DEBUG org.apache.http.wire -  << "Server: nginx/1.16.0[\r][\n]"
+00:36:25.331 [main] DEBUG org.apache.http.wire -  << "Set-Cookie: PHPSESSID=de335aa9c00a175da7ce17f753292051; path=/[\r][\n]"
+00:36:25.331 [main] DEBUG org.apache.http.wire -  << "Vary: Accept-Encoding[\r][\n]"
+00:36:25.332 [main] DEBUG org.apache.http.wire -  << "Vary: Accept-Encoding,Origin,X-APP-JSON[\r][\n]"
+00:36:25.332 [main] DEBUG org.apache.http.wire -  << "X-Ezoic-Cdn: Miss[\r][\n]"
+00:36:25.332 [main] DEBUG org.apache.http.wire -  << "X-Middleton-Display: staticcontent_sol[\r][\n]"
+00:36:25.332 [main] DEBUG org.apache.http.wire -  << "X-Middleton-Response: 200[\r][\n]"
+00:36:25.332 [main] DEBUG org.apache.http.wire -  << "X-Sol: pub_site[\r][\n]"
+00:36:25.332 [main] DEBUG org.apache.http.wire -  << "Content-Length: 77[\r][\n]"
+00:36:25.333 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+00:36:25.334 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+00:36:25.334 [main] DEBUG org.apache.http.headers - << HTTP/1.1 200 OK
+00:36:25.334 [main] DEBUG org.apache.http.headers - << Access-Control-Allow-Origin: *
+00:36:25.334 [main] DEBUG org.apache.http.headers - << Access-Control-Expose-Headers: Content-Type, X-Requested-With, X-authentication, X-client
+00:36:25.335 [main] DEBUG org.apache.http.headers - << Cache-Control: no-store, no-cache, must-revalidate
+00:36:25.336 [main] DEBUG org.apache.http.headers - << Content-Type: application/json;charset=utf-8
+00:36:25.336 [main] DEBUG org.apache.http.headers - << Date: Sat, 04 Jul 2020 05:36:23 GMT
+00:36:25.336 [main] DEBUG org.apache.http.headers - << Display: staticcontent_sol
+00:36:25.336 [main] DEBUG org.apache.http.headers - << Expires: Thu, 19 Nov 1981 08:52:00 GMT
+00:36:25.336 [main] DEBUG org.apache.http.headers - << Host-Header: c2hhcmVkLmJsdWVob3N0LmNvbQ==
+00:36:25.336 [main] DEBUG org.apache.http.headers - << Pragma: no-cache
+00:36:25.337 [main] DEBUG org.apache.http.headers - << Referrer-Policy: 
+00:36:25.337 [main] DEBUG org.apache.http.headers - << Response: 200
+00:36:25.337 [main] DEBUG org.apache.http.headers - << Server: nginx/1.16.0
+00:36:25.337 [main] DEBUG org.apache.http.headers - << Set-Cookie: PHPSESSID=de335aa9c00a175da7ce17f753292051; path=/
+00:36:25.337 [main] DEBUG org.apache.http.headers - << Vary: Accept-Encoding
+00:36:25.337 [main] DEBUG org.apache.http.headers - << Vary: Accept-Encoding,Origin,X-APP-JSON
+00:36:25.337 [main] DEBUG org.apache.http.headers - << X-Ezoic-Cdn: Miss
+00:36:25.338 [main] DEBUG org.apache.http.headers - << X-Middleton-Display: staticcontent_sol
+00:36:25.338 [main] DEBUG org.apache.http.headers - << X-Middleton-Response: 200
+00:36:25.338 [main] DEBUG org.apache.http.headers - << X-Sol: pub_site
+00:36:25.338 [main] DEBUG org.apache.http.headers - << Content-Length: 77
+00:36:25.342 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+00:36:25.361 [main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: application/json;charset=utf-8
+00:36:25.363 [main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+00:36:25.507 [main] DEBUG org.apache.http.wire -  << "{"status":"success","data":{"name":"Samir","salary":"50","age":"34","id":89}}"
+00:36:25.508 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@1b9c1b51
+00:36:25.509 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive indefinitely
+00:36:44.780 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://dummy.restapiexample.com:80
+00:36:44.840 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to dummy.restapiexample.com:80
+00:36:44.932 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+00:36:44.934 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+00:36:44.935 [main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+00:36:44.936 [main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+00:36:44.936 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+00:36:44.938 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: POST /api/v1/create HTTP/1.1
+00:36:44.939 [main] DEBUG org.apache.http.wire -  >> "POST /api/v1/create HTTP/1.1[\r][\n]"
+00:36:44.941 [main] DEBUG org.apache.http.wire -  >> "Accept: application/json, application/javascript, text/javascript, text/json[\r][\n]"
+00:36:44.941 [main] DEBUG org.apache.http.wire -  >> "Content-Type: text/plain; charset=ISO-8859-1[\r][\n]"
+00:36:44.941 [main] DEBUG org.apache.http.wire -  >> "Content-Length: 41[\r][\n]"
+00:36:44.943 [main] DEBUG org.apache.http.wire -  >> "Host: dummy.restapiexample.com[\r][\n]"
+00:36:44.943 [main] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+00:36:44.943 [main] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)[\r][\n]"
+00:36:44.943 [main] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+00:36:44.943 [main] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+00:36:44.943 [main] DEBUG org.apache.http.headers - >> POST /api/v1/create HTTP/1.1
+00:36:44.945 [main] DEBUG org.apache.http.headers - >> Accept: application/json, application/javascript, text/javascript, text/json
+00:36:44.945 [main] DEBUG org.apache.http.headers - >> Content-Type: text/plain; charset=ISO-8859-1
+00:36:44.945 [main] DEBUG org.apache.http.headers - >> Content-Length: 41
+00:36:44.945 [main] DEBUG org.apache.http.headers - >> Host: dummy.restapiexample.com
+00:36:44.945 [main] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+00:36:44.945 [main] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)
+00:36:44.948 [main] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+00:36:44.948 [main] DEBUG org.apache.http.wire -  >> "{"name":"Samir","age":"34","salary":"50"}"
+00:36:45.447 [main] DEBUG org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+00:36:45.450 [main] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Origin: *[\r][\n]"
+00:36:45.451 [main] DEBUG org.apache.http.wire -  << "Access-Control-Expose-Headers: Content-Type, X-Requested-With, X-authentication, X-client[\r][\n]"
+00:36:45.451 [main] DEBUG org.apache.http.wire -  << "Cache-Control: no-store, no-cache, must-revalidate[\r][\n]"
+00:36:45.453 [main] DEBUG org.apache.http.wire -  << "Content-Type: application/json;charset=utf-8[\r][\n]"
+00:36:45.453 [main] DEBUG org.apache.http.wire -  << "Date: Sat, 04 Jul 2020 05:36:44 GMT[\r][\n]"
+00:36:45.453 [main] DEBUG org.apache.http.wire -  << "Display: staticcontent_sol[\r][\n]"
+00:36:45.453 [main] DEBUG org.apache.http.wire -  << "Expires: Thu, 19 Nov 1981 08:52:00 GMT[\r][\n]"
+00:36:45.453 [main] DEBUG org.apache.http.wire -  << "Host-Header: c2hhcmVkLmJsdWVob3N0LmNvbQ==[\r][\n]"
+00:36:45.455 [main] DEBUG org.apache.http.wire -  << "Pragma: no-cache[\r][\n]"
+00:36:45.455 [main] DEBUG org.apache.http.wire -  << "Referrer-Policy: [\r][\n]"
+00:36:45.455 [main] DEBUG org.apache.http.wire -  << "Response: 200[\r][\n]"
+00:36:45.455 [main] DEBUG org.apache.http.wire -  << "Server: nginx/1.16.0[\r][\n]"
+00:36:45.455 [main] DEBUG org.apache.http.wire -  << "Set-Cookie: PHPSESSID=02c5aeaed2cb664a63b5c400d318db3a; path=/[\r][\n]"
+00:36:45.456 [main] DEBUG org.apache.http.wire -  << "Vary: Accept-Encoding[\r][\n]"
+00:36:45.457 [main] DEBUG org.apache.http.wire -  << "Vary: Accept-Encoding,Origin,X-APP-JSON[\r][\n]"
+00:36:45.457 [main] DEBUG org.apache.http.wire -  << "X-Ezoic-Cdn: Miss[\r][\n]"
+00:36:45.457 [main] DEBUG org.apache.http.wire -  << "X-Middleton-Display: staticcontent_sol[\r][\n]"
+00:36:45.458 [main] DEBUG org.apache.http.wire -  << "X-Middleton-Response: 200[\r][\n]"
+00:36:45.458 [main] DEBUG org.apache.http.wire -  << "X-Sol: pub_site[\r][\n]"
+00:36:45.458 [main] DEBUG org.apache.http.wire -  << "Content-Length: 77[\r][\n]"
+00:36:45.460 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+00:36:45.461 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+00:36:45.461 [main] DEBUG org.apache.http.headers - << HTTP/1.1 200 OK
+00:36:45.461 [main] DEBUG org.apache.http.headers - << Access-Control-Allow-Origin: *
+00:36:45.461 [main] DEBUG org.apache.http.headers - << Access-Control-Expose-Headers: Content-Type, X-Requested-With, X-authentication, X-client
+00:36:45.461 [main] DEBUG org.apache.http.headers - << Cache-Control: no-store, no-cache, must-revalidate
+00:36:45.462 [main] DEBUG org.apache.http.headers - << Content-Type: application/json;charset=utf-8
+00:36:45.462 [main] DEBUG org.apache.http.headers - << Date: Sat, 04 Jul 2020 05:36:44 GMT
+00:36:45.462 [main] DEBUG org.apache.http.headers - << Display: staticcontent_sol
+00:36:45.462 [main] DEBUG org.apache.http.headers - << Expires: Thu, 19 Nov 1981 08:52:00 GMT
+00:36:45.462 [main] DEBUG org.apache.http.headers - << Host-Header: c2hhcmVkLmJsdWVob3N0LmNvbQ==
+00:36:45.463 [main] DEBUG org.apache.http.headers - << Pragma: no-cache
+00:36:45.465 [main] DEBUG org.apache.http.headers - << Referrer-Policy: 
+00:36:45.465 [main] DEBUG org.apache.http.headers - << Response: 200
+00:36:45.465 [main] DEBUG org.apache.http.headers - << Server: nginx/1.16.0
+00:36:45.465 [main] DEBUG org.apache.http.headers - << Set-Cookie: PHPSESSID=02c5aeaed2cb664a63b5c400d318db3a; path=/
+00:36:45.465 [main] DEBUG org.apache.http.headers - << Vary: Accept-Encoding
+00:36:45.465 [main] DEBUG org.apache.http.headers - << Vary: Accept-Encoding,Origin,X-APP-JSON
+00:36:45.465 [main] DEBUG org.apache.http.headers - << X-Ezoic-Cdn: Miss
+00:36:45.467 [main] DEBUG org.apache.http.headers - << X-Middleton-Display: staticcontent_sol
+00:36:45.467 [main] DEBUG org.apache.http.headers - << X-Middleton-Response: 200
+00:36:45.467 [main] DEBUG org.apache.http.headers - << X-Sol: pub_site
+00:36:45.468 [main] DEBUG org.apache.http.headers - << Content-Length: 77
+00:36:45.474 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+00:36:45.493 [main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: application/json;charset=utf-8
+00:36:45.494 [main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+00:36:45.617 [main] DEBUG org.apache.http.wire -  << "{"status":"success","data":{"name":"Samir","salary":"50","age":"34","id":80}}"
+00:36:45.618 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@16fe9c29
+00:36:45.618 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive indefinitely
+00:38:09.076 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://dummy.restapiexample.com:80
+00:38:09.136 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to dummy.restapiexample.com:80
+00:38:09.234 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+00:38:09.236 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+00:38:09.236 [main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+00:38:09.237 [main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+00:38:09.238 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+00:38:09.240 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: POST /api/v1/create HTTP/1.1
+00:38:09.241 [main] DEBUG org.apache.http.wire -  >> "POST /api/v1/create HTTP/1.1[\r][\n]"
+00:38:09.242 [main] DEBUG org.apache.http.wire -  >> "Accept: application/json, application/javascript, text/javascript, text/json[\r][\n]"
+00:38:09.242 [main] DEBUG org.apache.http.wire -  >> "Content-Type: text/plain; charset=ISO-8859-1[\r][\n]"
+00:38:09.242 [main] DEBUG org.apache.http.wire -  >> "Content-Length: 41[\r][\n]"
+00:38:09.244 [main] DEBUG org.apache.http.wire -  >> "Host: dummy.restapiexample.com[\r][\n]"
+00:38:09.244 [main] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+00:38:09.244 [main] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)[\r][\n]"
+00:38:09.245 [main] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+00:38:09.245 [main] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+00:38:09.245 [main] DEBUG org.apache.http.headers - >> POST /api/v1/create HTTP/1.1
+00:38:09.246 [main] DEBUG org.apache.http.headers - >> Accept: application/json, application/javascript, text/javascript, text/json
+00:38:09.247 [main] DEBUG org.apache.http.headers - >> Content-Type: text/plain; charset=ISO-8859-1
+00:38:09.247 [main] DEBUG org.apache.http.headers - >> Content-Length: 41
+00:38:09.247 [main] DEBUG org.apache.http.headers - >> Host: dummy.restapiexample.com
+00:38:09.247 [main] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+00:38:09.247 [main] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)
+00:38:09.248 [main] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+00:38:09.249 [main] DEBUG org.apache.http.wire -  >> "{"name":"Samir","age":"34","salary":"50"}"
+00:38:09.654 [main] DEBUG org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+00:38:09.656 [main] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Origin: *[\r][\n]"
+00:38:09.656 [main] DEBUG org.apache.http.wire -  << "Access-Control-Expose-Headers: Content-Type, X-Requested-With, X-authentication, X-client[\r][\n]"
+00:38:09.656 [main] DEBUG org.apache.http.wire -  << "Cache-Control: no-store, no-cache, must-revalidate[\r][\n]"
+00:38:09.657 [main] DEBUG org.apache.http.wire -  << "Content-Type: application/json;charset=utf-8[\r][\n]"
+00:38:09.657 [main] DEBUG org.apache.http.wire -  << "Date: Sat, 04 Jul 2020 05:38:08 GMT[\r][\n]"
+00:38:09.657 [main] DEBUG org.apache.http.wire -  << "Display: staticcontent_sol[\r][\n]"
+00:38:09.657 [main] DEBUG org.apache.http.wire -  << "Expires: Thu, 19 Nov 1981 08:52:00 GMT[\r][\n]"
+00:38:09.657 [main] DEBUG org.apache.http.wire -  << "Host-Header: c2hhcmVkLmJsdWVob3N0LmNvbQ==[\r][\n]"
+00:38:09.658 [main] DEBUG org.apache.http.wire -  << "Pragma: no-cache[\r][\n]"
+00:38:09.658 [main] DEBUG org.apache.http.wire -  << "Referrer-Policy: [\r][\n]"
+00:38:09.658 [main] DEBUG org.apache.http.wire -  << "Response: 200[\r][\n]"
+00:38:09.658 [main] DEBUG org.apache.http.wire -  << "Server: nginx/1.16.0[\r][\n]"
+00:38:09.658 [main] DEBUG org.apache.http.wire -  << "Set-Cookie: PHPSESSID=b9c41fd6f565fd11b5780c5c89b0e69e; path=/[\r][\n]"
+00:38:09.658 [main] DEBUG org.apache.http.wire -  << "Vary: Accept-Encoding[\r][\n]"
+00:38:09.659 [main] DEBUG org.apache.http.wire -  << "Vary: Accept-Encoding,Origin,X-APP-JSON[\r][\n]"
+00:38:09.659 [main] DEBUG org.apache.http.wire -  << "X-Ezoic-Cdn: Miss[\r][\n]"
+00:38:09.660 [main] DEBUG org.apache.http.wire -  << "X-Middleton-Display: staticcontent_sol[\r][\n]"
+00:38:09.660 [main] DEBUG org.apache.http.wire -  << "X-Middleton-Response: 200[\r][\n]"
+00:38:09.660 [main] DEBUG org.apache.http.wire -  << "X-Sol: pub_site[\r][\n]"
+00:38:09.660 [main] DEBUG org.apache.http.wire -  << "Content-Length: 77[\r][\n]"
+00:38:09.661 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+00:38:09.662 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+00:38:09.662 [main] DEBUG org.apache.http.headers - << HTTP/1.1 200 OK
+00:38:09.662 [main] DEBUG org.apache.http.headers - << Access-Control-Allow-Origin: *
+00:38:09.662 [main] DEBUG org.apache.http.headers - << Access-Control-Expose-Headers: Content-Type, X-Requested-With, X-authentication, X-client
+00:38:09.662 [main] DEBUG org.apache.http.headers - << Cache-Control: no-store, no-cache, must-revalidate
+00:38:09.663 [main] DEBUG org.apache.http.headers - << Content-Type: application/json;charset=utf-8
+00:38:09.663 [main] DEBUG org.apache.http.headers - << Date: Sat, 04 Jul 2020 05:38:08 GMT
+00:38:09.663 [main] DEBUG org.apache.http.headers - << Display: staticcontent_sol
+00:38:09.663 [main] DEBUG org.apache.http.headers - << Expires: Thu, 19 Nov 1981 08:52:00 GMT
+00:38:09.663 [main] DEBUG org.apache.http.headers - << Host-Header: c2hhcmVkLmJsdWVob3N0LmNvbQ==
+00:38:09.663 [main] DEBUG org.apache.http.headers - << Pragma: no-cache
+00:38:09.664 [main] DEBUG org.apache.http.headers - << Referrer-Policy: 
+00:38:09.664 [main] DEBUG org.apache.http.headers - << Response: 200
+00:38:09.664 [main] DEBUG org.apache.http.headers - << Server: nginx/1.16.0
+00:38:09.664 [main] DEBUG org.apache.http.headers - << Set-Cookie: PHPSESSID=b9c41fd6f565fd11b5780c5c89b0e69e; path=/
+00:38:09.664 [main] DEBUG org.apache.http.headers - << Vary: Accept-Encoding
+00:38:09.664 [main] DEBUG org.apache.http.headers - << Vary: Accept-Encoding,Origin,X-APP-JSON
+00:38:09.664 [main] DEBUG org.apache.http.headers - << X-Ezoic-Cdn: Miss
+00:38:09.665 [main] DEBUG org.apache.http.headers - << X-Middleton-Display: staticcontent_sol
+00:38:09.665 [main] DEBUG org.apache.http.headers - << X-Middleton-Response: 200
+00:38:09.665 [main] DEBUG org.apache.http.headers - << X-Sol: pub_site
+00:38:09.665 [main] DEBUG org.apache.http.headers - << Content-Length: 77
+00:38:09.670 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+00:38:09.690 [main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: application/json;charset=utf-8
+00:38:09.691 [main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+00:38:09.815 [main] DEBUG org.apache.http.wire -  << "{"status":"success","data":{"name":"Samir","salary":"50","age":"34","id":63}}"
+00:38:09.816 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@16fe9c29
+00:38:09.816 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive indefinitely
+00:38:29.280 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://dummy.restapiexample.com:80
+00:38:29.321 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to dummy.restapiexample.com:80
+00:38:29.395 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+00:38:29.396 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+00:38:29.396 [main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+00:38:29.397 [main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+00:38:29.397 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+00:38:29.399 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: POST /api/v1/create HTTP/1.1
+00:38:29.399 [main] DEBUG org.apache.http.wire -  >> "POST /api/v1/create HTTP/1.1[\r][\n]"
+00:38:29.400 [main] DEBUG org.apache.http.wire -  >> "Accept: application/json, application/javascript, text/javascript, text/json[\r][\n]"
+00:38:29.400 [main] DEBUG org.apache.http.wire -  >> "Content-Type: text/plain; charset=ISO-8859-1[\r][\n]"
+00:38:29.401 [main] DEBUG org.apache.http.wire -  >> "Content-Length: 41[\r][\n]"
+00:38:29.402 [main] DEBUG org.apache.http.wire -  >> "Host: dummy.restapiexample.com[\r][\n]"
+00:38:29.402 [main] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+00:38:29.402 [main] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)[\r][\n]"
+00:38:29.402 [main] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+00:38:29.402 [main] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+00:38:29.402 [main] DEBUG org.apache.http.headers - >> POST /api/v1/create HTTP/1.1
+00:38:29.403 [main] DEBUG org.apache.http.headers - >> Accept: application/json, application/javascript, text/javascript, text/json
+00:38:29.403 [main] DEBUG org.apache.http.headers - >> Content-Type: text/plain; charset=ISO-8859-1
+00:38:29.403 [main] DEBUG org.apache.http.headers - >> Content-Length: 41
+00:38:29.403 [main] DEBUG org.apache.http.headers - >> Host: dummy.restapiexample.com
+00:38:29.403 [main] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+00:38:29.404 [main] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)
+00:38:29.405 [main] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+00:38:29.405 [main] DEBUG org.apache.http.wire -  >> "{"name":"Samir","age":"34","salary":"50"}"
+00:38:29.815 [main] DEBUG org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+00:38:29.819 [main] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Origin: *[\r][\n]"
+00:38:29.819 [main] DEBUG org.apache.http.wire -  << "Access-Control-Expose-Headers: Content-Type, X-Requested-With, X-authentication, X-client[\r][\n]"
+00:38:29.819 [main] DEBUG org.apache.http.wire -  << "Cache-Control: no-store, no-cache, must-revalidate[\r][\n]"
+00:38:29.820 [main] DEBUG org.apache.http.wire -  << "Content-Type: application/json;charset=utf-8[\r][\n]"
+00:38:29.821 [main] DEBUG org.apache.http.wire -  << "Date: Sat, 04 Jul 2020 05:38:28 GMT[\r][\n]"
+00:38:29.821 [main] DEBUG org.apache.http.wire -  << "Display: staticcontent_sol[\r][\n]"
+00:38:29.821 [main] DEBUG org.apache.http.wire -  << "Expires: Thu, 19 Nov 1981 08:52:00 GMT[\r][\n]"
+00:38:29.821 [main] DEBUG org.apache.http.wire -  << "Host-Header: c2hhcmVkLmJsdWVob3N0LmNvbQ==[\r][\n]"
+00:38:29.822 [main] DEBUG org.apache.http.wire -  << "Pragma: no-cache[\r][\n]"
+00:38:29.822 [main] DEBUG org.apache.http.wire -  << "Referrer-Policy: [\r][\n]"
+00:38:29.822 [main] DEBUG org.apache.http.wire -  << "Response: 200[\r][\n]"
+00:38:29.822 [main] DEBUG org.apache.http.wire -  << "Server: nginx/1.16.0[\r][\n]"
+00:38:29.822 [main] DEBUG org.apache.http.wire -  << "Set-Cookie: PHPSESSID=95b7739764565d8fc21ae5b14f4f615a; path=/[\r][\n]"
+00:38:29.822 [main] DEBUG org.apache.http.wire -  << "Vary: Accept-Encoding[\r][\n]"
+00:38:29.823 [main] DEBUG org.apache.http.wire -  << "Vary: Accept-Encoding,Origin,X-APP-JSON[\r][\n]"
+00:38:29.823 [main] DEBUG org.apache.http.wire -  << "X-Ezoic-Cdn: Miss[\r][\n]"
+00:38:29.823 [main] DEBUG org.apache.http.wire -  << "X-Middleton-Display: staticcontent_sol[\r][\n]"
+00:38:29.823 [main] DEBUG org.apache.http.wire -  << "X-Middleton-Response: 200[\r][\n]"
+00:38:29.823 [main] DEBUG org.apache.http.wire -  << "X-Sol: pub_site[\r][\n]"
+00:38:29.823 [main] DEBUG org.apache.http.wire -  << "Content-Length: 77[\r][\n]"
+00:38:29.824 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+00:38:29.825 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+00:38:29.825 [main] DEBUG org.apache.http.headers - << HTTP/1.1 200 OK
+00:38:29.825 [main] DEBUG org.apache.http.headers - << Access-Control-Allow-Origin: *
+00:38:29.825 [main] DEBUG org.apache.http.headers - << Access-Control-Expose-Headers: Content-Type, X-Requested-With, X-authentication, X-client
+00:38:29.826 [main] DEBUG org.apache.http.headers - << Cache-Control: no-store, no-cache, must-revalidate
+00:38:29.826 [main] DEBUG org.apache.http.headers - << Content-Type: application/json;charset=utf-8
+00:38:29.827 [main] DEBUG org.apache.http.headers - << Date: Sat, 04 Jul 2020 05:38:28 GMT
+00:38:29.827 [main] DEBUG org.apache.http.headers - << Display: staticcontent_sol
+00:38:29.827 [main] DEBUG org.apache.http.headers - << Expires: Thu, 19 Nov 1981 08:52:00 GMT
+00:38:29.827 [main] DEBUG org.apache.http.headers - << Host-Header: c2hhcmVkLmJsdWVob3N0LmNvbQ==
+00:38:29.827 [main] DEBUG org.apache.http.headers - << Pragma: no-cache
+00:38:29.828 [main] DEBUG org.apache.http.headers - << Referrer-Policy: 
+00:38:29.828 [main] DEBUG org.apache.http.headers - << Response: 200
+00:38:29.828 [main] DEBUG org.apache.http.headers - << Server: nginx/1.16.0
+00:38:29.828 [main] DEBUG org.apache.http.headers - << Set-Cookie: PHPSESSID=95b7739764565d8fc21ae5b14f4f615a; path=/
+00:38:29.828 [main] DEBUG org.apache.http.headers - << Vary: Accept-Encoding
+00:38:29.828 [main] DEBUG org.apache.http.headers - << Vary: Accept-Encoding,Origin,X-APP-JSON
+00:38:29.828 [main] DEBUG org.apache.http.headers - << X-Ezoic-Cdn: Miss
+00:38:29.829 [main] DEBUG org.apache.http.headers - << X-Middleton-Display: staticcontent_sol
+00:38:29.829 [main] DEBUG org.apache.http.headers - << X-Middleton-Response: 200
+00:38:29.829 [main] DEBUG org.apache.http.headers - << X-Sol: pub_site
+00:38:29.829 [main] DEBUG org.apache.http.headers - << Content-Length: 77
+00:38:29.833 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+00:38:29.852 [main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: application/json;charset=utf-8
+00:38:29.853 [main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+00:38:29.975 [main] DEBUG org.apache.http.wire -  << "{"status":"success","data":{"name":"Samir","salary":"50","age":"34","id":78}}"
+00:38:29.976 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@6579c3d9
+00:38:29.977 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive indefinitely
+00:39:24.985 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://dummy.restapiexample.com:80
+00:39:25.037 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to dummy.restapiexample.com:80
+00:39:25.122 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+00:39:25.124 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+00:39:25.125 [main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+00:39:25.125 [main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+00:39:25.126 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+00:39:25.128 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: POST /api/v1/create HTTP/1.1
+00:39:25.128 [main] DEBUG org.apache.http.wire -  >> "POST /api/v1/create HTTP/1.1[\r][\n]"
+00:39:25.130 [main] DEBUG org.apache.http.wire -  >> "Accept: application/json, application/javascript, text/javascript, text/json[\r][\n]"
+00:39:25.130 [main] DEBUG org.apache.http.wire -  >> "Content-Type: text/plain; charset=ISO-8859-1[\r][\n]"
+00:39:25.130 [main] DEBUG org.apache.http.wire -  >> "Content-Length: 41[\r][\n]"
+00:39:25.132 [main] DEBUG org.apache.http.wire -  >> "Host: dummy.restapiexample.com[\r][\n]"
+00:39:25.132 [main] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+00:39:25.132 [main] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)[\r][\n]"
+00:39:25.132 [main] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+00:39:25.132 [main] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+00:39:25.132 [main] DEBUG org.apache.http.headers - >> POST /api/v1/create HTTP/1.1
+00:39:25.134 [main] DEBUG org.apache.http.headers - >> Accept: application/json, application/javascript, text/javascript, text/json
+00:39:25.134 [main] DEBUG org.apache.http.headers - >> Content-Type: text/plain; charset=ISO-8859-1
+00:39:25.134 [main] DEBUG org.apache.http.headers - >> Content-Length: 41
+00:39:25.134 [main] DEBUG org.apache.http.headers - >> Host: dummy.restapiexample.com
+00:39:25.135 [main] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+00:39:25.135 [main] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)
+00:39:25.136 [main] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+00:39:25.137 [main] DEBUG org.apache.http.wire -  >> "{"name":"Samir","age":"34","salary":"50"}"
+00:39:25.648 [main] DEBUG org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+00:39:25.651 [main] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Origin: *[\r][\n]"
+00:39:25.651 [main] DEBUG org.apache.http.wire -  << "Access-Control-Expose-Headers: Content-Type, X-Requested-With, X-authentication, X-client[\r][\n]"
+00:39:25.651 [main] DEBUG org.apache.http.wire -  << "Cache-Control: no-store, no-cache, must-revalidate[\r][\n]"
+00:39:25.653 [main] DEBUG org.apache.http.wire -  << "Content-Type: application/json;charset=utf-8[\r][\n]"
+00:39:25.653 [main] DEBUG org.apache.http.wire -  << "Date: Sat, 04 Jul 2020 05:39:24 GMT[\r][\n]"
+00:39:25.653 [main] DEBUG org.apache.http.wire -  << "Display: staticcontent_sol[\r][\n]"
+00:39:25.653 [main] DEBUG org.apache.http.wire -  << "Expires: Thu, 19 Nov 1981 08:52:00 GMT[\r][\n]"
+00:39:25.653 [main] DEBUG org.apache.http.wire -  << "Host-Header: c2hhcmVkLmJsdWVob3N0LmNvbQ==[\r][\n]"
+00:39:25.655 [main] DEBUG org.apache.http.wire -  << "Pragma: no-cache[\r][\n]"
+00:39:25.655 [main] DEBUG org.apache.http.wire -  << "Referrer-Policy: [\r][\n]"
+00:39:25.655 [main] DEBUG org.apache.http.wire -  << "Response: 200[\r][\n]"
+00:39:25.655 [main] DEBUG org.apache.http.wire -  << "Server: nginx/1.16.0[\r][\n]"
+00:39:25.655 [main] DEBUG org.apache.http.wire -  << "Set-Cookie: PHPSESSID=a299fe8a27c58601f01fd3ca934605b7; path=/[\r][\n]"
+00:39:25.655 [main] DEBUG org.apache.http.wire -  << "Vary: Accept-Encoding[\r][\n]"
+00:39:25.656 [main] DEBUG org.apache.http.wire -  << "Vary: Accept-Encoding,Origin,X-APP-JSON[\r][\n]"
+00:39:25.656 [main] DEBUG org.apache.http.wire -  << "X-Ezoic-Cdn: Miss[\r][\n]"
+00:39:25.656 [main] DEBUG org.apache.http.wire -  << "X-Middleton-Display: staticcontent_sol[\r][\n]"
+00:39:25.656 [main] DEBUG org.apache.http.wire -  << "X-Middleton-Response: 200[\r][\n]"
+00:39:25.656 [main] DEBUG org.apache.http.wire -  << "X-Sol: pub_site[\r][\n]"
+00:39:25.656 [main] DEBUG org.apache.http.wire -  << "Content-Length: 77[\r][\n]"
+00:39:25.657 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+00:39:25.658 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+00:39:25.658 [main] DEBUG org.apache.http.headers - << HTTP/1.1 200 OK
+00:39:25.658 [main] DEBUG org.apache.http.headers - << Access-Control-Allow-Origin: *
+00:39:25.658 [main] DEBUG org.apache.http.headers - << Access-Control-Expose-Headers: Content-Type, X-Requested-With, X-authentication, X-client
+00:39:25.658 [main] DEBUG org.apache.http.headers - << Cache-Control: no-store, no-cache, must-revalidate
+00:39:25.659 [main] DEBUG org.apache.http.headers - << Content-Type: application/json;charset=utf-8
+00:39:25.660 [main] DEBUG org.apache.http.headers - << Date: Sat, 04 Jul 2020 05:39:24 GMT
+00:39:25.660 [main] DEBUG org.apache.http.headers - << Display: staticcontent_sol
+00:39:25.660 [main] DEBUG org.apache.http.headers - << Expires: Thu, 19 Nov 1981 08:52:00 GMT
+00:39:25.660 [main] DEBUG org.apache.http.headers - << Host-Header: c2hhcmVkLmJsdWVob3N0LmNvbQ==
+00:39:25.660 [main] DEBUG org.apache.http.headers - << Pragma: no-cache
+00:39:25.661 [main] DEBUG org.apache.http.headers - << Referrer-Policy: 
+00:39:25.661 [main] DEBUG org.apache.http.headers - << Response: 200
+00:39:25.661 [main] DEBUG org.apache.http.headers - << Server: nginx/1.16.0
+00:39:25.661 [main] DEBUG org.apache.http.headers - << Set-Cookie: PHPSESSID=a299fe8a27c58601f01fd3ca934605b7; path=/
+00:39:25.661 [main] DEBUG org.apache.http.headers - << Vary: Accept-Encoding
+00:39:25.661 [main] DEBUG org.apache.http.headers - << Vary: Accept-Encoding,Origin,X-APP-JSON
+00:39:25.661 [main] DEBUG org.apache.http.headers - << X-Ezoic-Cdn: Miss
+00:39:25.662 [main] DEBUG org.apache.http.headers - << X-Middleton-Display: staticcontent_sol
+00:39:25.662 [main] DEBUG org.apache.http.headers - << X-Middleton-Response: 200
+00:39:25.662 [main] DEBUG org.apache.http.headers - << X-Sol: pub_site
+00:39:25.662 [main] DEBUG org.apache.http.headers - << Content-Length: 77
+00:39:25.666 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+00:39:25.684 [main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: application/json;charset=utf-8
+00:39:25.685 [main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+00:39:25.785 [main] DEBUG org.apache.http.wire -  << "{"status":"success","data":{"name":"Samir","salary":"50","age":"34","id":64}}"
+00:39:25.786 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@6579c3d9
+00:39:25.786 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive indefinitely
+00:39:41.340 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://dummy.restapiexample.com:80
+00:39:41.381 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to dummy.restapiexample.com:80
+00:39:41.459 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+00:39:41.462 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+00:39:41.462 [main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+00:39:41.462 [main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+00:39:41.462 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+00:39:41.463 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: POST /api/v1/create HTTP/1.1
+00:39:41.464 [main] DEBUG org.apache.http.wire -  >> "POST /api/v1/create HTTP/1.1[\r][\n]"
+00:39:41.465 [main] DEBUG org.apache.http.wire -  >> "Accept: application/json, application/javascript, text/javascript, text/json[\r][\n]"
+00:39:41.465 [main] DEBUG org.apache.http.wire -  >> "Content-Type: text/plain; charset=ISO-8859-1[\r][\n]"
+00:39:41.465 [main] DEBUG org.apache.http.wire -  >> "Content-Length: 41[\r][\n]"
+00:39:41.467 [main] DEBUG org.apache.http.wire -  >> "Host: dummy.restapiexample.com[\r][\n]"
+00:39:41.467 [main] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+00:39:41.467 [main] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)[\r][\n]"
+00:39:41.467 [main] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+00:39:41.467 [main] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+00:39:41.467 [main] DEBUG org.apache.http.headers - >> POST /api/v1/create HTTP/1.1
+00:39:41.468 [main] DEBUG org.apache.http.headers - >> Accept: application/json, application/javascript, text/javascript, text/json
+00:39:41.468 [main] DEBUG org.apache.http.headers - >> Content-Type: text/plain; charset=ISO-8859-1
+00:39:41.468 [main] DEBUG org.apache.http.headers - >> Content-Length: 41
+00:39:41.468 [main] DEBUG org.apache.http.headers - >> Host: dummy.restapiexample.com
+00:39:41.468 [main] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+00:39:41.468 [main] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)
+00:39:41.469 [main] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+00:39:41.470 [main] DEBUG org.apache.http.wire -  >> "{"name":"Samir","age":"34","salary":"50"}"
+00:39:41.904 [main] DEBUG org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+00:39:41.906 [main] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Origin: *[\r][\n]"
+00:39:41.906 [main] DEBUG org.apache.http.wire -  << "Access-Control-Expose-Headers: Content-Type, X-Requested-With, X-authentication, X-client[\r][\n]"
+00:39:41.906 [main] DEBUG org.apache.http.wire -  << "Cache-Control: no-store, no-cache, must-revalidate[\r][\n]"
+00:39:41.907 [main] DEBUG org.apache.http.wire -  << "Content-Type: application/json;charset=utf-8[\r][\n]"
+00:39:41.907 [main] DEBUG org.apache.http.wire -  << "Date: Sat, 04 Jul 2020 05:39:40 GMT[\r][\n]"
+00:39:41.907 [main] DEBUG org.apache.http.wire -  << "Display: staticcontent_sol[\r][\n]"
+00:39:41.907 [main] DEBUG org.apache.http.wire -  << "Expires: Thu, 19 Nov 1981 08:52:00 GMT[\r][\n]"
+00:39:41.907 [main] DEBUG org.apache.http.wire -  << "Host-Header: c2hhcmVkLmJsdWVob3N0LmNvbQ==[\r][\n]"
+00:39:41.908 [main] DEBUG org.apache.http.wire -  << "Pragma: no-cache[\r][\n]"
+00:39:41.908 [main] DEBUG org.apache.http.wire -  << "Referrer-Policy: [\r][\n]"
+00:39:41.908 [main] DEBUG org.apache.http.wire -  << "Response: 200[\r][\n]"
+00:39:41.908 [main] DEBUG org.apache.http.wire -  << "Server: nginx/1.16.0[\r][\n]"
+00:39:41.908 [main] DEBUG org.apache.http.wire -  << "Set-Cookie: PHPSESSID=1ba6b1cc078a85033078d8283f02c5b3; path=/[\r][\n]"
+00:39:41.909 [main] DEBUG org.apache.http.wire -  << "Vary: Accept-Encoding[\r][\n]"
+00:39:41.909 [main] DEBUG org.apache.http.wire -  << "Vary: Accept-Encoding,Origin,X-APP-JSON[\r][\n]"
+00:39:41.910 [main] DEBUG org.apache.http.wire -  << "X-Ezoic-Cdn: Miss[\r][\n]"
+00:39:41.910 [main] DEBUG org.apache.http.wire -  << "X-Middleton-Display: staticcontent_sol[\r][\n]"
+00:39:41.910 [main] DEBUG org.apache.http.wire -  << "X-Middleton-Response: 200[\r][\n]"
+00:39:41.910 [main] DEBUG org.apache.http.wire -  << "X-Sol: pub_site[\r][\n]"
+00:39:41.910 [main] DEBUG org.apache.http.wire -  << "Content-Length: 77[\r][\n]"
+00:39:41.911 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+00:39:41.912 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+00:39:41.912 [main] DEBUG org.apache.http.headers - << HTTP/1.1 200 OK
+00:39:41.912 [main] DEBUG org.apache.http.headers - << Access-Control-Allow-Origin: *
+00:39:41.912 [main] DEBUG org.apache.http.headers - << Access-Control-Expose-Headers: Content-Type, X-Requested-With, X-authentication, X-client
+00:39:41.912 [main] DEBUG org.apache.http.headers - << Cache-Control: no-store, no-cache, must-revalidate
+00:39:41.913 [main] DEBUG org.apache.http.headers - << Content-Type: application/json;charset=utf-8
+00:39:41.913 [main] DEBUG org.apache.http.headers - << Date: Sat, 04 Jul 2020 05:39:40 GMT
+00:39:41.913 [main] DEBUG org.apache.http.headers - << Display: staticcontent_sol
+00:39:41.913 [main] DEBUG org.apache.http.headers - << Expires: Thu, 19 Nov 1981 08:52:00 GMT
+00:39:41.913 [main] DEBUG org.apache.http.headers - << Host-Header: c2hhcmVkLmJsdWVob3N0LmNvbQ==
+00:39:41.913 [main] DEBUG org.apache.http.headers - << Pragma: no-cache
+00:39:41.914 [main] DEBUG org.apache.http.headers - << Referrer-Policy: 
+00:39:41.914 [main] DEBUG org.apache.http.headers - << Response: 200
+00:39:41.914 [main] DEBUG org.apache.http.headers - << Server: nginx/1.16.0
+00:39:41.914 [main] DEBUG org.apache.http.headers - << Set-Cookie: PHPSESSID=1ba6b1cc078a85033078d8283f02c5b3; path=/
+00:39:41.914 [main] DEBUG org.apache.http.headers - << Vary: Accept-Encoding
+00:39:41.915 [main] DEBUG org.apache.http.headers - << Vary: Accept-Encoding,Origin,X-APP-JSON
+00:39:41.915 [main] DEBUG org.apache.http.headers - << X-Ezoic-Cdn: Miss
+00:39:41.916 [main] DEBUG org.apache.http.headers - << X-Middleton-Display: staticcontent_sol
+00:39:41.916 [main] DEBUG org.apache.http.headers - << X-Middleton-Response: 200
+00:39:41.916 [main] DEBUG org.apache.http.headers - << X-Sol: pub_site
+00:39:41.916 [main] DEBUG org.apache.http.headers - << Content-Length: 77
+00:39:41.920 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+00:39:41.938 [main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: application/json;charset=utf-8
+00:39:41.939 [main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+00:39:42.058 [main] DEBUG org.apache.http.wire -  << "{"status":"success","data":{"name":"Samir","salary":"50","age":"34","id":29}}"
+00:39:42.059 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@6579c3d9
+00:39:42.059 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive indefinitely
+00:41:18.442 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://dummy.restapiexample.com:80
+00:41:18.515 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to dummy.restapiexample.com:80
+00:41:18.600 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+00:41:18.602 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+00:41:18.602 [main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+00:41:18.603 [main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+00:41:18.604 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+00:41:18.606 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: POST /api/v1/create HTTP/1.1
+00:41:18.606 [main] DEBUG org.apache.http.wire -  >> "POST /api/v1/create HTTP/1.1[\r][\n]"
+00:41:18.608 [main] DEBUG org.apache.http.wire -  >> "Accept: application/json, application/javascript, text/javascript, text/json[\r][\n]"
+00:41:18.608 [main] DEBUG org.apache.http.wire -  >> "Content-Type: text/plain; charset=ISO-8859-1[\r][\n]"
+00:41:18.608 [main] DEBUG org.apache.http.wire -  >> "Content-Length: 41[\r][\n]"
+00:41:18.609 [main] DEBUG org.apache.http.wire -  >> "Host: dummy.restapiexample.com[\r][\n]"
+00:41:18.610 [main] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+00:41:18.610 [main] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)[\r][\n]"
+00:41:18.610 [main] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+00:41:18.610 [main] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+00:41:18.610 [main] DEBUG org.apache.http.headers - >> POST /api/v1/create HTTP/1.1
+00:41:18.612 [main] DEBUG org.apache.http.headers - >> Accept: application/json, application/javascript, text/javascript, text/json
+00:41:18.612 [main] DEBUG org.apache.http.headers - >> Content-Type: text/plain; charset=ISO-8859-1
+00:41:18.612 [main] DEBUG org.apache.http.headers - >> Content-Length: 41
+00:41:18.612 [main] DEBUG org.apache.http.headers - >> Host: dummy.restapiexample.com
+00:41:18.612 [main] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+00:41:18.612 [main] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)
+00:41:18.613 [main] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+00:41:18.614 [main] DEBUG org.apache.http.wire -  >> "{"name":"Samir","age":"34","salary":"50"}"
+00:41:19.074 [main] DEBUG org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+00:41:19.077 [main] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Origin: *[\r][\n]"
+00:41:19.077 [main] DEBUG org.apache.http.wire -  << "Access-Control-Expose-Headers: Content-Type, X-Requested-With, X-authentication, X-client[\r][\n]"
+00:41:19.078 [main] DEBUG org.apache.http.wire -  << "Cache-Control: no-store, no-cache, must-revalidate[\r][\n]"
+00:41:19.079 [main] DEBUG org.apache.http.wire -  << "Content-Type: application/json;charset=utf-8[\r][\n]"
+00:41:19.079 [main] DEBUG org.apache.http.wire -  << "Date: Sat, 04 Jul 2020 05:41:17 GMT[\r][\n]"
+00:41:19.079 [main] DEBUG org.apache.http.wire -  << "Display: staticcontent_sol[\r][\n]"
+00:41:19.080 [main] DEBUG org.apache.http.wire -  << "Expires: Thu, 19 Nov 1981 08:52:00 GMT[\r][\n]"
+00:41:19.080 [main] DEBUG org.apache.http.wire -  << "Host-Header: c2hhcmVkLmJsdWVob3N0LmNvbQ==[\r][\n]"
+00:41:19.081 [main] DEBUG org.apache.http.wire -  << "Pragma: no-cache[\r][\n]"
+00:41:19.081 [main] DEBUG org.apache.http.wire -  << "Referrer-Policy: [\r][\n]"
+00:41:19.081 [main] DEBUG org.apache.http.wire -  << "Response: 200[\r][\n]"
+00:41:19.082 [main] DEBUG org.apache.http.wire -  << "Server: nginx/1.16.0[\r][\n]"
+00:41:19.082 [main] DEBUG org.apache.http.wire -  << "Set-Cookie: PHPSESSID=ec2a139ea13b55554ae1f5f06c2f0972; path=/[\r][\n]"
+00:41:19.082 [main] DEBUG org.apache.http.wire -  << "Vary: Accept-Encoding[\r][\n]"
+00:41:19.083 [main] DEBUG org.apache.http.wire -  << "Vary: Accept-Encoding,Origin,X-APP-JSON[\r][\n]"
+00:41:19.083 [main] DEBUG org.apache.http.wire -  << "X-Ezoic-Cdn: Miss[\r][\n]"
+00:41:19.083 [main] DEBUG org.apache.http.wire -  << "X-Middleton-Display: staticcontent_sol[\r][\n]"
+00:41:19.084 [main] DEBUG org.apache.http.wire -  << "X-Middleton-Response: 200[\r][\n]"
+00:41:19.084 [main] DEBUG org.apache.http.wire -  << "X-Sol: pub_site[\r][\n]"
+00:41:19.084 [main] DEBUG org.apache.http.wire -  << "Content-Length: 77[\r][\n]"
+00:41:19.085 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+00:41:19.087 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+00:41:19.087 [main] DEBUG org.apache.http.headers - << HTTP/1.1 200 OK
+00:41:19.087 [main] DEBUG org.apache.http.headers - << Access-Control-Allow-Origin: *
+00:41:19.087 [main] DEBUG org.apache.http.headers - << Access-Control-Expose-Headers: Content-Type, X-Requested-With, X-authentication, X-client
+00:41:19.087 [main] DEBUG org.apache.http.headers - << Cache-Control: no-store, no-cache, must-revalidate
+00:41:19.089 [main] DEBUG org.apache.http.headers - << Content-Type: application/json;charset=utf-8
+00:41:19.089 [main] DEBUG org.apache.http.headers - << Date: Sat, 04 Jul 2020 05:41:17 GMT
+00:41:19.089 [main] DEBUG org.apache.http.headers - << Display: staticcontent_sol
+00:41:19.089 [main] DEBUG org.apache.http.headers - << Expires: Thu, 19 Nov 1981 08:52:00 GMT
+00:41:19.089 [main] DEBUG org.apache.http.headers - << Host-Header: c2hhcmVkLmJsdWVob3N0LmNvbQ==
+00:41:19.089 [main] DEBUG org.apache.http.headers - << Pragma: no-cache
+00:41:19.091 [main] DEBUG org.apache.http.headers - << Referrer-Policy: 
+00:41:19.091 [main] DEBUG org.apache.http.headers - << Response: 200
+00:41:19.091 [main] DEBUG org.apache.http.headers - << Server: nginx/1.16.0
+00:41:19.091 [main] DEBUG org.apache.http.headers - << Set-Cookie: PHPSESSID=ec2a139ea13b55554ae1f5f06c2f0972; path=/
+00:41:19.091 [main] DEBUG org.apache.http.headers - << Vary: Accept-Encoding
+00:41:19.091 [main] DEBUG org.apache.http.headers - << Vary: Accept-Encoding,Origin,X-APP-JSON
+00:41:19.092 [main] DEBUG org.apache.http.headers - << X-Ezoic-Cdn: Miss
+00:41:19.092 [main] DEBUG org.apache.http.headers - << X-Middleton-Display: staticcontent_sol
+00:41:19.092 [main] DEBUG org.apache.http.headers - << X-Middleton-Response: 200
+00:41:19.093 [main] DEBUG org.apache.http.headers - << X-Sol: pub_site
+00:41:19.093 [main] DEBUG org.apache.http.headers - << Content-Length: 77
+00:41:19.096 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+00:41:19.116 [main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: application/json;charset=utf-8
+00:41:19.118 [main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+00:41:19.258 [main] DEBUG org.apache.http.wire -  << "{"status":"success","data":{"name":"Samir","salary":"50","age":"34","id":39}}"
+00:41:19.259 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@5183d589
+00:41:19.259 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive indefinitely
+00:43:20.677 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://dummy.restapiexample.com:80
+00:43:20.771 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to dummy.restapiexample.com:80
+00:43:20.859 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+00:43:20.863 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+00:43:20.863 [main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+00:43:20.864 [main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+00:43:20.865 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+00:43:20.866 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: POST /api/v1/create HTTP/1.1
+00:43:20.867 [main] DEBUG org.apache.http.wire -  >> "POST /api/v1/create HTTP/1.1[\r][\n]"
+00:43:20.869 [main] DEBUG org.apache.http.wire -  >> "Accept: application/json, application/javascript, text/javascript, text/json[\r][\n]"
+00:43:20.869 [main] DEBUG org.apache.http.wire -  >> "Content-Type: text/plain; charset=ISO-8859-1[\r][\n]"
+00:43:20.869 [main] DEBUG org.apache.http.wire -  >> "Content-Length: 41[\r][\n]"
+00:43:20.871 [main] DEBUG org.apache.http.wire -  >> "Host: dummy.restapiexample.com[\r][\n]"
+00:43:20.871 [main] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+00:43:20.871 [main] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)[\r][\n]"
+00:43:20.871 [main] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+00:43:20.871 [main] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+00:43:20.871 [main] DEBUG org.apache.http.headers - >> POST /api/v1/create HTTP/1.1
+00:43:20.873 [main] DEBUG org.apache.http.headers - >> Accept: application/json, application/javascript, text/javascript, text/json
+00:43:20.873 [main] DEBUG org.apache.http.headers - >> Content-Type: text/plain; charset=ISO-8859-1
+00:43:20.873 [main] DEBUG org.apache.http.headers - >> Content-Length: 41
+00:43:20.874 [main] DEBUG org.apache.http.headers - >> Host: dummy.restapiexample.com
+00:43:20.874 [main] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+00:43:20.874 [main] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)
+00:43:20.875 [main] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+00:43:20.876 [main] DEBUG org.apache.http.wire -  >> "{"name":"Samir","age":"34","salary":"50"}"
+00:43:21.295 [main] DEBUG org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+00:43:21.299 [main] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Origin: *[\r][\n]"
+00:43:21.299 [main] DEBUG org.apache.http.wire -  << "Access-Control-Expose-Headers: Content-Type, X-Requested-With, X-authentication, X-client[\r][\n]"
+00:43:21.299 [main] DEBUG org.apache.http.wire -  << "Cache-Control: no-store, no-cache, must-revalidate[\r][\n]"
+00:43:21.300 [main] DEBUG org.apache.http.wire -  << "Content-Type: application/json;charset=utf-8[\r][\n]"
+00:43:21.301 [main] DEBUG org.apache.http.wire -  << "Date: Sat, 04 Jul 2020 05:43:19 GMT[\r][\n]"
+00:43:21.301 [main] DEBUG org.apache.http.wire -  << "Display: staticcontent_sol[\r][\n]"
+00:43:21.301 [main] DEBUG org.apache.http.wire -  << "Expires: Thu, 19 Nov 1981 08:52:00 GMT[\r][\n]"
+00:43:21.301 [main] DEBUG org.apache.http.wire -  << "Host-Header: c2hhcmVkLmJsdWVob3N0LmNvbQ==[\r][\n]"
+00:43:21.302 [main] DEBUG org.apache.http.wire -  << "Pragma: no-cache[\r][\n]"
+00:43:21.302 [main] DEBUG org.apache.http.wire -  << "Referrer-Policy: [\r][\n]"
+00:43:21.302 [main] DEBUG org.apache.http.wire -  << "Response: 200[\r][\n]"
+00:43:21.302 [main] DEBUG org.apache.http.wire -  << "Server: nginx/1.16.0[\r][\n]"
+00:43:21.303 [main] DEBUG org.apache.http.wire -  << "Set-Cookie: PHPSESSID=1e0238f7320b0a9c473992212e663370; path=/[\r][\n]"
+00:43:21.303 [main] DEBUG org.apache.http.wire -  << "Vary: Accept-Encoding[\r][\n]"
+00:43:21.304 [main] DEBUG org.apache.http.wire -  << "Vary: Accept-Encoding,Origin,X-APP-JSON[\r][\n]"
+00:43:21.304 [main] DEBUG org.apache.http.wire -  << "X-Ezoic-Cdn: Miss[\r][\n]"
+00:43:21.304 [main] DEBUG org.apache.http.wire -  << "X-Middleton-Display: staticcontent_sol[\r][\n]"
+00:43:21.304 [main] DEBUG org.apache.http.wire -  << "X-Middleton-Response: 200[\r][\n]"
+00:43:21.304 [main] DEBUG org.apache.http.wire -  << "X-Sol: pub_site[\r][\n]"
+00:43:21.305 [main] DEBUG org.apache.http.wire -  << "Content-Length: 77[\r][\n]"
+00:43:21.306 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+00:43:21.307 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+00:43:21.308 [main] DEBUG org.apache.http.headers - << HTTP/1.1 200 OK
+00:43:21.308 [main] DEBUG org.apache.http.headers - << Access-Control-Allow-Origin: *
+00:43:21.308 [main] DEBUG org.apache.http.headers - << Access-Control-Expose-Headers: Content-Type, X-Requested-With, X-authentication, X-client
+00:43:21.308 [main] DEBUG org.apache.http.headers - << Cache-Control: no-store, no-cache, must-revalidate
+00:43:21.309 [main] DEBUG org.apache.http.headers - << Content-Type: application/json;charset=utf-8
+00:43:21.309 [main] DEBUG org.apache.http.headers - << Date: Sat, 04 Jul 2020 05:43:19 GMT
+00:43:21.309 [main] DEBUG org.apache.http.headers - << Display: staticcontent_sol
+00:43:21.309 [main] DEBUG org.apache.http.headers - << Expires: Thu, 19 Nov 1981 08:52:00 GMT
+00:43:21.309 [main] DEBUG org.apache.http.headers - << Host-Header: c2hhcmVkLmJsdWVob3N0LmNvbQ==
+00:43:21.310 [main] DEBUG org.apache.http.headers - << Pragma: no-cache
+00:43:21.311 [main] DEBUG org.apache.http.headers - << Referrer-Policy: 
+00:43:21.311 [main] DEBUG org.apache.http.headers - << Response: 200
+00:43:21.311 [main] DEBUG org.apache.http.headers - << Server: nginx/1.16.0
+00:43:21.311 [main] DEBUG org.apache.http.headers - << Set-Cookie: PHPSESSID=1e0238f7320b0a9c473992212e663370; path=/
+00:43:21.311 [main] DEBUG org.apache.http.headers - << Vary: Accept-Encoding
+00:43:21.311 [main] DEBUG org.apache.http.headers - << Vary: Accept-Encoding,Origin,X-APP-JSON
+00:43:21.311 [main] DEBUG org.apache.http.headers - << X-Ezoic-Cdn: Miss
+00:43:21.313 [main] DEBUG org.apache.http.headers - << X-Middleton-Display: staticcontent_sol
+00:43:21.313 [main] DEBUG org.apache.http.headers - << X-Middleton-Response: 200
+00:43:21.313 [main] DEBUG org.apache.http.headers - << X-Sol: pub_site
+00:43:21.313 [main] DEBUG org.apache.http.headers - << Content-Length: 77
+00:43:21.319 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+00:43:21.354 [main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: application/json;charset=utf-8
+00:43:21.356 [main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+00:43:21.543 [main] DEBUG org.apache.http.wire -  << "{"status":"success","data":{"name":"Samir","salary":"50","age":"34","id":93}}"
+00:43:21.545 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@5183d589
+00:43:21.545 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive indefinitely
+00:53:52.725 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://dummy.restapiexample.com:80
+00:53:52.795 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to dummy.restapiexample.com:80
+00:53:52.893 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+00:53:52.895 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+00:53:52.896 [main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+00:53:52.896 [main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+00:53:52.897 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+00:53:52.899 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: POST /api/v1/create HTTP/1.1
+00:53:52.900 [main] DEBUG org.apache.http.wire -  >> "POST /api/v1/create HTTP/1.1[\r][\n]"
+00:53:52.901 [main] DEBUG org.apache.http.wire -  >> "Accept: application/json, application/javascript, text/javascript, text/json[\r][\n]"
+00:53:52.901 [main] DEBUG org.apache.http.wire -  >> "Content-Type: text/plain; charset=ISO-8859-1[\r][\n]"
+00:53:52.901 [main] DEBUG org.apache.http.wire -  >> "Content-Length: 41[\r][\n]"
+00:53:52.903 [main] DEBUG org.apache.http.wire -  >> "Host: dummy.restapiexample.com[\r][\n]"
+00:53:52.904 [main] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+00:53:52.904 [main] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)[\r][\n]"
+00:53:52.904 [main] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+00:53:52.904 [main] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+00:53:52.904 [main] DEBUG org.apache.http.headers - >> POST /api/v1/create HTTP/1.1
+00:53:52.906 [main] DEBUG org.apache.http.headers - >> Accept: application/json, application/javascript, text/javascript, text/json
+00:53:52.906 [main] DEBUG org.apache.http.headers - >> Content-Type: text/plain; charset=ISO-8859-1
+00:53:52.906 [main] DEBUG org.apache.http.headers - >> Content-Length: 41
+00:53:52.906 [main] DEBUG org.apache.http.headers - >> Host: dummy.restapiexample.com
+00:53:52.907 [main] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+00:53:52.907 [main] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)
+00:53:52.908 [main] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+00:53:52.908 [main] DEBUG org.apache.http.wire -  >> "{"name":"Samir","age":"34","salary":"50"}"
+00:53:53.332 [main] DEBUG org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+00:53:53.334 [main] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Origin: *[\r][\n]"
+00:53:53.335 [main] DEBUG org.apache.http.wire -  << "Access-Control-Expose-Headers: Content-Type, X-Requested-With, X-authentication, X-client[\r][\n]"
+00:53:53.335 [main] DEBUG org.apache.http.wire -  << "Cache-Control: no-store, no-cache, must-revalidate[\r][\n]"
+00:53:53.336 [main] DEBUG org.apache.http.wire -  << "Content-Type: application/json;charset=utf-8[\r][\n]"
+00:53:53.336 [main] DEBUG org.apache.http.wire -  << "Date: Sat, 04 Jul 2020 05:53:51 GMT[\r][\n]"
+00:53:53.336 [main] DEBUG org.apache.http.wire -  << "Display: staticcontent_sol[\r][\n]"
+00:53:53.336 [main] DEBUG org.apache.http.wire -  << "Expires: Thu, 19 Nov 1981 08:52:00 GMT[\r][\n]"
+00:53:53.336 [main] DEBUG org.apache.http.wire -  << "Host-Header: c2hhcmVkLmJsdWVob3N0LmNvbQ==[\r][\n]"
+00:53:53.338 [main] DEBUG org.apache.http.wire -  << "Pragma: no-cache[\r][\n]"
+00:53:53.338 [main] DEBUG org.apache.http.wire -  << "Referrer-Policy: [\r][\n]"
+00:53:53.338 [main] DEBUG org.apache.http.wire -  << "Response: 200[\r][\n]"
+00:53:53.338 [main] DEBUG org.apache.http.wire -  << "Server: nginx/1.16.0[\r][\n]"
+00:53:53.338 [main] DEBUG org.apache.http.wire -  << "Set-Cookie: PHPSESSID=17bdce5207ec5a62611877ab359f91be; path=/[\r][\n]"
+00:53:53.338 [main] DEBUG org.apache.http.wire -  << "Vary: Accept-Encoding[\r][\n]"
+00:53:53.339 [main] DEBUG org.apache.http.wire -  << "Vary: Accept-Encoding,Origin,X-APP-JSON[\r][\n]"
+00:53:53.339 [main] DEBUG org.apache.http.wire -  << "X-Ezoic-Cdn: Miss[\r][\n]"
+00:53:53.339 [main] DEBUG org.apache.http.wire -  << "X-Middleton-Display: staticcontent_sol[\r][\n]"
+00:53:53.340 [main] DEBUG org.apache.http.wire -  << "X-Middleton-Response: 200[\r][\n]"
+00:53:53.340 [main] DEBUG org.apache.http.wire -  << "X-Sol: pub_site[\r][\n]"
+00:53:53.340 [main] DEBUG org.apache.http.wire -  << "Content-Length: 77[\r][\n]"
+00:53:53.341 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+00:53:53.342 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+00:53:53.342 [main] DEBUG org.apache.http.headers - << HTTP/1.1 200 OK
+00:53:53.342 [main] DEBUG org.apache.http.headers - << Access-Control-Allow-Origin: *
+00:53:53.343 [main] DEBUG org.apache.http.headers - << Access-Control-Expose-Headers: Content-Type, X-Requested-With, X-authentication, X-client
+00:53:53.343 [main] DEBUG org.apache.http.headers - << Cache-Control: no-store, no-cache, must-revalidate
+00:53:53.344 [main] DEBUG org.apache.http.headers - << Content-Type: application/json;charset=utf-8
+00:53:53.344 [main] DEBUG org.apache.http.headers - << Date: Sat, 04 Jul 2020 05:53:51 GMT
+00:53:53.344 [main] DEBUG org.apache.http.headers - << Display: staticcontent_sol
+00:53:53.344 [main] DEBUG org.apache.http.headers - << Expires: Thu, 19 Nov 1981 08:52:00 GMT
+00:53:53.344 [main] DEBUG org.apache.http.headers - << Host-Header: c2hhcmVkLmJsdWVob3N0LmNvbQ==
+00:53:53.344 [main] DEBUG org.apache.http.headers - << Pragma: no-cache
+00:53:53.348 [main] DEBUG org.apache.http.headers - << Referrer-Policy: 
+00:53:53.348 [main] DEBUG org.apache.http.headers - << Response: 200
+00:53:53.348 [main] DEBUG org.apache.http.headers - << Server: nginx/1.16.0
+00:53:53.348 [main] DEBUG org.apache.http.headers - << Set-Cookie: PHPSESSID=17bdce5207ec5a62611877ab359f91be; path=/
+00:53:53.348 [main] DEBUG org.apache.http.headers - << Vary: Accept-Encoding
+00:53:53.348 [main] DEBUG org.apache.http.headers - << Vary: Accept-Encoding,Origin,X-APP-JSON
+00:53:53.348 [main] DEBUG org.apache.http.headers - << X-Ezoic-Cdn: Miss
+00:53:53.349 [main] DEBUG org.apache.http.headers - << X-Middleton-Display: staticcontent_sol
+00:53:53.350 [main] DEBUG org.apache.http.headers - << X-Middleton-Response: 200
+00:53:53.350 [main] DEBUG org.apache.http.headers - << X-Sol: pub_site
+00:53:53.350 [main] DEBUG org.apache.http.headers - << Content-Length: 77
+00:53:53.356 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+00:53:53.380 [main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: application/json;charset=utf-8
+00:53:53.382 [main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+00:53:53.530 [main] DEBUG org.apache.http.wire -  << "{"status":"success","data":{"name":"Samir","salary":"50","age":"34","id":84}}"
+00:53:53.530 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@5183d589
+00:53:53.530 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive indefinitely
+16:38:44.077 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {s}->https://rahulshettyacademy.com:443
+16:38:44.270 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to rahulshettyacademy.com:443
+16:38:45.763 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+16:38:45.766 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+16:38:45.767 [main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+16:38:45.768 [main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+16:38:45.768 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+16:38:45.771 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: POST /maps/api/place/add/json?key=qaclick123 HTTP/1.1
+16:38:45.773 [main] DEBUG org.apache.http.wire -  >> "POST /maps/api/place/add/json?key=qaclick123 HTTP/1.1[\r][\n]"
+16:38:45.780 [main] DEBUG org.apache.http.wire -  >> "Accept: application/json, application/javascript, text/javascript, text/json[\r][\n]"
+16:38:45.780 [main] DEBUG org.apache.http.wire -  >> "Content-Type: text/plain; charset=ISO-8859-1[\r][\n]"
+16:38:45.783 [main] DEBUG org.apache.http.wire -  >> "Content-Length: 216[\r][\n]"
+16:38:45.783 [main] DEBUG org.apache.http.wire -  >> "Host: rahulshettyacademy.com[\r][\n]"
+16:38:45.783 [main] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+16:38:45.784 [main] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)[\r][\n]"
+16:38:45.784 [main] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+16:38:45.784 [main] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+16:38:45.786 [main] DEBUG org.apache.http.headers - >> POST /maps/api/place/add/json?key=qaclick123 HTTP/1.1
+16:38:45.788 [main] DEBUG org.apache.http.headers - >> Accept: application/json, application/javascript, text/javascript, text/json
+16:38:45.788 [main] DEBUG org.apache.http.headers - >> Content-Type: text/plain; charset=ISO-8859-1
+16:38:45.789 [main] DEBUG org.apache.http.headers - >> Content-Length: 216
+16:38:45.789 [main] DEBUG org.apache.http.headers - >> Host: rahulshettyacademy.com
+16:38:45.789 [main] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+16:38:45.792 [main] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)
+16:38:45.792 [main] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+16:38:45.793 [main] DEBUG org.apache.http.wire -  >> "{"location":{"lat":-47.5554546,"lng":42.777777},"accuracy":50,"name":"arkansas","phone_number":"4124131313","address":"304 Ables dr","types":["shoe park","shop"],"website":"wwww.rahulshetty.com","language":"russian"}"
+16:38:46.073 [main] DEBUG org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+16:38:46.077 [main] DEBUG org.apache.http.wire -  << "Date: Sat, 04 Jul 2020 21:38:45 GMT[\r][\n]"
+16:38:46.078 [main] DEBUG org.apache.http.wire -  << "Server: Apache/2.4.18 (Ubuntu)[\r][\n]"
+16:38:46.078 [main] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Origin: *[\r][\n]"
+16:38:46.078 [main] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Methods: POST[\r][\n]"
+16:38:46.078 [main] DEBUG org.apache.http.wire -  << "Access-Control-Max-Age: 3600[\r][\n]"
+16:38:46.078 [main] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With[\r][\n]"
+16:38:46.079 [main] DEBUG org.apache.http.wire -  << "Content-Length: 194[\r][\n]"
+16:38:46.080 [main] DEBUG org.apache.http.wire -  << "Keep-Alive: timeout=5, max=100[\r][\n]"
+16:38:46.080 [main] DEBUG org.apache.http.wire -  << "Connection: Keep-Alive[\r][\n]"
+16:38:46.080 [main] DEBUG org.apache.http.wire -  << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+16:38:46.080 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+16:38:46.082 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+16:38:46.082 [main] DEBUG org.apache.http.headers - << HTTP/1.1 200 OK
+16:38:46.082 [main] DEBUG org.apache.http.headers - << Date: Sat, 04 Jul 2020 21:38:45 GMT
+16:38:46.082 [main] DEBUG org.apache.http.headers - << Server: Apache/2.4.18 (Ubuntu)
+16:38:46.083 [main] DEBUG org.apache.http.headers - << Access-Control-Allow-Origin: *
+16:38:46.083 [main] DEBUG org.apache.http.headers - << Access-Control-Allow-Methods: POST
+16:38:46.085 [main] DEBUG org.apache.http.headers - << Access-Control-Max-Age: 3600
+16:38:46.085 [main] DEBUG org.apache.http.headers - << Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+16:38:46.085 [main] DEBUG org.apache.http.headers - << Content-Length: 194
+16:38:46.085 [main] DEBUG org.apache.http.headers - << Keep-Alive: timeout=5, max=100
+16:38:46.085 [main] DEBUG org.apache.http.headers - << Connection: Keep-Alive
+16:38:46.087 [main] DEBUG org.apache.http.headers - << Content-Type: application/json;charset=UTF-8
+16:38:46.100 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive for 5000 MILLISECONDS
+16:38:46.131 [main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: application/json;charset=UTF-8
+16:38:46.131 [main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+16:38:46.566 [main] DEBUG org.apache.http.wire -  << "{"status":"OK","place_id":"7a23e9314afb9b0c2dfba216bf636ae9","scope":"APP","reference":"6781a9f94a01b46630cc1df0f078ab5a6781a9f94a01b46630cc1df0f078ab5a","id":"6781a9f94a01b46630cc1df0f078ab5a"}"
+16:38:46.573 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@3b0ee03a
+16:38:46.573 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive for 5000 MILLISECONDS
+16:41:48.217 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {s}->https://rahulshettyacademy.com:443
+16:41:48.325 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to rahulshettyacademy.com:443
+16:41:49.716 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+16:41:49.719 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+16:41:49.719 [main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+16:41:49.720 [main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+16:41:49.720 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+16:41:49.723 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: POST /maps/api/place/add/json?key=qaclick123 HTTP/1.1
+16:41:49.724 [main] DEBUG org.apache.http.wire -  >> "POST /maps/api/place/add/json?key=qaclick123 HTTP/1.1[\r][\n]"
+16:41:49.725 [main] DEBUG org.apache.http.wire -  >> "Accept: application/json, application/javascript, text/javascript, text/json[\r][\n]"
+16:41:49.725 [main] DEBUG org.apache.http.wire -  >> "Content-Type: text/plain; charset=ISO-8859-1[\r][\n]"
+16:41:49.727 [main] DEBUG org.apache.http.wire -  >> "Content-Length: 216[\r][\n]"
+16:41:49.727 [main] DEBUG org.apache.http.wire -  >> "Host: rahulshettyacademy.com[\r][\n]"
+16:41:49.727 [main] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+16:41:49.727 [main] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)[\r][\n]"
+16:41:49.727 [main] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+16:41:49.727 [main] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+16:41:49.728 [main] DEBUG org.apache.http.headers - >> POST /maps/api/place/add/json?key=qaclick123 HTTP/1.1
+16:41:49.729 [main] DEBUG org.apache.http.headers - >> Accept: application/json, application/javascript, text/javascript, text/json
+16:41:49.729 [main] DEBUG org.apache.http.headers - >> Content-Type: text/plain; charset=ISO-8859-1
+16:41:49.729 [main] DEBUG org.apache.http.headers - >> Content-Length: 216
+16:41:49.729 [main] DEBUG org.apache.http.headers - >> Host: rahulshettyacademy.com
+16:41:49.729 [main] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+16:41:49.735 [main] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)
+16:41:49.735 [main] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+16:41:49.736 [main] DEBUG org.apache.http.wire -  >> "{"location":{"lat":-47.5554546,"lng":42.777777},"accuracy":50,"name":"arkansas","phone_number":"4124131313","address":"304 Ables dr","types":["shoe park","shop"],"website":"wwww.rahulshetty.com","language":"russian"}"
+16:41:50.032 [main] DEBUG org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+16:41:50.036 [main] DEBUG org.apache.http.wire -  << "Date: Sat, 04 Jul 2020 21:41:49 GMT[\r][\n]"
+16:41:50.036 [main] DEBUG org.apache.http.wire -  << "Server: Apache/2.4.18 (Ubuntu)[\r][\n]"
+16:41:50.036 [main] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Origin: *[\r][\n]"
+16:41:50.036 [main] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Methods: POST[\r][\n]"
+16:41:50.036 [main] DEBUG org.apache.http.wire -  << "Access-Control-Max-Age: 3600[\r][\n]"
+16:41:50.036 [main] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With[\r][\n]"
+16:41:50.038 [main] DEBUG org.apache.http.wire -  << "Content-Length: 194[\r][\n]"
+16:41:50.038 [main] DEBUG org.apache.http.wire -  << "Keep-Alive: timeout=5, max=100[\r][\n]"
+16:41:50.038 [main] DEBUG org.apache.http.wire -  << "Connection: Keep-Alive[\r][\n]"
+16:41:50.038 [main] DEBUG org.apache.http.wire -  << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+16:41:50.038 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+16:41:50.041 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+16:41:50.042 [main] DEBUG org.apache.http.headers - << HTTP/1.1 200 OK
+16:41:50.042 [main] DEBUG org.apache.http.headers - << Date: Sat, 04 Jul 2020 21:41:49 GMT
+16:41:50.042 [main] DEBUG org.apache.http.headers - << Server: Apache/2.4.18 (Ubuntu)
+16:41:50.042 [main] DEBUG org.apache.http.headers - << Access-Control-Allow-Origin: *
+16:41:50.042 [main] DEBUG org.apache.http.headers - << Access-Control-Allow-Methods: POST
+16:41:50.044 [main] DEBUG org.apache.http.headers - << Access-Control-Max-Age: 3600
+16:41:50.044 [main] DEBUG org.apache.http.headers - << Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+16:41:50.044 [main] DEBUG org.apache.http.headers - << Content-Length: 194
+16:41:50.044 [main] DEBUG org.apache.http.headers - << Keep-Alive: timeout=5, max=100
+16:41:50.044 [main] DEBUG org.apache.http.headers - << Connection: Keep-Alive
+16:41:50.046 [main] DEBUG org.apache.http.headers - << Content-Type: application/json;charset=UTF-8
+16:41:50.053 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive for 5000 MILLISECONDS
+16:41:50.076 [main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: application/json;charset=UTF-8
+16:41:50.077 [main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+16:41:50.333 [main] DEBUG org.apache.http.wire -  << "{"status":"OK","place_id":"597b21c93cefe2f3cc96c671741eb648","scope":"APP","reference":"60452570bc256fc98b89f13de9554c7d60452570bc256fc98b89f13de9554c7d","id":"60452570bc256fc98b89f13de9554c7d"}"
+16:41:50.340 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@3b0ee03a
+16:41:50.341 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive for 5000 MILLISECONDS
+16:46:01.896 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://dummy.restapiexample.com:80
+16:46:01.999 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to dummy.restapiexample.com:80
+16:46:02.110 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+16:46:02.112 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+16:46:02.113 [main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+16:46:02.114 [main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+16:46:02.114 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+16:46:02.116 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: POST /api/v1/create HTTP/1.1
+16:46:02.117 [main] DEBUG org.apache.http.wire -  >> "POST /api/v1/create HTTP/1.1[\r][\n]"
+16:46:02.118 [main] DEBUG org.apache.http.wire -  >> "Accept: application/json, application/javascript, text/javascript, text/json[\r][\n]"
+16:46:02.118 [main] DEBUG org.apache.http.wire -  >> "Content-Type: text/plain; charset=ISO-8859-1[\r][\n]"
+16:46:02.119 [main] DEBUG org.apache.http.wire -  >> "Content-Length: 41[\r][\n]"
+16:46:02.120 [main] DEBUG org.apache.http.wire -  >> "Host: dummy.restapiexample.com[\r][\n]"
+16:46:02.121 [main] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+16:46:02.121 [main] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)[\r][\n]"
+16:46:02.121 [main] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+16:46:02.121 [main] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+16:46:02.121 [main] DEBUG org.apache.http.headers - >> POST /api/v1/create HTTP/1.1
+16:46:02.123 [main] DEBUG org.apache.http.headers - >> Accept: application/json, application/javascript, text/javascript, text/json
+16:46:02.123 [main] DEBUG org.apache.http.headers - >> Content-Type: text/plain; charset=ISO-8859-1
+16:46:02.123 [main] DEBUG org.apache.http.headers - >> Content-Length: 41
+16:46:02.123 [main] DEBUG org.apache.http.headers - >> Host: dummy.restapiexample.com
+16:46:02.123 [main] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+16:46:02.123 [main] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)
+16:46:02.126 [main] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+16:46:02.126 [main] DEBUG org.apache.http.wire -  >> "{"name":"Samir","age":"34","salary":"50"}"
+16:46:02.712 [main] DEBUG org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+16:46:02.715 [main] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Origin: *[\r][\n]"
+16:46:02.715 [main] DEBUG org.apache.http.wire -  << "Access-Control-Expose-Headers: Content-Type, X-Requested-With, X-authentication, X-client[\r][\n]"
+16:46:02.715 [main] DEBUG org.apache.http.wire -  << "Cache-Control: no-store, no-cache, must-revalidate[\r][\n]"
+16:46:02.716 [main] DEBUG org.apache.http.wire -  << "Content-Type: application/json;charset=utf-8[\r][\n]"
+16:46:02.716 [main] DEBUG org.apache.http.wire -  << "Date: Sat, 04 Jul 2020 21:46:02 GMT[\r][\n]"
+16:46:02.716 [main] DEBUG org.apache.http.wire -  << "Display: staticcontent_sol[\r][\n]"
+16:46:02.716 [main] DEBUG org.apache.http.wire -  << "Expires: Thu, 19 Nov 1981 08:52:00 GMT[\r][\n]"
+16:46:02.716 [main] DEBUG org.apache.http.wire -  << "Host-Header: c2hhcmVkLmJsdWVob3N0LmNvbQ==[\r][\n]"
+16:46:02.717 [main] DEBUG org.apache.http.wire -  << "Pragma: no-cache[\r][\n]"
+16:46:02.717 [main] DEBUG org.apache.http.wire -  << "Referrer-Policy: [\r][\n]"
+16:46:02.718 [main] DEBUG org.apache.http.wire -  << "Response: 200[\r][\n]"
+16:46:02.718 [main] DEBUG org.apache.http.wire -  << "Server: nginx/1.16.0[\r][\n]"
+16:46:02.718 [main] DEBUG org.apache.http.wire -  << "Set-Cookie: PHPSESSID=0fd43543cd98957c82975242f206b610; path=/[\r][\n]"
+16:46:02.718 [main] DEBUG org.apache.http.wire -  << "Vary: Accept-Encoding[\r][\n]"
+16:46:02.719 [main] DEBUG org.apache.http.wire -  << "Vary: Accept-Encoding,Origin,X-APP-JSON[\r][\n]"
+16:46:02.719 [main] DEBUG org.apache.http.wire -  << "X-Ezoic-Cdn: Miss[\r][\n]"
+16:46:02.719 [main] DEBUG org.apache.http.wire -  << "X-Middleton-Display: staticcontent_sol[\r][\n]"
+16:46:02.719 [main] DEBUG org.apache.http.wire -  << "X-Middleton-Response: 200[\r][\n]"
+16:46:02.719 [main] DEBUG org.apache.http.wire -  << "X-Sol: pub_site[\r][\n]"
+16:46:02.719 [main] DEBUG org.apache.http.wire -  << "Content-Length: 77[\r][\n]"
+16:46:02.720 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+16:46:02.721 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+16:46:02.721 [main] DEBUG org.apache.http.headers - << HTTP/1.1 200 OK
+16:46:02.721 [main] DEBUG org.apache.http.headers - << Access-Control-Allow-Origin: *
+16:46:02.721 [main] DEBUG org.apache.http.headers - << Access-Control-Expose-Headers: Content-Type, X-Requested-With, X-authentication, X-client
+16:46:02.721 [main] DEBUG org.apache.http.headers - << Cache-Control: no-store, no-cache, must-revalidate
+16:46:02.722 [main] DEBUG org.apache.http.headers - << Content-Type: application/json;charset=utf-8
+16:46:02.723 [main] DEBUG org.apache.http.headers - << Date: Sat, 04 Jul 2020 21:46:02 GMT
+16:46:02.723 [main] DEBUG org.apache.http.headers - << Display: staticcontent_sol
+16:46:02.723 [main] DEBUG org.apache.http.headers - << Expires: Thu, 19 Nov 1981 08:52:00 GMT
+16:46:02.723 [main] DEBUG org.apache.http.headers - << Host-Header: c2hhcmVkLmJsdWVob3N0LmNvbQ==
+16:46:02.723 [main] DEBUG org.apache.http.headers - << Pragma: no-cache
+16:46:02.724 [main] DEBUG org.apache.http.headers - << Referrer-Policy: 
+16:46:02.724 [main] DEBUG org.apache.http.headers - << Response: 200
+16:46:02.724 [main] DEBUG org.apache.http.headers - << Server: nginx/1.16.0
+16:46:02.724 [main] DEBUG org.apache.http.headers - << Set-Cookie: PHPSESSID=0fd43543cd98957c82975242f206b610; path=/
+16:46:02.724 [main] DEBUG org.apache.http.headers - << Vary: Accept-Encoding
+16:46:02.724 [main] DEBUG org.apache.http.headers - << Vary: Accept-Encoding,Origin,X-APP-JSON
+16:46:02.724 [main] DEBUG org.apache.http.headers - << X-Ezoic-Cdn: Miss
+16:46:02.725 [main] DEBUG org.apache.http.headers - << X-Middleton-Display: staticcontent_sol
+16:46:02.725 [main] DEBUG org.apache.http.headers - << X-Middleton-Response: 200
+16:46:02.725 [main] DEBUG org.apache.http.headers - << X-Sol: pub_site
+16:46:02.725 [main] DEBUG org.apache.http.headers - << Content-Length: 77
+16:46:02.729 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+16:46:02.747 [main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: application/json;charset=utf-8
+16:46:02.748 [main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+16:46:02.851 [main] DEBUG org.apache.http.wire -  << "{"status":"success","data":{"name":"Samir","salary":"50","age":"34","id":71}}"
+16:46:02.852 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@5328a9c1
+16:46:02.852 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive indefinitely
+16:55:48.095 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {s}->https://rahulshettyacademy.com:443
+16:55:48.182 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to rahulshettyacademy.com:443
+16:55:49.557 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+16:55:49.562 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+16:55:49.562 [main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+16:55:49.563 [main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+16:55:49.563 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+16:55:49.565 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: POST /maps/api/place/add/json?key=qaclick123 HTTP/1.1
+16:55:49.565 [main] DEBUG org.apache.http.wire -  >> "POST /maps/api/place/add/json?key=qaclick123 HTTP/1.1[\r][\n]"
+16:55:49.567 [main] DEBUG org.apache.http.wire -  >> "Accept: application/json, application/javascript, text/javascript, text/json[\r][\n]"
+16:55:49.567 [main] DEBUG org.apache.http.wire -  >> "Content-Type: text/plain; charset=ISO-8859-1[\r][\n]"
+16:55:49.568 [main] DEBUG org.apache.http.wire -  >> "Content-Length: 216[\r][\n]"
+16:55:49.568 [main] DEBUG org.apache.http.wire -  >> "Host: rahulshettyacademy.com[\r][\n]"
+16:55:49.568 [main] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+16:55:49.568 [main] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)[\r][\n]"
+16:55:49.568 [main] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+16:55:49.568 [main] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+16:55:49.571 [main] DEBUG org.apache.http.headers - >> POST /maps/api/place/add/json?key=qaclick123 HTTP/1.1
+16:55:49.571 [main] DEBUG org.apache.http.headers - >> Accept: application/json, application/javascript, text/javascript, text/json
+16:55:49.571 [main] DEBUG org.apache.http.headers - >> Content-Type: text/plain; charset=ISO-8859-1
+16:55:49.571 [main] DEBUG org.apache.http.headers - >> Content-Length: 216
+16:55:49.571 [main] DEBUG org.apache.http.headers - >> Host: rahulshettyacademy.com
+16:55:49.571 [main] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+16:55:49.573 [main] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)
+16:55:49.573 [main] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+16:55:49.573 [main] DEBUG org.apache.http.wire -  >> "{"location":{"lat":-47.5554546,"lng":42.777777},"accuracy":50,"name":"arkansas","phone_number":"4124131313","address":"304 Ables dr","types":["shoe park","shop"],"website":"wwww.rahulshetty.com","language":"russian"}"
+16:55:49.865 [main] DEBUG org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+16:55:49.867 [main] DEBUG org.apache.http.wire -  << "Date: Sat, 04 Jul 2020 21:55:49 GMT[\r][\n]"
+16:55:49.868 [main] DEBUG org.apache.http.wire -  << "Server: Apache/2.4.18 (Ubuntu)[\r][\n]"
+16:55:49.868 [main] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Origin: *[\r][\n]"
+16:55:49.868 [main] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Methods: POST[\r][\n]"
+16:55:49.868 [main] DEBUG org.apache.http.wire -  << "Access-Control-Max-Age: 3600[\r][\n]"
+16:55:49.868 [main] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With[\r][\n]"
+16:55:49.869 [main] DEBUG org.apache.http.wire -  << "Content-Length: 194[\r][\n]"
+16:55:49.869 [main] DEBUG org.apache.http.wire -  << "Keep-Alive: timeout=5, max=100[\r][\n]"
+16:55:49.869 [main] DEBUG org.apache.http.wire -  << "Connection: Keep-Alive[\r][\n]"
+16:55:49.869 [main] DEBUG org.apache.http.wire -  << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+16:55:49.869 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+16:55:49.871 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+16:55:49.871 [main] DEBUG org.apache.http.headers - << HTTP/1.1 200 OK
+16:55:49.871 [main] DEBUG org.apache.http.headers - << Date: Sat, 04 Jul 2020 21:55:49 GMT
+16:55:49.871 [main] DEBUG org.apache.http.headers - << Server: Apache/2.4.18 (Ubuntu)
+16:55:49.871 [main] DEBUG org.apache.http.headers - << Access-Control-Allow-Origin: *
+16:55:49.871 [main] DEBUG org.apache.http.headers - << Access-Control-Allow-Methods: POST
+16:55:49.873 [main] DEBUG org.apache.http.headers - << Access-Control-Max-Age: 3600
+16:55:49.873 [main] DEBUG org.apache.http.headers - << Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+16:55:49.873 [main] DEBUG org.apache.http.headers - << Content-Length: 194
+16:55:49.873 [main] DEBUG org.apache.http.headers - << Keep-Alive: timeout=5, max=100
+16:55:49.873 [main] DEBUG org.apache.http.headers - << Connection: Keep-Alive
+16:55:49.874 [main] DEBUG org.apache.http.headers - << Content-Type: application/json;charset=UTF-8
+16:55:49.878 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive for 5000 MILLISECONDS
+16:55:49.897 [main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: application/json;charset=UTF-8
+16:55:49.897 [main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+16:55:50.064 [main] DEBUG org.apache.http.wire -  << "{"status":"OK","place_id":"72659580fa0fbd2bd0327da513eba14f","scope":"APP","reference":"263d8a3790d0e280b5640e58950e5afd263d8a3790d0e280b5640e58950e5afd","id":"263d8a3790d0e280b5640e58950e5afd"}"
+16:55:50.068 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@3b0ee03a
+16:55:50.068 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive for 5000 MILLISECONDS
+16:59:45.852 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {s}->https://rahulshettyacademy.com:443
+16:59:45.931 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to rahulshettyacademy.com:443
+16:59:47.259 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+16:59:47.259 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+16:59:47.259 [main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+16:59:47.259 [main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+16:59:47.259 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+16:59:47.275 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: POST /maps/api/place/add/json?key=qaclick123 HTTP/1.1
+16:59:47.275 [main] DEBUG org.apache.http.wire -  >> "POST /maps/api/place/add/json?key=qaclick123 HTTP/1.1[\r][\n]"
+16:59:47.275 [main] DEBUG org.apache.http.wire -  >> "Accept: application/json, application/javascript, text/javascript, text/json[\r][\n]"
+16:59:47.275 [main] DEBUG org.apache.http.wire -  >> "Content-Type: text/plain; charset=ISO-8859-1[\r][\n]"
+16:59:47.275 [main] DEBUG org.apache.http.wire -  >> "Content-Length: 216[\r][\n]"
+16:59:47.275 [main] DEBUG org.apache.http.wire -  >> "Host: rahulshettyacademy.com[\r][\n]"
+16:59:47.275 [main] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+16:59:47.275 [main] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)[\r][\n]"
+16:59:47.275 [main] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+16:59:47.275 [main] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+16:59:47.275 [main] DEBUG org.apache.http.headers - >> POST /maps/api/place/add/json?key=qaclick123 HTTP/1.1
+16:59:47.275 [main] DEBUG org.apache.http.headers - >> Accept: application/json, application/javascript, text/javascript, text/json
+16:59:47.275 [main] DEBUG org.apache.http.headers - >> Content-Type: text/plain; charset=ISO-8859-1
+16:59:47.275 [main] DEBUG org.apache.http.headers - >> Content-Length: 216
+16:59:47.275 [main] DEBUG org.apache.http.headers - >> Host: rahulshettyacademy.com
+16:59:47.275 [main] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+16:59:47.275 [main] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)
+16:59:47.275 [main] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+16:59:47.275 [main] DEBUG org.apache.http.wire -  >> "{"location":{"lat":-47.5554546,"lng":42.777777},"accuracy":50,"name":"arkansas","phone_number":"4124131313","address":"304 Ables dr","types":["shoe park","shop"],"website":"wwww.rahulshetty.com","language":"russian"}"
+16:59:47.561 [main] DEBUG org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+16:59:47.561 [main] DEBUG org.apache.http.wire -  << "Date: Sat, 04 Jul 2020 21:59:47 GMT[\r][\n]"
+16:59:47.561 [main] DEBUG org.apache.http.wire -  << "Server: Apache/2.4.18 (Ubuntu)[\r][\n]"
+16:59:47.561 [main] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Origin: *[\r][\n]"
+16:59:47.561 [main] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Methods: POST[\r][\n]"
+16:59:47.561 [main] DEBUG org.apache.http.wire -  << "Access-Control-Max-Age: 3600[\r][\n]"
+16:59:47.561 [main] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With[\r][\n]"
+16:59:47.576 [main] DEBUG org.apache.http.wire -  << "Content-Length: 194[\r][\n]"
+16:59:47.576 [main] DEBUG org.apache.http.wire -  << "Keep-Alive: timeout=5, max=100[\r][\n]"
+16:59:47.576 [main] DEBUG org.apache.http.wire -  << "Connection: Keep-Alive[\r][\n]"
+16:59:47.576 [main] DEBUG org.apache.http.wire -  << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+16:59:47.576 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+16:59:47.576 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+16:59:47.576 [main] DEBUG org.apache.http.headers - << HTTP/1.1 200 OK
+16:59:47.576 [main] DEBUG org.apache.http.headers - << Date: Sat, 04 Jul 2020 21:59:47 GMT
+16:59:47.576 [main] DEBUG org.apache.http.headers - << Server: Apache/2.4.18 (Ubuntu)
+16:59:47.576 [main] DEBUG org.apache.http.headers - << Access-Control-Allow-Origin: *
+16:59:47.576 [main] DEBUG org.apache.http.headers - << Access-Control-Allow-Methods: POST
+16:59:47.576 [main] DEBUG org.apache.http.headers - << Access-Control-Max-Age: 3600
+16:59:47.576 [main] DEBUG org.apache.http.headers - << Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+16:59:47.576 [main] DEBUG org.apache.http.headers - << Content-Length: 194
+16:59:47.576 [main] DEBUG org.apache.http.headers - << Keep-Alive: timeout=5, max=100
+16:59:47.576 [main] DEBUG org.apache.http.headers - << Connection: Keep-Alive
+16:59:47.576 [main] DEBUG org.apache.http.headers - << Content-Type: application/json;charset=UTF-8
+16:59:47.576 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive for 5000 MILLISECONDS
+16:59:47.592 [main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: application/json;charset=UTF-8
+16:59:47.592 [main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+16:59:47.766 [main] DEBUG org.apache.http.wire -  << "{"status":"OK","place_id":"452cb87b14ae1d4f464661bb6ef8ff6a","scope":"APP","reference":"0116aa526a4421d785f3304faf53b9740116aa526a4421d785f3304faf53b974","id":"0116aa526a4421d785f3304faf53b974"}"
+16:59:47.766 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@b967222
+16:59:47.766 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive for 5000 MILLISECONDS
+17:19:25.044 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {s}->https://rahulshettyacademy.com:443
+17:19:25.157 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to rahulshettyacademy.com:443
+17:19:26.500 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+17:19:26.516 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+17:19:26.516 [main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+17:19:26.516 [main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+17:19:26.516 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+17:19:26.516 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: POST /maps/api/place/add/json?key=qaclick123 HTTP/1.1
+17:19:26.516 [main] DEBUG org.apache.http.wire -  >> "POST /maps/api/place/add/json?key=qaclick123 HTTP/1.1[\r][\n]"
+17:19:26.516 [main] DEBUG org.apache.http.wire -  >> "Accept: application/json, application/javascript, text/javascript, text/json[\r][\n]"
+17:19:26.516 [main] DEBUG org.apache.http.wire -  >> "Content-Type: text/plain; charset=ISO-8859-1[\r][\n]"
+17:19:26.516 [main] DEBUG org.apache.http.wire -  >> "Content-Length: 216[\r][\n]"
+17:19:26.516 [main] DEBUG org.apache.http.wire -  >> "Host: rahulshettyacademy.com[\r][\n]"
+17:19:26.516 [main] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+17:19:26.516 [main] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)[\r][\n]"
+17:19:26.516 [main] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+17:19:26.516 [main] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+17:19:26.516 [main] DEBUG org.apache.http.headers - >> POST /maps/api/place/add/json?key=qaclick123 HTTP/1.1
+17:19:26.516 [main] DEBUG org.apache.http.headers - >> Accept: application/json, application/javascript, text/javascript, text/json
+17:19:26.516 [main] DEBUG org.apache.http.headers - >> Content-Type: text/plain; charset=ISO-8859-1
+17:19:26.516 [main] DEBUG org.apache.http.headers - >> Content-Length: 216
+17:19:26.516 [main] DEBUG org.apache.http.headers - >> Host: rahulshettyacademy.com
+17:19:26.516 [main] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+17:19:26.516 [main] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)
+17:19:26.516 [main] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+17:19:26.516 [main] DEBUG org.apache.http.wire -  >> "{"location":{"lat":-47.5554546,"lng":42.777777},"accuracy":50,"name":"arkansas","phone_number":"4124131313","address":"304 Ables dr","types":["shoe park","shop"],"website":"wwww.rahulshetty.com","language":"russian"}"
+17:19:26.813 [main] DEBUG org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+17:19:26.813 [main] DEBUG org.apache.http.wire -  << "Date: Sat, 04 Jul 2020 22:19:26 GMT[\r][\n]"
+17:19:26.813 [main] DEBUG org.apache.http.wire -  << "Server: Apache/2.4.18 (Ubuntu)[\r][\n]"
+17:19:26.813 [main] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Origin: *[\r][\n]"
+17:19:26.813 [main] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Methods: POST[\r][\n]"
+17:19:26.813 [main] DEBUG org.apache.http.wire -  << "Access-Control-Max-Age: 3600[\r][\n]"
+17:19:26.813 [main] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With[\r][\n]"
+17:19:26.813 [main] DEBUG org.apache.http.wire -  << "Content-Length: 194[\r][\n]"
+17:19:26.813 [main] DEBUG org.apache.http.wire -  << "Keep-Alive: timeout=5, max=100[\r][\n]"
+17:19:26.813 [main] DEBUG org.apache.http.wire -  << "Connection: Keep-Alive[\r][\n]"
+17:19:26.813 [main] DEBUG org.apache.http.wire -  << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+17:19:26.813 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+17:19:26.813 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+17:19:26.829 [main] DEBUG org.apache.http.headers - << HTTP/1.1 200 OK
+17:19:26.829 [main] DEBUG org.apache.http.headers - << Date: Sat, 04 Jul 2020 22:19:26 GMT
+17:19:26.829 [main] DEBUG org.apache.http.headers - << Server: Apache/2.4.18 (Ubuntu)
+17:19:26.829 [main] DEBUG org.apache.http.headers - << Access-Control-Allow-Origin: *
+17:19:26.829 [main] DEBUG org.apache.http.headers - << Access-Control-Allow-Methods: POST
+17:19:26.829 [main] DEBUG org.apache.http.headers - << Access-Control-Max-Age: 3600
+17:19:26.829 [main] DEBUG org.apache.http.headers - << Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+17:19:26.829 [main] DEBUG org.apache.http.headers - << Content-Length: 194
+17:19:26.829 [main] DEBUG org.apache.http.headers - << Keep-Alive: timeout=5, max=100
+17:19:26.829 [main] DEBUG org.apache.http.headers - << Connection: Keep-Alive
+17:19:26.829 [main] DEBUG org.apache.http.headers - << Content-Type: application/json;charset=UTF-8
+17:19:26.844 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive for 5000 MILLISECONDS
+17:19:26.875 [main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: application/json;charset=UTF-8
+17:19:26.875 [main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+17:19:27.063 [main] DEBUG org.apache.http.wire -  << "{"status":"OK","place_id":"57e3eeecdfcd2c861fdd619792f4a385","scope":"APP","reference":"9b06aad8920e19bb10024dabd440769e9b06aad8920e19bb10024dabd440769e","id":"9b06aad8920e19bb10024dabd440769e"}"
+17:19:27.079 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@3b0ee03a
+17:19:27.079 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive for 5000 MILLISECONDS
+17:22:40.406 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {s}->https://rahulshettyacademy.com:443
+17:22:40.500 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to rahulshettyacademy.com:443
+17:22:41.843 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+17:22:41.843 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+17:22:41.843 [main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+17:22:41.843 [main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+17:22:41.843 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+17:22:41.843 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: POST /maps/api/place/add/json?key=qaclick123 HTTP/1.1
+17:22:41.843 [main] DEBUG org.apache.http.wire -  >> "POST /maps/api/place/add/json?key=qaclick123 HTTP/1.1[\r][\n]"
+17:22:41.859 [main] DEBUG org.apache.http.wire -  >> "Accept: application/json, application/javascript, text/javascript, text/json[\r][\n]"
+17:22:41.859 [main] DEBUG org.apache.http.wire -  >> "Content-Type: text/plain; charset=ISO-8859-1[\r][\n]"
+17:22:41.859 [main] DEBUG org.apache.http.wire -  >> "Content-Length: 216[\r][\n]"
+17:22:41.859 [main] DEBUG org.apache.http.wire -  >> "Host: rahulshettyacademy.com[\r][\n]"
+17:22:41.859 [main] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+17:22:41.859 [main] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)[\r][\n]"
+17:22:41.859 [main] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+17:22:41.859 [main] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+17:22:41.859 [main] DEBUG org.apache.http.headers - >> POST /maps/api/place/add/json?key=qaclick123 HTTP/1.1
+17:22:41.859 [main] DEBUG org.apache.http.headers - >> Accept: application/json, application/javascript, text/javascript, text/json
+17:22:41.859 [main] DEBUG org.apache.http.headers - >> Content-Type: text/plain; charset=ISO-8859-1
+17:22:41.859 [main] DEBUG org.apache.http.headers - >> Content-Length: 216
+17:22:41.859 [main] DEBUG org.apache.http.headers - >> Host: rahulshettyacademy.com
+17:22:41.859 [main] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+17:22:41.859 [main] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)
+17:22:41.859 [main] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+17:22:41.859 [main] DEBUG org.apache.http.wire -  >> "{"location":{"lat":-47.5554546,"lng":42.777777},"accuracy":50,"name":"arkansas","phone_number":"4124131313","address":"304 Ables dr","types":["shoe park","shop"],"website":"wwww.rahulshetty.com","language":"russian"}"
+17:22:42.141 [main] DEBUG org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+17:22:42.156 [main] DEBUG org.apache.http.wire -  << "Date: Sat, 04 Jul 2020 22:22:41 GMT[\r][\n]"
+17:22:42.156 [main] DEBUG org.apache.http.wire -  << "Server: Apache/2.4.18 (Ubuntu)[\r][\n]"
+17:22:42.156 [main] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Origin: *[\r][\n]"
+17:22:42.156 [main] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Methods: POST[\r][\n]"
+17:22:42.156 [main] DEBUG org.apache.http.wire -  << "Access-Control-Max-Age: 3600[\r][\n]"
+17:22:42.156 [main] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With[\r][\n]"
+17:22:42.156 [main] DEBUG org.apache.http.wire -  << "Content-Length: 194[\r][\n]"
+17:22:42.156 [main] DEBUG org.apache.http.wire -  << "Keep-Alive: timeout=5, max=100[\r][\n]"
+17:22:42.156 [main] DEBUG org.apache.http.wire -  << "Connection: Keep-Alive[\r][\n]"
+17:22:42.156 [main] DEBUG org.apache.http.wire -  << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+17:22:42.156 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+17:22:42.156 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+17:22:42.156 [main] DEBUG org.apache.http.headers - << HTTP/1.1 200 OK
+17:22:42.156 [main] DEBUG org.apache.http.headers - << Date: Sat, 04 Jul 2020 22:22:41 GMT
+17:22:42.156 [main] DEBUG org.apache.http.headers - << Server: Apache/2.4.18 (Ubuntu)
+17:22:42.156 [main] DEBUG org.apache.http.headers - << Access-Control-Allow-Origin: *
+17:22:42.156 [main] DEBUG org.apache.http.headers - << Access-Control-Allow-Methods: POST
+17:22:42.156 [main] DEBUG org.apache.http.headers - << Access-Control-Max-Age: 3600
+17:22:42.156 [main] DEBUG org.apache.http.headers - << Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+17:22:42.156 [main] DEBUG org.apache.http.headers - << Content-Length: 194
+17:22:42.156 [main] DEBUG org.apache.http.headers - << Keep-Alive: timeout=5, max=100
+17:22:42.156 [main] DEBUG org.apache.http.headers - << Connection: Keep-Alive
+17:22:42.156 [main] DEBUG org.apache.http.headers - << Content-Type: application/json;charset=UTF-8
+17:22:42.156 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive for 5000 MILLISECONDS
+17:22:42.171 [main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: application/json;charset=UTF-8
+17:22:42.187 [main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+17:22:42.328 [main] DEBUG org.apache.http.wire -  << "{"status":"OK","place_id":"4458ee3729f994bbae3bda9f19437f4d","scope":"APP","reference":"49635535b6c2a3444aefd64ac9ac21e949635535b6c2a3444aefd64ac9ac21e9","id":"49635535b6c2a3444aefd64ac9ac21e9"}"
+17:22:42.328 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@3b0ee03a
+17:22:42.328 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive for 5000 MILLISECONDS
+17:23:47.472 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {s}->https://rahulshettyacademy.com:443
+17:23:47.519 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to rahulshettyacademy.com:443
+17:23:48.847 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+17:23:48.863 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+17:23:48.863 [main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+17:23:48.863 [main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+17:23:48.863 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+17:23:48.863 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: POST /maps/api/place/add/json?key=qaclick123 HTTP/1.1
+17:23:48.863 [main] DEBUG org.apache.http.wire -  >> "POST /maps/api/place/add/json?key=qaclick123 HTTP/1.1[\r][\n]"
+17:23:48.863 [main] DEBUG org.apache.http.wire -  >> "Accept: application/json, application/javascript, text/javascript, text/json[\r][\n]"
+17:23:48.863 [main] DEBUG org.apache.http.wire -  >> "Content-Type: text/plain; charset=ISO-8859-1[\r][\n]"
+17:23:48.863 [main] DEBUG org.apache.http.wire -  >> "Content-Length: 216[\r][\n]"
+17:23:48.863 [main] DEBUG org.apache.http.wire -  >> "Host: rahulshettyacademy.com[\r][\n]"
+17:23:48.863 [main] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+17:23:48.863 [main] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)[\r][\n]"
+17:23:48.863 [main] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+17:23:48.863 [main] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+17:23:48.863 [main] DEBUG org.apache.http.headers - >> POST /maps/api/place/add/json?key=qaclick123 HTTP/1.1
+17:23:48.863 [main] DEBUG org.apache.http.headers - >> Accept: application/json, application/javascript, text/javascript, text/json
+17:23:48.863 [main] DEBUG org.apache.http.headers - >> Content-Type: text/plain; charset=ISO-8859-1
+17:23:48.863 [main] DEBUG org.apache.http.headers - >> Content-Length: 216
+17:23:48.863 [main] DEBUG org.apache.http.headers - >> Host: rahulshettyacademy.com
+17:23:48.863 [main] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+17:23:48.863 [main] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)
+17:23:48.863 [main] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+17:23:48.863 [main] DEBUG org.apache.http.wire -  >> "{"location":{"lat":-47.5554546,"lng":42.777777},"accuracy":50,"name":"arkansas","phone_number":"4124131313","address":"304 Ables dr","types":["shoe park","shop"],"website":"wwww.rahulshetty.com","language":"russian"}"
+17:23:49.144 [main] DEBUG org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+17:23:49.144 [main] DEBUG org.apache.http.wire -  << "Date: Sat, 04 Jul 2020 22:23:48 GMT[\r][\n]"
+17:23:49.144 [main] DEBUG org.apache.http.wire -  << "Server: Apache/2.4.18 (Ubuntu)[\r][\n]"
+17:23:49.144 [main] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Origin: *[\r][\n]"
+17:23:49.144 [main] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Methods: POST[\r][\n]"
+17:23:49.159 [main] DEBUG org.apache.http.wire -  << "Access-Control-Max-Age: 3600[\r][\n]"
+17:23:49.159 [main] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With[\r][\n]"
+17:23:49.159 [main] DEBUG org.apache.http.wire -  << "Content-Length: 194[\r][\n]"
+17:23:49.159 [main] DEBUG org.apache.http.wire -  << "Keep-Alive: timeout=5, max=100[\r][\n]"
+17:23:49.159 [main] DEBUG org.apache.http.wire -  << "Connection: Keep-Alive[\r][\n]"
+17:23:49.159 [main] DEBUG org.apache.http.wire -  << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+17:23:49.159 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+17:23:49.159 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+17:23:49.159 [main] DEBUG org.apache.http.headers - << HTTP/1.1 200 OK
+17:23:49.159 [main] DEBUG org.apache.http.headers - << Date: Sat, 04 Jul 2020 22:23:48 GMT
+17:23:49.159 [main] DEBUG org.apache.http.headers - << Server: Apache/2.4.18 (Ubuntu)
+17:23:49.159 [main] DEBUG org.apache.http.headers - << Access-Control-Allow-Origin: *
+17:23:49.159 [main] DEBUG org.apache.http.headers - << Access-Control-Allow-Methods: POST
+17:23:49.159 [main] DEBUG org.apache.http.headers - << Access-Control-Max-Age: 3600
+17:23:49.159 [main] DEBUG org.apache.http.headers - << Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+17:23:49.159 [main] DEBUG org.apache.http.headers - << Content-Length: 194
+17:23:49.159 [main] DEBUG org.apache.http.headers - << Keep-Alive: timeout=5, max=100
+17:23:49.159 [main] DEBUG org.apache.http.headers - << Connection: Keep-Alive
+17:23:49.159 [main] DEBUG org.apache.http.headers - << Content-Type: application/json;charset=UTF-8
+17:23:49.159 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive for 5000 MILLISECONDS
+17:23:49.175 [main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: application/json;charset=UTF-8
+17:23:49.175 [main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+17:23:49.331 [main] DEBUG org.apache.http.wire -  << "{"status":"OK","place_id":"ef39bff836c94fdbcdaa02fe1d3366cc","scope":"APP","reference":"dde542a9c0288ff30532810fffeabd47dde542a9c0288ff30532810fffeabd47","id":"dde542a9c0288ff30532810fffeabd47"}"
+17:23:49.331 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@6c298dc
+17:23:49.331 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive for 5000 MILLISECONDS
+17:25:25.440 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {s}->https://rahulshettyacademy.com:443
+17:25:25.491 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to rahulshettyacademy.com:443
+17:25:26.956 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+17:25:26.960 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+17:25:26.960 [main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+17:25:26.961 [main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+17:25:26.961 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+17:25:26.963 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: POST /maps/api/place/add/json?key=qaclick123 HTTP/1.1
+17:25:26.964 [main] DEBUG org.apache.http.wire -  >> "POST /maps/api/place/add/json?key=qaclick123 HTTP/1.1[\r][\n]"
+17:25:26.965 [main] DEBUG org.apache.http.wire -  >> "Accept: application/json, application/javascript, text/javascript, text/json[\r][\n]"
+17:25:26.965 [main] DEBUG org.apache.http.wire -  >> "Content-Type: text/plain; charset=ISO-8859-1[\r][\n]"
+17:25:26.967 [main] DEBUG org.apache.http.wire -  >> "Content-Length: 216[\r][\n]"
+17:25:26.967 [main] DEBUG org.apache.http.wire -  >> "Host: rahulshettyacademy.com[\r][\n]"
+17:25:26.967 [main] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+17:25:26.967 [main] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)[\r][\n]"
+17:25:26.968 [main] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+17:25:26.968 [main] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+17:25:26.972 [main] DEBUG org.apache.http.headers - >> POST /maps/api/place/add/json?key=qaclick123 HTTP/1.1
+17:25:26.972 [main] DEBUG org.apache.http.headers - >> Accept: application/json, application/javascript, text/javascript, text/json
+17:25:26.972 [main] DEBUG org.apache.http.headers - >> Content-Type: text/plain; charset=ISO-8859-1
+17:25:26.972 [main] DEBUG org.apache.http.headers - >> Content-Length: 216
+17:25:26.973 [main] DEBUG org.apache.http.headers - >> Host: rahulshettyacademy.com
+17:25:26.973 [main] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+17:25:26.974 [main] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)
+17:25:26.975 [main] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+17:25:26.975 [main] DEBUG org.apache.http.wire -  >> "{"location":{"lat":-47.5554546,"lng":42.777777},"accuracy":50,"name":"arkansas","phone_number":"4124131313","address":"304 Ables dr","types":["shoe park","shop"],"website":"wwww.rahulshetty.com","language":"russian"}"
+17:25:27.260 [main] DEBUG org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+17:25:27.264 [main] DEBUG org.apache.http.wire -  << "Date: Sat, 04 Jul 2020 22:25:27 GMT[\r][\n]"
+17:25:27.264 [main] DEBUG org.apache.http.wire -  << "Server: Apache/2.4.18 (Ubuntu)[\r][\n]"
+17:25:27.264 [main] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Origin: *[\r][\n]"
+17:25:27.264 [main] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Methods: POST[\r][\n]"
+17:25:27.264 [main] DEBUG org.apache.http.wire -  << "Access-Control-Max-Age: 3600[\r][\n]"
+17:25:27.264 [main] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With[\r][\n]"
+17:25:27.266 [main] DEBUG org.apache.http.wire -  << "Content-Length: 194[\r][\n]"
+17:25:27.266 [main] DEBUG org.apache.http.wire -  << "Keep-Alive: timeout=5, max=100[\r][\n]"
+17:25:27.266 [main] DEBUG org.apache.http.wire -  << "Connection: Keep-Alive[\r][\n]"
+17:25:27.267 [main] DEBUG org.apache.http.wire -  << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+17:25:27.267 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+17:25:27.274 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+17:25:27.274 [main] DEBUG org.apache.http.headers - << HTTP/1.1 200 OK
+17:25:27.274 [main] DEBUG org.apache.http.headers - << Date: Sat, 04 Jul 2020 22:25:27 GMT
+17:25:27.274 [main] DEBUG org.apache.http.headers - << Server: Apache/2.4.18 (Ubuntu)
+17:25:27.274 [main] DEBUG org.apache.http.headers - << Access-Control-Allow-Origin: *
+17:25:27.274 [main] DEBUG org.apache.http.headers - << Access-Control-Allow-Methods: POST
+17:25:27.276 [main] DEBUG org.apache.http.headers - << Access-Control-Max-Age: 3600
+17:25:27.277 [main] DEBUG org.apache.http.headers - << Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+17:25:27.277 [main] DEBUG org.apache.http.headers - << Content-Length: 194
+17:25:27.277 [main] DEBUG org.apache.http.headers - << Keep-Alive: timeout=5, max=100
+17:25:27.277 [main] DEBUG org.apache.http.headers - << Connection: Keep-Alive
+17:25:27.279 [main] DEBUG org.apache.http.headers - << Content-Type: application/json;charset=UTF-8
+17:25:27.287 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive for 5000 MILLISECONDS
+17:25:27.325 [main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: application/json;charset=UTF-8
+17:25:27.326 [main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+17:25:27.598 [main] DEBUG org.apache.http.wire -  << "{"status":"OK","place_id":"bc0f66e51d968014afaf074dc5ddee5d","scope":"APP","reference":"80bfc520d3a49243cbaa10948e37874c80bfc520d3a49243cbaa10948e37874c","id":"80bfc520d3a49243cbaa10948e37874c"}"
+17:25:27.603 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@6c298dc
+17:25:27.604 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive for 5000 MILLISECONDS
+18:08:28.600 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {s}->https://rahulshettyacademy.com:443
+18:08:28.678 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to rahulshettyacademy.com:443
+18:08:30.021 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+18:08:30.021 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+18:08:30.021 [main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+18:08:30.021 [main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+18:08:30.021 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+18:08:30.021 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: GET /getCourse.php?apiKey=value HTTP/1.1
+18:08:30.021 [main] DEBUG org.apache.http.wire -  >> "GET /getCourse.php?apiKey=value HTTP/1.1[\r][\n]"
+18:08:30.021 [main] DEBUG org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+18:08:30.021 [main] DEBUG org.apache.http.wire -  >> "Host: rahulshettyacademy.com[\r][\n]"
+18:08:30.021 [main] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+18:08:30.021 [main] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)[\r][\n]"
+18:08:30.021 [main] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+18:08:30.021 [main] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+18:08:30.021 [main] DEBUG org.apache.http.headers - >> GET /getCourse.php?apiKey=value HTTP/1.1
+18:08:30.021 [main] DEBUG org.apache.http.headers - >> Accept: */*
+18:08:30.021 [main] DEBUG org.apache.http.headers - >> Host: rahulshettyacademy.com
+18:08:30.021 [main] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+18:08:30.021 [main] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)
+18:08:30.021 [main] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+18:08:30.319 [main] DEBUG org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+18:08:30.319 [main] DEBUG org.apache.http.wire -  << "Date: Sat, 04 Jul 2020 23:08:30 GMT[\r][\n]"
+18:08:30.319 [main] DEBUG org.apache.http.wire -  << "Server: Apache/2.4.18 (Ubuntu)[\r][\n]"
+18:08:30.319 [main] DEBUG org.apache.http.wire -  << "Content-Length: 2[\r][\n]"
+18:08:30.319 [main] DEBUG org.apache.http.wire -  << "Keep-Alive: timeout=5, max=100[\r][\n]"
+18:08:30.319 [main] DEBUG org.apache.http.wire -  << "Connection: Keep-Alive[\r][\n]"
+18:08:30.319 [main] DEBUG org.apache.http.wire -  << "Content-Type: text/html; charset=UTF-8[\r][\n]"
+18:08:30.319 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+18:08:30.319 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+18:08:30.319 [main] DEBUG org.apache.http.headers - << HTTP/1.1 200 OK
+18:08:30.319 [main] DEBUG org.apache.http.headers - << Date: Sat, 04 Jul 2020 23:08:30 GMT
+18:08:30.319 [main] DEBUG org.apache.http.headers - << Server: Apache/2.4.18 (Ubuntu)
+18:08:30.319 [main] DEBUG org.apache.http.headers - << Content-Length: 2
+18:08:30.319 [main] DEBUG org.apache.http.headers - << Keep-Alive: timeout=5, max=100
+18:08:30.319 [main] DEBUG org.apache.http.headers - << Connection: Keep-Alive
+18:08:30.319 [main] DEBUG org.apache.http.headers - << Content-Type: text/html; charset=UTF-8
+18:08:30.334 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive for 5000 MILLISECONDS
+18:08:30.350 [main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: text/html; charset=UTF-8
+18:08:30.350 [main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream

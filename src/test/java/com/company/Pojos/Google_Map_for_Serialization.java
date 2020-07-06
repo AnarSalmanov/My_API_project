@@ -5,16 +5,17 @@ import org.codehaus.jackson.annotate.JsonPropertyOrder;
 import java.io.Serializable;
 import java.util.List;
 
+// keys order
 @JsonPropertyOrder(value = {"location", "accuracy", "name", "name", "phone_number",
-                              "address", "types", "website", "language"})
-public class Google_Map implements Serializable {
+        "address", "types", "website", "language"})
+public class Google_Map_for_Serialization implements Serializable {
 
-    private Location location; // child json inside main Json payload - Should created as a separate class.
+    private Location location; // child json inside main Json payload - create as separate class.
     private int accuracy;
     private String name;
     private String phone_number;
     private String address;
-    private List<String> types; // array inside main Json payload - Should be List of Strings
+    private List<String> types; // array inside main Json payload - create as List of Strings
     private String website;
     private String language;
 

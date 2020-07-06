@@ -6,6 +6,7 @@ import io.restassured.RestAssured.*;
 import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
+import org.json.simple.JSONObject;
 import org.junit.Assert;
 import org.testng.annotations.Test;
 
@@ -32,13 +33,13 @@ public class POSTexample {
 
     @Given("Content type Json")
     public void content_type_Json() {
-        Map<String, String> employeeMap = new HashMap<>();
-        employeeMap.put("name", "Layla");
-        employeeMap.put("salary", "7000");
-        employeeMap.put("age", "2");
-        System.out.println(employeeMap);
+        JSONObject jsonObject = new JSONObject();
+        jsonObject.put("name", "Lay");
+        jsonObject.put("salary", "700");
+        jsonObject.put("age", "24");
+        System.out.println(jsonObject);
         given().accept(ContentType.JSON)
-                .body(employeeMap);
+                .body(jsonObject);
     }
 
     @When("I post a new Employee  to resource {string}")
@@ -55,7 +56,7 @@ public class POSTexample {
     public void response_Json_should_contain_new_Employee_info() {
         JsonPath js = res.jsonPath();
         res.prettyPrint();
-        Assert.assertEquals(js.getString("data.name"), "LayLa");
+        Assert.assertEquals(js.getString("data.name"), "null");
     }
 
     @When("I send Get request with created Id")
