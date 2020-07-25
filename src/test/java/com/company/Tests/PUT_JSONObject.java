@@ -11,8 +11,7 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import static io.restassured.RestAssured.baseURI;
-import static io.restassured.RestAssured.given;
+import static io.restassured.RestAssured.*;
 
 public class PUT_JSONObject {
 
@@ -23,12 +22,13 @@ public class PUT_JSONObject {
         jsonObject.put("name", "Anar");
         jsonObject.put("job", "Engineer");
         baseURI = "https://reqres.in/";
+        basePath="/api/users/3";
         Response res =
                 given().log().all()
                         .accept(ContentType.JSON)
                         .body(jsonObject)
                         .when().log().ifValidationFails()
-                        .put("/api/users/3")
+                        .put()
                         .then().assertThat()
                         .statusCode(200)
                         .contentType(ContentType.JSON)

@@ -4,18 +4,22 @@ import com.github.javafaker.Faker;
 
 public class Payloads {
 
-    public static String name;
-    public static String isbn;
-    public static String author;
+    /**
+     * In before string part(in value) which you want make dynamic in payload
+     * we need to replace variable part with below way in the body String.
+     *   " + variable + "
+     * ex :    "\"name\":\"   " + variable + "   \",\n" +
+     *
+     * Note: If while copying the Json body input and pasting somewhere it
+     * includes lots og weird attributes, then use following link and past
+     * that Json to the edit-box and click ESCAPE. Then place that under the
+     * reusable payload methods. Look at methods in this class
+     * https://www.freeformatter.com/json-escape.html
+     */
 
-
-    public static String addBook(String aisle) {
-        Faker faker = new Faker();
-        name = faker.name().firstName();
-        isbn = name.substring(0, 3);
-        author = faker.name().lastName();
+    // This returns ready Json String to use in payload body, passing data dynamically in parameters
+    public static String addBookDynamically(String name, String isbn, String aisle, String author) {
         return "{\n" +
-                "\n" +
                 "\"name\":\"" + name + "\",\n" +
                 "\"isbn\":\"" + isbn + "\",\n" +
                 "\"aisle\":\"" + aisle + "\",\n" +
@@ -23,14 +27,11 @@ public class Payloads {
                 "}\n";
     }
 
-    public static String addBookDynamically(String name, String isbn, String aisle, String author) {
+    // This returns ready Json String to use in payload body, passing data dynamically in parameters
+    public static String deleteBook(String id) {
         return "{\n" +
-                "\n" +
-                "\"name\":\"" + name + "\",\n" +
-                "\"isbn\":\"" + isbn + "\",\n" +
-                "\"aisle\":\"" + aisle + "\",\n" +
-                "\"author\":\"" + author + "\"\n" +
-                "}\n";
+                "\"ID\" : \"" + id + "\"\n" +
+                "} \n";
     }
 
 

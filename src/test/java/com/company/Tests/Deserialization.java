@@ -18,7 +18,7 @@ import static org.hamcrest.Matchers.*;
  * linkedIn;
  */
 
-public class POST_Deserialization {
+public class Deserialization {
     @Test
     public void deserializeResponse() {
         baseURI = "https://rahulshettyacademy.com";

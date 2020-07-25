@@ -17,7 +17,7 @@ import java.net.ResponseCache;
 import java.util.List;
 
 
-public class Param_query {
+public class Param_QueryParameters {
 /**
  *  /? key=value -> is used as a queryParameters. Used for filter the response.
  * /: and / { data} used for path parameters, it is a part of URL.

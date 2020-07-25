@@ -1,0 +1,86 @@
+15:35:36.266 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://api.open-notify.org:80
+15:35:36.487 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to api.open-notify.org:80
+15:35:36.608 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+15:35:36.611 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+15:35:36.611 [main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+15:35:36.612 [main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+15:35:36.614 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+15:35:36.615 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: GET /astros.json HTTP/1.1
+15:35:36.616 [main] DEBUG org.apache.http.wire -  >> "GET /astros.json HTTP/1.1[\r][\n]"
+15:35:36.617 [main] DEBUG org.apache.http.wire -  >> "Accept: application/json, application/javascript, text/javascript, text/json[\r][\n]"
+15:35:36.617 [main] DEBUG org.apache.http.wire -  >> "Host: api.open-notify.org[\r][\n]"
+15:35:36.618 [main] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+15:35:36.619 [main] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)[\r][\n]"
+15:35:36.619 [main] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+15:35:36.619 [main] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+15:35:36.619 [main] DEBUG org.apache.http.headers - >> GET /astros.json HTTP/1.1
+15:35:36.619 [main] DEBUG org.apache.http.headers - >> Accept: application/json, application/javascript, text/javascript, text/json
+15:35:36.620 [main] DEBUG org.apache.http.headers - >> Host: api.open-notify.org
+15:35:36.620 [main] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+15:35:36.621 [main] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)
+15:35:36.621 [main] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+15:35:36.680 [main] DEBUG org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+15:35:36.684 [main] DEBUG org.apache.http.wire -  << "Server: nginx/1.10.3[\r][\n]"
+15:35:36.688 [main] DEBUG org.apache.http.wire -  << "Date: Sat, 11 Jul 2020 20:35:34 GMT[\r][\n]"
+15:35:36.688 [main] DEBUG org.apache.http.wire -  << "Content-Type: application/json[\r][\n]"
+15:35:36.689 [main] DEBUG org.apache.http.wire -  << "Content-Length: 260[\r][\n]"
+15:35:36.689 [main] DEBUG org.apache.http.wire -  << "Connection: keep-alive[\r][\n]"
+15:35:36.689 [main] DEBUG org.apache.http.wire -  << "access-control-allow-origin: *[\r][\n]"
+15:35:36.689 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+15:35:36.696 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+15:35:36.697 [main] DEBUG org.apache.http.headers - << HTTP/1.1 200 OK
+15:35:36.697 [main] DEBUG org.apache.http.headers - << Server: nginx/1.10.3
+15:35:36.697 [main] DEBUG org.apache.http.headers - << Date: Sat, 11 Jul 2020 20:35:34 GMT
+15:35:36.697 [main] DEBUG org.apache.http.headers - << Content-Type: application/json
+15:35:36.697 [main] DEBUG org.apache.http.headers - << Content-Length: 260
+15:35:36.699 [main] DEBUG org.apache.http.headers - << Connection: keep-alive
+15:35:36.699 [main] DEBUG org.apache.http.headers - << access-control-allow-origin: *
+15:35:36.711 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+15:35:36.756 [main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: application/json
+15:35:36.757 [main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+15:35:37.377 [main] DEBUG org.apache.http.wire -  << "{"message": "success", "number": 5, "people": [{"craft": "ISS", "name": "Chris Cassidy"}, {"craft": "ISS", "name": "Anatoly Ivanishin"}, {"craft": "ISS", "name": "Ivan Vagner"}, {"craft": "ISS", "name": "Doug Hurley"}, {"craft": "ISS", "name": "Bob Behnken"}]}"
+15:35:37.389 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@54e7391d
+15:35:37.389 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive indefinitely
+15:42:17.277 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://api.open-notify.org:80
+15:42:17.332 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to api.open-notify.org:80
+15:42:17.449 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+15:42:17.453 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+15:42:17.454 [main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+15:42:17.455 [main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+15:42:17.457 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+15:42:17.463 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: GET /astros.json HTTP/1.1
+15:42:17.464 [main] DEBUG org.apache.http.wire -  >> "GET /astros.json HTTP/1.1[\r][\n]"
+15:42:17.465 [main] DEBUG org.apache.http.wire -  >> "Accept: application/json, application/javascript, text/javascript, text/json[\r][\n]"
+15:42:17.465 [main] DEBUG org.apache.http.wire -  >> "Host: api.open-notify.org[\r][\n]"
+15:42:17.465 [main] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+15:42:17.467 [main] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)[\r][\n]"
+15:42:17.467 [main] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+15:42:17.467 [main] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+15:42:17.467 [main] DEBUG org.apache.http.headers - >> GET /astros.json HTTP/1.1
+15:42:17.467 [main] DEBUG org.apache.http.headers - >> Accept: application/json, application/javascript, text/javascript, text/json
+15:42:17.467 [main] DEBUG org.apache.http.headers - >> Host: api.open-notify.org
+15:42:17.469 [main] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+15:42:17.469 [main] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)
+15:42:17.469 [main] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+15:42:17.538 [main] DEBUG org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+15:42:17.541 [main] DEBUG org.apache.http.wire -  << "Server: nginx/1.10.3[\r][\n]"
+15:42:17.542 [main] DEBUG org.apache.http.wire -  << "Date: Sat, 11 Jul 2020 20:42:15 GMT[\r][\n]"
+15:42:17.543 [main] DEBUG org.apache.http.wire -  << "Content-Type: application/json[\r][\n]"
+15:42:17.543 [main] DEBUG org.apache.http.wire -  << "Content-Length: 260[\r][\n]"
+15:42:17.543 [main] DEBUG org.apache.http.wire -  << "Connection: keep-alive[\r][\n]"
+15:42:17.544 [main] DEBUG org.apache.http.wire -  << "access-control-allow-origin: *[\r][\n]"
+15:42:17.544 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+15:42:17.545 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+15:42:17.547 [main] DEBUG org.apache.http.headers - << HTTP/1.1 200 OK
+15:42:17.547 [main] DEBUG org.apache.http.headers - << Server: nginx/1.10.3
+15:42:17.547 [main] DEBUG org.apache.http.headers - << Date: Sat, 11 Jul 2020 20:42:15 GMT
+15:42:17.547 [main] DEBUG org.apache.http.headers - << Content-Type: application/json
+15:42:17.547 [main] DEBUG org.apache.http.headers - << Content-Length: 260
+15:42:17.547 [main] DEBUG org.apache.http.headers - << Connection: keep-alive
+15:42:17.548 [main] DEBUG org.apache.http.headers - << access-control-allow-origin: *
+15:42:17.556 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+15:42:17.613 [main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: application/json
+15:42:17.613 [main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+15:42:18.105 [main] DEBUG org.apache.http.wire -  << "{"message": "success", "number": 5, "people": [{"craft": "ISS", "name": "Chris Cassidy"}, {"craft": "ISS", "name": "Anatoly Ivanishin"}, {"craft": "ISS", "name": "Ivan Vagner"}, {"craft": "ISS", "name": "Doug Hurley"}, {"craft": "ISS", "name": "Bob Behnken"}]}"
+15:42:18.115 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@50b8ae8d
+15:42:18.116 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive indefinitely

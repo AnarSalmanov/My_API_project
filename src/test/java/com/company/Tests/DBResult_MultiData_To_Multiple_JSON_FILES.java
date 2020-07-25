@@ -32,14 +32,16 @@ public class DBResult_MultiData_To_Multiple_JSON_FILES {
             // adding all created objects to the list.
             customersList.add(customerDetails);
         }
+        DBUtil.destroyConnection();
         // Create multiple Json file
         for (int i = 0; i < customersList.size(); i++) {
             File filePath = new File("MultiData" + i + " .json");
             ObjectMapper objectMapper = new ObjectMapper();
+            //Iterate and get each object from List and write as JSON to Json file
             objectMapper.writeValue(filePath, customersList.get(i));
         }
 
-        DBUtil.destroyConnection();
+
     }
 
 

@@ -45,6 +45,8 @@ public class DBResult_Multiple_JSON_To_1_JSON_File {
         for (int i = 0; i < customersList.size(); i++) {
             jsonArray.add(customersList.get(i));
         }
+        //close db connection
+        DBUtil.destroyConnection();
         // 2. Create JSONObject, key = nameOfArray , value = JSONArray reference
         JSONObject jsonObject = new JSONObject();
         jsonObject.put("data", jsonArray);
@@ -55,7 +57,6 @@ public class DBResult_Multiple_JSON_To_1_JSON_File {
         ObjectMapper objectMapper = new ObjectMapper();
         objectMapper.writeValue(filePath, jsonObject);
 
-        //close db connection
-        DBUtil.destroyConnection();
+
     }
 }

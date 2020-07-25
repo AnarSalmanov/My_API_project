@@ -2,6 +2,7 @@ package com.company.Stepdefinitions;
 
 
 import io.cucumber.java.en.*;
+import io.restassured.RestAssured;
 import io.restassured.RestAssured.*;
 import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
@@ -23,54 +24,58 @@ import static org.testng.AssertJUnit.assertEquals;
 
 public class POSTexample {
 
-    public Response res;
-    public int id;
+    public Response postRes;
+    public Response getRes;
+    public String id;
+    public String baseUri;
 
-    @Given("Base Uri {string}")
-    public void base_Uri(String string) {
-        baseURI = string;
-    }
 
-    @Given("Content type Json")
-    public void content_type_Json() {
+
+
+    @Given("I make post request to {string} to {string} resource")
+    public void i_make_post_request_to_to_resource(String string, String string2) {
         JSONObject jsonObject = new JSONObject();
-        jsonObject.put("name", "Lay");
-        jsonObject.put("salary", "700");
-        jsonObject.put("age", "24");
+        jsonObject.put("name", "Laylow");
+        jsonObject.put("salary", "777");
+        jsonObject.put("age", "33");
         System.out.println(jsonObject);
-        given().accept(ContentType.JSON)
-                .body(jsonObject);
+        baseUri = string; // initializing;
+        baseURI = baseUri;
+        postRes =
+                given().accept(ContentType.JSON)
+                        .body(jsonObject)
+                        .when().post(string2)
+                        .then()
+                        .assertThat()
+                        .statusCode(200)
+                        .extract().response();
+        postRes.prettyPrint();
     }
 
-    @When("I post a new Employee  to resource {string}")
-    public void i_post_a_new_Employee_to_resource(String string) {
-        res = when().post(string).then().extract().response();
-    }
-
-    @Then("Status code should be {int}")
-    public void status_code_should_be(int int1) {
-        Assert.assertEquals(res.statusCode(), int1);
-    }
-
-    @Then("Response Json should contain new Employee info")
+    @Given("Response Json should contain new Employee info")
     public void response_Json_should_contain_new_Employee_info() {
-        JsonPath js = res.jsonPath();
-        res.prettyPrint();
-        Assert.assertEquals(js.getString("data.name"), "null");
+        JsonPath js = postRes.jsonPath();
+        Assert.assertNotNull(js.getString("id"));
+        id = js.getString("id");
+
     }
 
-    @When("I send Get request with created Id")
-    public void i_send_Get_request_with_created_Id() {
-        baseURI = "http://dummy.restapiexample.com/api/v1";
-        given().accept(ContentType.JSON).pathParam("id", id)
-                .when().get("/employee/" + id)
-                .then().assertThat().statusCode(200);
-    }
 
-    @Then("Employee Json body should match with Posted Json")
+    @When("I send Get request with created Id to {string} resource")
+    public void i_send_Get_request_with_created_Id_to_resource(String string) {
+        baseURI = baseUri;
+        getRes =
+                given()
+                        .pathParam("id", id)
+                        .accept(ContentType.JSON)
+                        .when()
+                        .get(string).then().assertThat().statusCode(200)
+                        .extract().response();
+    }
+    @When("Employee Json body should match with Posted Json")
     public void employee_Json_body_should_match_with_Posted_Json() {
-
+       JsonPath jsonPath = getRes.jsonPath();
+       Assert.assertEquals(jsonPath.getString("name"),"Laylow");
     }
-
 
 }

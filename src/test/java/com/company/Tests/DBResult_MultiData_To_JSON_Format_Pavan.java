@@ -47,11 +47,12 @@ public class DBResult_MultiData_To_JSON_Format_Pavan {
             String jsonString = gson.toJson(customersList.get(i));
             jsonArray.add(jsonString);
         }
+        //Adding JsonArray to a Map in key-value pair
         JSONObject jsonObject = new JSONObject();
         jsonObject.put("data", jsonArray); // here data is array name
-        String escapedSlashes = jsonObject.toJSONString().replace("\\\"", "\"");
-        String finalJson = escapedSlashes.replace("\"{", "{").replace("}\"", "}");
-        System.out.println(finalJson);
+        String finalJson = jsonObject.toJSONString().replace("\\\"", "\"")
+                .replace("\"{", "{").replace("}\"", "}");
+        System.out.println(finalJson);  // In Body we will use this String
         /**  Will return this
          * {
          *   "data": [
