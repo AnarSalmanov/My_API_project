@@ -22,10 +22,14 @@ public class GET_Astro_Practice {
     @Test
     public void getAstro() {
         baseURI = "http://api.open-notify.org";
+        basePath = "/astros.json";
         Response res =
-                given().accept(ContentType.JSON)
-                        .when().get("/astros.json")
-                        .then().assertThat()
+                given()
+                        .accept(ContentType.JSON)
+                        .when()
+                        .get()
+                        .then()
+                        .assertThat()
                         .contentType(ContentType.JSON)
                         .statusCode(200)
                         .statusLine("HTTP/1.1 200 OK")

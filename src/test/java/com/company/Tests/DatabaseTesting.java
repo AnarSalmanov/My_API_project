@@ -18,7 +18,7 @@ public class DatabaseTesting {
         while (resultSet.next()) {
             //find first_name by emp_id
             if (resultSet.getInt("employee_id") == 113) {
-                System.out.println("Name for emp_id 113 is : "
+                System.out.println("Name of emp_id 113 is : "
                         + resultSet.getString("first_name"));
             }
             // print all firstName and last names

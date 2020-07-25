@@ -2,11 +2,7 @@ Feature: Adding new customer
 
 
   Scenario: Adding new customer with correct credentials
-    Given Base Uri "http://dummy.restapiexample.com/api/v1"
-    And Content type Json
-    When I post a new Employee  to resource "/create"
-    Then Status code should be 200
+    Given I make post request to "http://dummy.restapiexample.com/api/v1" to "/create/" resource
     And Response Json should contain new Employee info
-    When I send Get request with created Id
-    Then Status code should be 200
+    When I send Get request with created Id to "/employee/{id}" resource
     And Employee Json body should match with Posted Json
