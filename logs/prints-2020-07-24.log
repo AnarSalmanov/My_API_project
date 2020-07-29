@@ -1917,3 +1917,10 @@
 22:04:52.120 [main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
 22:04:52.183 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@4287d447
 22:04:52.183 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive indefinitely
+23:48:40.055 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://localhost:9090
+23:48:40.077 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to localhost:9090
+23:48:42.109 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connect to localhost:9090 timed out. Connection will be retried using another IP address
+23:48:42.109 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to localhost:9090
+23:48:44.153 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Connection org.apache.http.impl.conn.DefaultClientConnection@67ef029 closed
+23:48:44.153 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Connection org.apache.http.impl.conn.DefaultClientConnection@67ef029 shut down
+23:48:44.155 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@7df587ef
