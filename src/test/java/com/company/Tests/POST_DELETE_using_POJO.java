@@ -13,7 +13,7 @@ import java.io.IOException;
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
 
-public class POST_DELETE_usingPOJO {
+public class POST_DELETE_using_POJO {
 
     public int id;
 

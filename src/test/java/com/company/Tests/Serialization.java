@@ -20,7 +20,6 @@ public class Serialization {
 
     @Test
     public void addingPlace() {
-        // simple points give value to Main class variables using setter methods
         Google_Map_for_Serialization google_map = new Google_Map_for_Serialization();
         google_map.setAccuracy(50);
         google_map.setName("arkansas");
@@ -28,18 +27,15 @@ public class Serialization {
         google_map.setLanguage("russian");
         google_map.setPhone_number("4124131313");
         google_map.setWebsite("wwww.rahulshetty.com");
-        // Create a List, for array inside main Json payload, then add the value
+        // Create a List, for array inside main Json, pass object to setter
         List<String> typeList = new ArrayList<>();
         typeList.add("shoe park");
         typeList.add("shop");
-        // then pass that List into setter method of main Json payload class
         google_map.setTypes(typeList);
-        // Create an object of the Class which we created for Child Json
-        // use that object and setter method of that class to set variables
+        // Create an object of Location class,give value to setters, use object in main class
         Location location = new Location();
         location.setLat(-47.5554546);
         location.setLng(42.777777);
-        // then pass that object into setter method from main Json payload class
         google_map.setLocation(location);
         // all points set , now pass the object of main Json class to the body
         baseURI = "https://rahulshettyacademy.com";
@@ -65,7 +61,7 @@ public class Serialization {
     }
     /**
      {
-     "location": {
+     "location": {                           <--- As a class
      "lat": -47.5554546,
      "lng": 42.777777
      },
@@ -73,7 +69,7 @@ public class Serialization {
      "name": "arkansas",
      "phone_number": "4124131313",
      "address": "304 Ables dr",
-     "types": [
+     "types": [                              <----- As a List
      "shoe park",
      "shop"
      ],

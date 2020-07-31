@@ -1,4 +1,4 @@
-package com.company.Tests;
+package com.company.FromDb_to_Json;
 
 import com.company.Pojos.CustomerDetails_Pojo;
 import com.company.Utils.DBUtil;
@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-public class DBResult_Multiple_JSON_To_1_JSON_File {
+public class DB_Multiple_JSON_To_1_JSON_File {
     @Test
     public void example() throws SQLException, IOException {
         DBUtil.createConnectionToHrDB();
