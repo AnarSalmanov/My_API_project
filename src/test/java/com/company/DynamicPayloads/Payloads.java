@@ -5,7 +5,7 @@ import com.github.javafaker.Faker;
 public class Payloads {
 
     /**
-     * In before string part(in value) which you want make dynamic in payload
+     * Before string part(in value) which you want make dynamic in payload
      * we need to replace variable part with below way in the body String.
      *   " + variable + "
      * ex :    "\"name\":\"   " + variable + "   \",\n" +

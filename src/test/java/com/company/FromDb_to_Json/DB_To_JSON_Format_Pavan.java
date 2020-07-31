@@ -1,4 +1,4 @@
-package com.company.Tests;
+package com.company.FromDb_to_Json;
 
 import com.company.Pojos.CustomerDetails_Pojo;
 import com.company.Utils.DBUtil;
@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-public class DBResult_MultiData_To_JSON_Format_Pavan {
+public class DB_To_JSON_Format_Pavan {
     @Test
     public void example() throws SQLException, IOException {
         DBUtil.createConnectionToHrDB();

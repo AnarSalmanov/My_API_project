@@ -15,9 +15,9 @@ import static org.hamcrest.Matchers.not;
 
 
 public class DDT_POST {
-    private String id;
-    String base = "http://216.10.245.166";
+    private static String id; // If no static then will be null.
 
+    String base = "http://216.10.245.166";
     ExcelUtil excelUtil = new ExcelUtil("AddBook.xlsx", "books");
 
     @DataProvider
@@ -30,7 +30,8 @@ public class DDT_POST {
     public void POST_NewBook(String name, String isbn, String aisle, String author) {
         baseURI = base;
         Response res =
-                given().accept(ContentType.JSON)
+                given().log().all()
+                        .accept(ContentType.JSON)
                         .body(Payloads.addBookDynamically(name, isbn, aisle, author)).log().ifValidationFails()
                         .when().post("/Library/Addbook.php")
                         .then().assertThat().statusCode(200).contentType(ContentType.JSON)
@@ -46,7 +47,7 @@ public class DDT_POST {
     }
 
 
-    // @Test(dependsOnMethods = "POST_NewBook")
+     @Test(dependsOnMethods = "POST_NewBook")
     public void Delete_Book_By_ID() {
         baseURI = base;
         Response res =

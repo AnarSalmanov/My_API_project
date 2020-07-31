@@ -19,8 +19,8 @@ public class SpecBuilders {
      * Request and Response spec builders
      * It is used to combine common/repeated steps for every test .
      */
-    static RequestSpecification reqSpec;
-    static ResponseSpecification resSpec;
+    static RequestSpecification reqSpec; // interface
+    static ResponseSpecification resSpec; //interface
 
     // RequestSpecBuilder - Building as RequestSpecification
     public static RequestSpecification reqSpec() {
