@@ -16,7 +16,8 @@ public class JsonUtil {
      * Methods are:
      * .writeValueAsString(Object object)
      *      -> In serialization converts Class object to Json String
-     *
+     * .writeValue
+     *      -> Used to write value to Json file
      */
 
     public static ObjectMapper mapper;

@@ -17,42 +17,30 @@ public class DB_To_JSON_Format_Pavan {
     @Test
     public void example() throws SQLException, IOException {
         DBUtil.createConnectionToHrDB();
-        // Give me first 5 employee in employees table
         String query = "select * from employees limit 5";
-        // Store result in List Of maps
         List<Map<String, Object>> resultMap = DBUtil.executeQueryAndGetResultMap(query);
-        //Creating a list of CustomerDetails class before looping
         List<CustomerDetails_Pojo> customersList = new ArrayList<>();
-        // Iterate in order to be able to perform value assigning
         for (int i = 0; i < resultMap.size(); i++) {
-            //Create object of Pojo class inside loop in order to create a new object for each looping.
             CustomerDetails_Pojo customerDetails = new CustomerDetails_Pojo();
-            // Inside loop getting result from db
-            Object firstName = resultMap.get(i).get("first_name");
-            Object lastName = resultMap.get(i).get("last_name");
-            Object employeeID = resultMap.get(i).get("employee_id");
-            // Setting value of Pojo class variables using setter methods.
-            customerDetails.setFirst_name(String.valueOf(firstName));
-            customerDetails.setLast_name(String.valueOf(lastName));
-            customerDetails.setEmployee_id(Integer.valueOf((Integer) employeeID));
-            // adding all created objects to the list.
+            customerDetails.setFirst_name(resultMap.get(i).get("first_name").toString());
+            customerDetails.setLast_name(resultMap.get(i).get("last_name").toString());
+            customerDetails.setEmployee_id(Integer.valueOf(resultMap.get(i).get("employee_id").toString()));
             customersList.add(customerDetails);
         }
-        DBUtil.destroyConnection();
-        // dependency Gson for JSONObject, json-simple for JSONArray
         JSONArray jsonArray = new JSONArray();
         for (int i = 0; i < customersList.size(); i++) {
-            // converting java object into Json string
             Gson gson = new Gson();
             String jsonString = gson.toJson(customersList.get(i));
             jsonArray.add(jsonString);
         }
-        //Adding JsonArray to a Map in key-value pair
         JSONObject jsonObject = new JSONObject();
-        jsonObject.put("data", jsonArray); // here data is array name
+        jsonObject.put("data", jsonArray);
         String finalJson = jsonObject.toJSONString().replace("\\\"", "\"")
                 .replace("\"{", "{").replace("}\"", "}");
         System.out.println(finalJson);  // In Body we will use this String
+
+        DBUtil.destroyConnection();
+
         /**  Will return this
          * {
          *   "data": [
