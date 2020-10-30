@@ -22,6 +22,7 @@ public class DBUtil {
     protected static Connection connection;
     protected static Statement statement;
     protected static ResultSet resultSet;
+    protected static ResultSetMetaData rsmd;
 
     /**
      * This method creates connection to hrDB
@@ -84,7 +85,7 @@ public class DBUtil {
             statement = connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
             resultSet = statement.executeQuery(query);
         } catch (SQLException e) {
-            System.out.println(e.getMessage());
+            e.printStackTrace();
         }
         return resultSet;
     }
@@ -95,13 +96,13 @@ public class DBUtil {
      * Accepts : resultSet as parameter.
      */
     public static int executeQueryAndGetRowsCount(String query) {
-        ResultSet resultSet = executeQuery(query);
+        resultSet = executeQuery(query);
         int amountOfRows = 0;
         try {
             resultSet.last();
             amountOfRows = resultSet.getRow();
         } catch (SQLException e) {
-            System.out.println(e.getMessage());
+            e.printStackTrace();
         }
         return amountOfRows;
     }
@@ -113,12 +114,12 @@ public class DBUtil {
      */
     public static int executeQueryAndGetColumnsCount(String query) {
         int columnsCount = 0;
-        ResultSet resultSet = executeQuery(query);
+        resultSet = executeQuery(query);
         try {
-            ResultSetMetaData rsmd = resultSet.getMetaData();
+            rsmd = resultSet.getMetaData();
             columnsCount = rsmd.getColumnCount();
         } catch (SQLException e) {
-            System.out.println(e.getMessage());
+            e.printStackTrace();
         }
         return columnsCount;
     }
@@ -132,14 +133,14 @@ public class DBUtil {
     public static List<String> executeQueryAndGetColumnsNames(String query) {
         List<String> columns = new ArrayList<>();
         try {
-            ResultSet resultSet = executeQuery(query);
-            ResultSetMetaData rsmd = resultSet.getMetaData();
+            resultSet = executeQuery(query);
+            rsmd = resultSet.getMetaData();
             int columnCount = rsmd.getColumnCount();
             for (int i = 1; i <= columnCount; i++) {
                 columns.add(rsmd.getColumnName(i));
             }
         } catch (SQLException e) {
-            System.out.println(e.getMessage());
+            e.printStackTrace();
         }
         return columns;
     }
@@ -150,15 +151,15 @@ public class DBUtil {
      * Accepts: query as parameter and columnName
      */
     public static List<String> executeQueryAndGetColumnValues(String query, String columnName) {
-        ResultSet resultSet = executeQuery(query);
+        resultSet = executeQuery(query);
         List<String> values = new ArrayList<>();
         try {
-            ResultSetMetaData rsmd = resultSet.getMetaData();
+            rsmd = resultSet.getMetaData();
             while (resultSet.next()) {
                 values.add(resultSet.getString(columnName));
             }
         } catch (SQLException e) {
-            System.out.println(e.getMessage());
+            e.printStackTrace();
         }
         return values;
     }
@@ -170,9 +171,8 @@ public class DBUtil {
      * Accept query String as a parameter.
      */
     public static List<List<Object>> executeQueryAndGetResultAsListOfLists(String query) {
-        ResultSet resultSet = executeQuery(query);
+        resultSet = executeQuery(query);
         List<List<Object>> rowList = new ArrayList<>();
-        ResultSetMetaData rsmd;
         try {
             rsmd = resultSet.getMetaData();
             while (resultSet.next()) {
@@ -195,9 +195,8 @@ public class DBUtil {
      */
 
     public static List<Map<String, Object>> executeQueryAndGetResultMap(String query) {
-        ResultSet resultSet = executeQuery(query);
+        resultSet = executeQuery(query);
         List<Map<String, Object>> rowList = new ArrayList<>();
-        ResultSetMetaData rsmd;
         try {
             rsmd = resultSet.getMetaData();
             while (resultSet.next()) {
@@ -212,8 +211,6 @@ public class DBUtil {
         }
         return rowList;
     }
-
-
 
 
     public static Object getCellValue(String query) {

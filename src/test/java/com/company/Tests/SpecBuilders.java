@@ -19,16 +19,15 @@ public class SpecBuilders {
      * Request and Response spec builders
      * It is used to combine common/repeated steps for every test .
      */
-    static RequestSpecification reqSpec; // interface
-    static ResponseSpecification resSpec; //interface
 
-    // RequestSpecBuilder - Building as RequestSpecification
+
+    // RequestSpecBuilder
     public static RequestSpecification reqSpec() {
         Map<String, String> queryParamsMap = new HashMap<>();
         queryParamsMap.put("type", "member");
         queryParamsMap.put("sort", "pushed");
         queryParamsMap.put("direction", "desc");
-        reqSpec = new RequestSpecBuilder()
+        RequestSpecification reqSpec = new RequestSpecBuilder()
                 .setBaseUri("https://api.github.com")
                 .setContentType(ContentType.JSON)
                 .addQueryParams(queryParamsMap)
@@ -37,9 +36,9 @@ public class SpecBuilders {
         return reqSpec;
     }
 
-    // ResponseSpecBuilder - Building as ResponseSpecifications
+    // ResponseSpecBuilder
     public static ResponseSpecification resSpec() {
-        resSpec = new ResponseSpecBuilder()
+        ResponseSpecification resSpec = new ResponseSpecBuilder()
                 .expectStatusCode(200)
                 .expectContentType(ContentType.JSON)
                 .build();

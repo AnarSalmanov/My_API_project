@@ -15,6 +15,7 @@ import static org.hamcrest.Matchers.not;
 
 
 public class DDT_POST {
+
     private static String id; // If no static then will be null.
 
     String base = "http://216.10.245.166";

@@ -1,45 +1,38 @@
 package com.company.FromDb_to_Json;
 
-import com.company.Pojos.CustomerDetails_Pojo;
+import com.company.Pojos.Customer;
 import com.company.Utils.DBUtil;
 import com.google.gson.Gson;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.testng.annotations.Test;
 
-import java.io.IOException;
-import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-public class DB_To_JSON_Format_Pavan {
+public class DB_To_JSON_Format {
     @Test
-    public void example() throws SQLException, IOException {
+    public void example(){
         DBUtil.createConnectionToHrDB();
         String query = "select * from employees limit 5";
         List<Map<String, Object>> resultMap = DBUtil.executeQueryAndGetResultMap(query);
-        List<CustomerDetails_Pojo> customersList = new ArrayList<>();
-        for (int i = 0; i < resultMap.size(); i++) {
-            CustomerDetails_Pojo customerDetails = new CustomerDetails_Pojo();
-            customerDetails.setFirst_name(resultMap.get(i).get("first_name").toString());
-            customerDetails.setLast_name(resultMap.get(i).get("last_name").toString());
-            customerDetails.setEmployee_id(Integer.valueOf(resultMap.get(i).get("employee_id").toString()));
-            customersList.add(customerDetails);
-        }
         JSONArray jsonArray = new JSONArray();
-        for (int i = 0; i < customersList.size(); i++) {
+        for (int i = 0; i < resultMap.size(); i++) {
+            Customer cus = new Customer();
+            cus.setFirstName(resultMap.get(i).get("first_name").toString());
+            cus.setLastName(resultMap.get(i).get("last_name").toString());
+            cus.setEmployeeId(Integer.parseInt(resultMap.get(i).get("employee_id").toString()));
             Gson gson = new Gson();
-            String jsonString = gson.toJson(customersList.get(i));
-            jsonArray.add(jsonString);
+            String objToJson = gson.toJson(cus);
+            jsonArray.add(objToJson);
         }
         JSONObject jsonObject = new JSONObject();
         jsonObject.put("data", jsonArray);
         String finalJson = jsonObject.toJSONString().replace("\\\"", "\"")
                 .replace("\"{", "{").replace("}\"", "}");
-        System.out.println(finalJson);  // In Body we will use this String
+        System.out.println(finalJson);
 
-        DBUtil.destroyConnection();
 
         /**  Will return this
          * {

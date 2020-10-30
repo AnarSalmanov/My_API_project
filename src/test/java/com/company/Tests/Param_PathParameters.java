@@ -10,7 +10,7 @@ import static org.hamcrest.Matchers.equalTo;
 public class Param_PathParameters {
     /**
      * Path parameter is a part of URL , format-->  URL/{name} or  URL/:name (can be any thing)
-     * In RestAssure should be passed in Url -->  /resource /{name}
+     * In RestAssured should be passed in Url -->  /resource /{name}
      * Note: In Postman We should pass as /resource/:name .
      * Otherwise path param section will not be active
      */

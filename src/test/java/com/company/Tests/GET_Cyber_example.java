@@ -17,6 +17,7 @@ import static org.hamcrest.Matchers.*;
 
 import java.net.ResponseCache;
 import java.util.HashMap;
+import java.util.Hashtable;
 import java.util.List;
 import java.util.Map;
 
@@ -25,27 +26,29 @@ public class GET_Cyber_example {
     @Test
     public void testingTask() {
         baseURI = "https://api.github.com";
+        basePath = "/users/{username}/repos";
+        Map<String, String> queryParamSets = new HashMap<>();
+        queryParamSets.put("type", "member");
+        queryParamSets.put("sort", "pushed");
+        queryParamSets.put("direction", "desc");
         Response res =
                 given().log().all()
+                        .queryParams(queryParamSets)
                         .pathParam("username", "ali")
-                        .queryParam("type", "member")
-                        .queryParam("sort", "pushed")
-                        .queryParam("direction", "desc")
                         .accept(ContentType.JSON)
                         .when()
                         .log().ifValidationFails()  // will print where it fails
-                        .log().headers()
-                        .log().cookies()
-                        .get("/users/{username}/repos")
+                        .get()
                         .then().assertThat()
                         .statusCode(200)
                         .statusLine("HTTP/1.1 200 OK")
                         .statusLine(containsString("OK"))
                         .contentType(ContentType.JSON)
                         .header("server", "GitHub.com")
-                        .header("content-type","application/json; charset=utf-8")
+                        .header("content-type", "application/json; charset=utf-8")
                         .body("name[4]", equalTo("hatch"))
                         .body("owner[4].id", equalTo(2610172))
+                        .log().all()
                         .extract().response();
         res.prettyPrint();
         //statusCode separate verify
@@ -70,23 +73,24 @@ public class GET_Cyber_example {
         List<Integer> idList = js.getList("id");
         // Verify 5th name is hatch
         String name_5th = namesList.get(4);
-              // Verify owner id of 5th person is 2610172
+        // Verify owner id of 5th person is 2610172
         List<Integer> allOwnerIds = js.getList("owner.id");
         int id_5th = allOwnerIds.get(4);
         Assert.assertEquals(id_5th, 2610172);
 
         // Find all cookies in response
         Map<String, String> cookies = res.getCookies();
-        for (String cookieKey : cookies.keySet()) {
-            System.out.println(cookieKey + " " + cookies.get(cookieKey));
+        for (String Key : cookies.keySet()) {
+            System.out.println(Key + " " + cookies.get(Key));
         }
         //Find all Headers in response
         Headers headers = res.getHeaders();
         Map<String, String> headersMap = new HashMap<>();
         for (Header header : headers) {
-            headersMap.put(header.getName(), header.getValue());
+            headersMap.put(header.getName(), header.getValue()); //String, String
         }
         System.out.println(headersMap);
     }
+
 
 }
