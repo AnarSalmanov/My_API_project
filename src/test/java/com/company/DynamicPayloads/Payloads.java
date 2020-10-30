@@ -8,10 +8,10 @@ public class Payloads {
      * Before string part(in value) which you want make dynamic in payload
      * we need to replace variable part with below way in the body String.
      *   " + variable + "
-     * ex :    "\"name\":\"   " + variable + "   \",\n" +
+     * ex :    "\"name\":\""  + variable + "\",\n" +
      *
      * Note: If while copying the Json body input and pasting somewhere it
-     * includes lots og weird attributes, then use following link and past
+     * includes lots of weird attributes, then use following link and past
      * that Json to the edit-box and click ESCAPE. Then place that under the
      * reusable payload methods. Look at methods in this class
      * https://www.freeformatter.com/json-escape.html

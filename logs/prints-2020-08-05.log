@@ -1,0 +1,58 @@
+12:37:00.097 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://216.10.245.166:80
+12:37:00.128 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to 216.10.245.166:80
+12:37:00.440 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+12:37:00.440 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+12:37:00.440 [main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+12:37:00.440 [main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+12:37:00.440 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+12:37:00.440 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: POST /Library/Addbook.php HTTP/1.1
+12:37:00.440 [main] DEBUG org.apache.http.wire -  >> "POST /Library/Addbook.php HTTP/1.1[\r][\n]"
+12:37:00.440 [main] DEBUG org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+12:37:00.440 [main] DEBUG org.apache.http.wire -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+12:37:00.440 [main] DEBUG org.apache.http.wire -  >> "Content-Length: 84[\r][\n]"
+12:37:00.440 [main] DEBUG org.apache.http.wire -  >> "Host: 216.10.245.166[\r][\n]"
+12:37:00.440 [main] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+12:37:00.440 [main] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)[\r][\n]"
+12:37:00.440 [main] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+12:37:00.440 [main] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+12:37:00.440 [main] DEBUG org.apache.http.headers - >> POST /Library/Addbook.php HTTP/1.1
+12:37:00.440 [main] DEBUG org.apache.http.headers - >> Accept: */*
+12:37:00.440 [main] DEBUG org.apache.http.headers - >> Content-Type: application/json; charset=UTF-8
+12:37:00.440 [main] DEBUG org.apache.http.headers - >> Content-Length: 84
+12:37:00.440 [main] DEBUG org.apache.http.headers - >> Host: 216.10.245.166
+12:37:00.440 [main] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+12:37:00.440 [main] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_191)
+12:37:00.440 [main] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+12:37:00.440 [main] DEBUG org.apache.http.wire -  >> "{[\r][\n]"
+12:37:00.440 [main] DEBUG org.apache.http.wire -  >> "  "name": " minutes",[\r][\n]"
+12:37:00.440 [main] DEBUG org.apache.http.wire -  >> "  "isbn": "sx",[\r][\n]"
+12:37:00.440 [main] DEBUG org.apache.http.wire -  >> "  "aisle": "3",[\r][\n]"
+12:37:00.440 [main] DEBUG org.apache.http.wire -  >> "  "author": "cXose"[\r][\n]"
+12:37:00.456 [main] DEBUG org.apache.http.wire -  >> "}[\r][\n]"
+12:37:00.784 [main] DEBUG org.apache.http.wire -  << "HTTP/1.1 404 Not Found[\r][\n]"
+12:37:00.784 [main] DEBUG org.apache.http.wire -  << "Date: Wed, 05 Aug 2020 17:37:00 GMT[\r][\n]"
+12:37:00.784 [main] DEBUG org.apache.http.wire -  << "Server: Apache[\r][\n]"
+12:37:00.784 [main] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Origin: *[\r][\n]"
+12:37:00.784 [main] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Methods: POST[\r][\n]"
+12:37:00.784 [main] DEBUG org.apache.http.wire -  << "Access-Control-Max-Age: 3600[\r][\n]"
+12:37:00.800 [main] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With[\r][\n]"
+12:37:00.800 [main] DEBUG org.apache.http.wire -  << "Keep-Alive: timeout=5, max=100[\r][\n]"
+12:37:00.800 [main] DEBUG org.apache.http.wire -  << "Connection: Keep-Alive[\r][\n]"
+12:37:00.800 [main] DEBUG org.apache.http.wire -  << "Transfer-Encoding: chunked[\r][\n]"
+12:37:00.800 [main] DEBUG org.apache.http.wire -  << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+12:37:00.800 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+12:37:00.800 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 404 Not Found
+12:37:00.800 [main] DEBUG org.apache.http.headers - << HTTP/1.1 404 Not Found
+12:37:00.800 [main] DEBUG org.apache.http.headers - << Date: Wed, 05 Aug 2020 17:37:00 GMT
+12:37:00.800 [main] DEBUG org.apache.http.headers - << Server: Apache
+12:37:00.800 [main] DEBUG org.apache.http.headers - << Access-Control-Allow-Origin: *
+12:37:00.800 [main] DEBUG org.apache.http.headers - << Access-Control-Allow-Methods: POST
+12:37:00.800 [main] DEBUG org.apache.http.headers - << Access-Control-Max-Age: 3600
+12:37:00.800 [main] DEBUG org.apache.http.headers - << Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+12:37:00.800 [main] DEBUG org.apache.http.headers - << Keep-Alive: timeout=5, max=100
+12:37:00.800 [main] DEBUG org.apache.http.headers - << Connection: Keep-Alive
+12:37:00.800 [main] DEBUG org.apache.http.headers - << Transfer-Encoding: chunked
+12:37:00.800 [main] DEBUG org.apache.http.headers - << Content-Type: application/json;charset=UTF-8
+12:37:00.800 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive for 5000 MILLISECONDS
+12:37:00.815 [main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: application/json;charset=UTF-8
+12:37:00.831 [main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream

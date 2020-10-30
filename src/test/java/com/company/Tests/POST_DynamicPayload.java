@@ -1,21 +1,14 @@
 package com.company.Tests;
 
 import com.company.DynamicPayloads.Payloads;
-import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
+import org.testng.annotations.Test;
 
-import org.springframework.context.annotation.DependsOn;
-import org.testng.Assert;
-import org.testng.annotations.*;
-import sun.security.krb5.internal.PAData;
-
-
-import java.util.*;
-
-import static io.restassured.RestAssured.*;
-import static org.hamcrest.Matchers.*;
+import static io.restassured.RestAssured.baseURI;
+import static io.restassured.RestAssured.given;
+import static org.hamcrest.Matchers.equalTo;
 
 public class POST_DynamicPayload {
 
