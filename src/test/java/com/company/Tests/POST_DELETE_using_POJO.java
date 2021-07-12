@@ -1,6 +1,7 @@
 package com.company.Tests;
 
 import com.company.Pojos.Employee;
+import com.company.Utils.JsonUtil;
 import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
@@ -16,19 +17,19 @@ public class POST_DELETE_using_POJO {
 
     public int id;
 
-    @Test(priority = 1)
+    @Test(priority = 0)
     public void POST_newEmployee() throws IOException {
         Employee employee = new Employee();
-        employee.setName("Samir");
-        employee.setAge("34");
-        employee.setSalary("50");
-        System.out.println(employee.toString());
+        employee.setName("Anar");
+        employee.setAge("40");
+        employee.setSalary("70");
         baseURI = "http://dummy.restapiexample.com/api/v1";
         basePath = "/create";
         Response res =
                 given().log().all()
                         .accept(ContentType.JSON)
-                        .body(employee).log().all()
+                        //Always convert Pojo object to JsonString for payload
+                        .body(JsonUtil.convertJavaToJson(employee)).log().all()
                         .when()
                         .post()
                         .then().assertThat()
@@ -37,8 +38,8 @@ public class POST_DELETE_using_POJO {
                         .extract().response();
         JsonPath js = res.jsonPath();
         id = js.get("data.id");
-        System.out.println("Id is :" + id);
-        Assert.assertEquals(js.getString("data.name"), "Samir");
+        System.out.println("Id is :" + js.get("data.id"));
+        Assert.assertEquals("success", js.getString("status"));
 
     }
 

@@ -2,6 +2,7 @@ package com.company.Tests;
 
 import com.company.Pojos.Google_Map_for_Serialization;
 import com.company.Pojos.Location;
+import com.company.Utils.JsonUtil;
 import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
@@ -43,9 +44,10 @@ public class Serialization {
                 given().log().all()
                         .queryParam("key", "qaclick123")
                         .accept(ContentType.JSON)
-                        .body(google_map).log().all()
+                        //always convert Java object to JsonString using ObjectMapper
+                        .body(JsonUtil.convertJavaToJson(google_map)).log().all()
                         .when().log().ifValidationFails()
-                        .post()
+                        .post(basePath)
                         .then().assertThat()
                         .statusCode(200)
                         .contentType(ContentType.JSON)
@@ -60,7 +62,7 @@ public class Serialization {
     }
     /**
      {
-     "location": {                           <--- As a class
+     "location": {                           <--- Objects As a class
      "lat": -47.5554546,
      "lng": 42.777777
      },
@@ -68,7 +70,7 @@ public class Serialization {
      "name": "arkansas",
      "phone_number": "4124131313",
      "address": "304 Ables dr",
-     "types": [                              <----- As a List
+     "types": [                              <-----Arrays  As a List
      "shoe park",
      "shop"
      ],

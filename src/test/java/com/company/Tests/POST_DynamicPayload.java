@@ -11,6 +11,10 @@ import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 
 public class POST_DynamicPayload {
+    /**
+     * Here using a helper method which returns a String,
+     * dynamically passing required arguments and using String as payload
+     */
 
     private String id;
     String base = "http://216.10.245.166";
@@ -20,7 +24,8 @@ public class POST_DynamicPayload {
         baseURI = base;
         Response res =
                 given().accept(ContentType.JSON)
-                        .body(Payloads.addBookDynamically("5 minutes", "13", "15", "Anar")).log().all()
+                        .body(Payloads.addBookDynamically(
+                                "5 minutes", "13", "15", "Anar")).log().all()
                         .when().post("/Library/Addbook.php")
                         .then().assertThat().statusCode(200).contentType(ContentType.JSON)
                         .and().body("Msg", equalTo("successfully added"))

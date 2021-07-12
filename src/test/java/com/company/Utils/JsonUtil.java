@@ -11,7 +11,7 @@ public class JsonUtil {
     public static ObjectMapper mapper;
 
     /*
-     * Converts Json file to Json String for payload.
+     * Converts Json file to String for payload, not using objectMapper
      */
     public static String readFromJsonFile(String filePath) {
         String payload = "";
@@ -29,7 +29,7 @@ public class JsonUtil {
     public static String convertJavaToJson(Object object) {
         String payload = "";
         try {
-                payload = new ObjectMapper().writeValueAsString(object);
+            payload = new ObjectMapper().writeValueAsString(object);
         } catch (Exception e) {
             e.printStackTrace();
         }
