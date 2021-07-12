@@ -15,12 +15,12 @@ public class POST_DynamicPayload {
     private String id;
     String base = "http://216.10.245.166";
 
-    @Test(priority = 0)
+    @Test(priority = 1)
     public void POST_NewBook() {
         baseURI = base;
         Response res =
-                given() .accept(ContentType.JSON)
-                        .body(Payloads.addBookDynamically("5 minutes","13","15","Anar")).log().all()
+                given().accept(ContentType.JSON)
+                        .body(Payloads.addBookDynamically("5 minutes", "13", "15", "Anar")).log().all()
                         .when().post("/Library/Addbook.php")
                         .then().assertThat().statusCode(200).contentType(ContentType.JSON)
                         .and().body("Msg", equalTo("successfully added"))
@@ -30,8 +30,6 @@ public class POST_DynamicPayload {
         id = js.getString("ID");
         System.out.println(id);
     }
-
-
 
 
     @Test(priority = 2)

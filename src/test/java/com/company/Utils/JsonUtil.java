@@ -1,43 +1,38 @@
 package com.company.Utils;
 
-import org.codehaus.jackson.JsonGenerationException;
-import org.codehaus.jackson.JsonParseException;
-import org.codehaus.jackson.map.JsonMappingException;
 import org.codehaus.jackson.map.ObjectMapper;
 
-import java.io.IOException;
 import java.nio.file.Files;
-import java.nio.file.Path;
 import java.nio.file.Paths;
 
 public class JsonUtil {
-    /**
-     * Object Mapper is a class from Jackson library
-     * Methods are:
-     * .writeValueAsString(Object object)
-     *      -> In serialization converts Class object to Json String
-     * .writeValue
-     *      -> Used to write value to Json file
-     */
+
 
     public static ObjectMapper mapper;
 
     /*
-     *This method is used for just copy from Json and Paste to Body as String
-     * Accepts filePath location as string parameter of method.
+     * Converts Json file to Json String for payload.
      */
-    public static String readFromJsonFile(String filePath) throws IOException {
-        String payload = new String(Files.readAllBytes(Paths.get(filePath)));
+    public static String readFromJsonFile(String filePath) {
+        String payload = "";
+        try {
+            payload = new String(Files.readAllBytes(Paths.get(filePath)));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         return payload;
     }
 
     /**
-     * This method is used after creating object of Pojo class, in order to
-     * convert created  Java object to JSON format String to use it in body of payload.
+     * Converts Pojo class's object to Json String.
      */
-    public static String convertJavaToJson(Object object) throws IOException {
-        mapper = new ObjectMapper();
-        String payload = mapper.writeValueAsString(object);
+    public static String convertJavaToJson(Object object) {
+        String payload = "";
+        try {
+                payload = new ObjectMapper().writeValueAsString(object);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         return payload;
     }
 

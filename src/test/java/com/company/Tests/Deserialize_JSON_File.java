@@ -13,8 +13,7 @@ public class Deserialize_JSON_File {
     public void readFromJsonFile() throws IOException {
         File filePath = new File("SingleData.json");
         // Parsing Json File to Pojo class object.
-        ObjectMapper objMap = new ObjectMapper();
-        Customer cus = objMap.readValue(filePath, Customer.class);
+        Customer cus = new ObjectMapper().readValue(filePath, Customer.class);
         //Using getters of Customer class get appropriate variable from Json file
         String firstName = cus.getFirstName();
         String lastName = cus.getLastName();

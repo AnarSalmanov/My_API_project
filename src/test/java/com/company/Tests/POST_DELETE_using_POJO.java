@@ -1,7 +1,6 @@
 package com.company.Tests;
 
 import com.company.Pojos.Employee;
-import com.company.Utils.JsonUtil;
 import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
@@ -11,7 +10,7 @@ import org.testng.annotations.Test;
 import java.io.IOException;
 
 import static io.restassured.RestAssured.*;
-import static org.hamcrest.Matchers.*;
+import static org.hamcrest.Matchers.equalTo;
 
 public class POST_DELETE_using_POJO {
 

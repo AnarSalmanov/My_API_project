@@ -18,7 +18,7 @@ public class DDT_POST {
 
     private static String id; // If no static then will be null.
 
-    String base = "http://216.10.245.166";
+
     ExcelUtil excelUtil = new ExcelUtil("AddBook.xlsx", "books");
 
     @DataProvider
@@ -28,29 +28,28 @@ public class DDT_POST {
     }
 
     @Test(dataProvider = "testData")
-    public void POST_NewBook(String name, String isbn, String aisle, String author) {
-        baseURI = base;
+    public void post_NewBook(String name, String isbn, String aisle, String author) {
+        baseURI = "http://216.10.245.166";
         Response res =
                 given().log().all()
                         .accept(ContentType.JSON)
-                        .body(Payloads.addBookDynamically(name, isbn, aisle, author)).log().ifValidationFails()
+                        .body(Payloads.addBookDynamically(name, isbn, aisle, author))
                         .when().post("/Library/Addbook.php")
-                        .then().assertThat().statusCode(200).contentType(ContentType.JSON)
+                        .then().log().ifValidationFails()
+                        .assertThat().statusCode(200).contentType(ContentType.JSON)
                         .and().body("Msg", equalTo("successfully added"))
                         .extract().response();
         res.prettyPrint();
         JsonPath js = res.jsonPath();
         id = js.getString("ID");
-        System.out.println(id);
-
-        DDT_POST ddt_post = new DDT_POST();
-        ddt_post.Delete_Book_By_ID();
+        System.out.println("generated id is " + id);
+        delete_Book_By_ID();
     }
 
 
-     @Test(dependsOnMethods = "POST_NewBook")
-    public void Delete_Book_By_ID() {
-        baseURI = base;
+    @Test
+    public void delete_Book_By_ID() {
+        baseURI = "http://216.10.245.166";
         Response res =
                 given().log().all()
                         .body(Payloads.deleteBook(id)).log().ifValidationFails()

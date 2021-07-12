@@ -12,6 +12,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import static io.restassured.RestAssured.given;
+import static org.hamcrest.Matchers.containsString;
 import static org.hamcrest.Matchers.equalTo;
 
 public class SpecBuilders {
@@ -27,22 +28,22 @@ public class SpecBuilders {
         queryParamsMap.put("type", "member");
         queryParamsMap.put("sort", "pushed");
         queryParamsMap.put("direction", "desc");
-        RequestSpecification reqSpec = new RequestSpecBuilder()
+        return new RequestSpecBuilder()
                 .setBaseUri("https://api.github.com")
                 .setContentType(ContentType.JSON)
                 .addQueryParams(queryParamsMap)
                 .addPathParam("username", "ali")
                 .build();
-        return reqSpec;
     }
 
     // ResponseSpecBuilder
     public static ResponseSpecification resSpec() {
-        ResponseSpecification resSpec = new ResponseSpecBuilder()
+        return new ResponseSpecBuilder()
                 .expectStatusCode(200)
                 .expectContentType(ContentType.JSON)
+                .expectStatusLine(containsString("OK"))
                 .build();
-        return resSpec;
+
     }
 
 

@@ -21,10 +21,11 @@ public class PUT_JSONObject {
         JSONObject jsonObject = new JSONObject();
         jsonObject.put("name", "Anar");
         jsonObject.put("job", "Engineer");
+        System.out.println(jsonObject.toJSONString()); //{"name":"Anar","job":"Engineer"}
         baseURI = "https://reqres.in/";
-        basePath="/api/users/3";
+        basePath = "/api/users/3";
         Response res =
-                given().log().all()
+                given()
                         .accept(ContentType.JSON)
                         .body(jsonObject)
                         .when().log().ifValidationFails()
@@ -37,13 +38,11 @@ public class PUT_JSONObject {
         JsonPath js = res.jsonPath();
         String updatedMessage = js.getString("updatedAt");
         //current day
-        Date date = new Date();
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
-        String currentDay = simpleDateFormat.format(date);
+        String currentDay = new SimpleDateFormat("yyyy-MM-dd").format(new Date());
         System.out.println(currentDay);
         Assert.assertTrue(updatedMessage.contains(currentDay)); //1 day ahead
 
-    }
+   }
 
 
 }

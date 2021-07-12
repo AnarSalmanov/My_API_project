@@ -7,7 +7,7 @@ public class Payloads {
     /**
      * Before string part(in value) which you want make dynamic in payload
      * we need to replace variable part with below way in the body String.
-     *   " + variable + "
+     *   " + variable + " -> "" included
      * ex :    "\"name\":\""  + variable + "\",\n" +
      *
      * Note: If while copying the Json body input and pasting somewhere it

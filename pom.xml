@@ -160,7 +160,7 @@
                     </plugins>
                 </pluginManagement>
             </build>
-        </profile>
+444465  6    7i iuop        </profile>
     </profiles>
     <build>
         <plugins>

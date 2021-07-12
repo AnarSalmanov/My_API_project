@@ -1,1 +1,18 @@
-{"firstName":"Jose Manuel","lastName":"Urman","employeeId":112}
+{
+  "def": [
+    {
+      "setDef": [
+        {
+          "name": "ABC",
+          "type": "STRING"
+        },
+        {
+          "name": "XYZ",
+          "type": "STRING"
+        }
+      ],
+      "setId": 1
+    }
+  ],
+  "name": "sample"
+}
